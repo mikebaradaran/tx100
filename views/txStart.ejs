@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA setup</title>
+    <script>
+        function showFile() {
+            var fileUpload = document.getElementById("my-file");
+            var blob = fileUpload.files[0]; // Type = File
+
+            var reader = new FileReader();
+            reader.readAsText(blob, "UTF-8"); // asynchronous
+            reader.onload = function () {
+                getPCs(reader.result);
+                getLogin(reader.result);
+            };
+        }
+
+        function getPCs(data) {
+            let pcs = data.split('\n');
+            let result = "";
+            pcs.forEach(pc => {
+                if (pc.includes('Lab URL:'))
+                    result += pc.replace('Lab URL:', '').
+                        replace(',', '').trim() + "\n";
+            });
+            document.getElementById('pcs').value = result;
+        }
+        function getLogin(data) {
+            var email, password, accessCode;
+            let pcs = data.split('\n');
+            let result = "";
+            for(let line of pcs){
+                if (line.includes('Email:'))
+                    email = line.replace('Email:', '').trim();
+                if (line.includes('Password:'))
+                    password = line.replace('Password:', '').trim();
+                if (line.includes('Access Code:'))
+                    accessCode = line.replace('Access Code:', '').trim();
+            }
+            document.getElementById('password1').value = email;
+            document.getElementById('password2').value = password;
+            document.getElementById('password3').value = accessCode;
+            document.getElementById('form1').style.display = "block";
+        }
+
+    </script>
+  <style>
+    body{
+      background-color:lightgrey;
+    }
+    table tr td:nth-child(2) { width:30em;}
+    input,textarea:not(#my-file){ width:100%;}
+    #my-file{ width:15em;}
+  </style>
+</head>
+<body>
+    <h1>Files demo</h1>
+    <input id="my-file" type='file' accept='text/text'>
+    <button onclick="showFile()">set GoToMyPC values</button>
+    <div id="content"></div>
+
+    <form action="/startSubmit" method="POST">
+        <table id="form1" style="display:none">
+            <tr><td>Audio file:</td><td><input type="text" id="audio" name="audio" value="https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574"></td></tr>
+            <tr><td>Trainer:</td><td><input type="text" id="trainer" name="trainer" required></td></tr>
+            <tr><td>Course title:</td><td><input type="text" id="course_title" name="course_title" required></td></tr>
+            <tr><td>Course code:</td><td><input type="text" id="code" name="code" required placeholder="like ADXD2SD4M2"></td></tr>
+            <tr><td>Pin:</td><td><input type="text" id="pin" name="pin" required placeholder="like 4810608-20"></td></tr>
+            <tr><td>WebEx email:</td><td><input type="text" id="webex_email" name="webex_email" required placeholder="like qa.webex025@qa.com"></td></tr>
+            <tr><td>Extra material <br />(like OneDrive):</td><td><input type="text" id="material" name="material"></td></tr>
+            <tr><td>Mimeo:</td><td><input type="text" id="mimeo" name="mimeo"></td></tr>
+
+            <tr><td>GoToMyPC links:</td><td><textarea rows="5" type="text" id="pcs" name="pcs" /></textarea></td></tr>
+
+            <tr><td>GoToMyPC email:</td><td><input type="text" id="password1" name="password1"></td></tr>
+            <tr><td>GoToMyPC password:</td><td><input type="text" id="password2" name="password2" /></td></tr>
+            <tr><td>GoToMyPC access code:</td><td><input type="text" id="password3" name="password3" /></td></tr>
+
+            <tr><td>Student names:</td><td><textarea rows="5" type="text" id="students" name="students" />Trainer, Trainer</textarea></td></tr>
+
+            <tr><td></td><td><button type="submit">Submit</button></td></tr>
+        </table>
+    </form>
+</body>
+</html>
+</body>
+</html>

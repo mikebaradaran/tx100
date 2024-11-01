@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    paste here:<textarea id="pcs"></textarea>
+    <button onclick="getPCs()">OK</button>
+    <script>
+        function getPCs() {
+            let pcs = document.getElementById('pcs').value.split('\n');
+            let result = "";
+            pcs.forEach(pc => {
+                if (pc.includes('Lab URL:'))
+                    result += pc.replace('Lab URL:', '').
+                        replace(',', '').trim() + "\n";
+            });
+            navigator.clipboard.writeText(result);
+            alert('PCs are copied to clipboard');
+            //document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>

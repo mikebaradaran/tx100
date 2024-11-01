@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiks admin</title>
+    <style>
+        button {
+            margin-right: 10px;
+        }
+    </style>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+
+<body>
+    <div id="messages"></div>
+
+    <script>
+        const serverURL = '<%= commonData.appName %>';
+        const divMessages = document.getElementById("messages");
+        function deleteName(name) {
+            sendCommand("deletename " + name);
+        }
+        function sendCommand(command) {
+            let msg = {
+                name: "trainer",
+                body: command,
+            };
+            socket.emit("message", msg);
+        }
+
+        function displayData(data) {
+            let messages = '<table>';
+
+            data.forEach((d) => {
+                messages +=
+                    `<tr><tr><td><button onclick="deleteName('${d.name}')">delete name</button>${d.name}</td></tr>`;
+            });
+            divMessages.innerHTML = messages + "</table>" +
+            `<button onclick="sendCommand('clear')">Wipe messages</button>` +
+            `<button onclick="sendCommand('delete')">Close class</button>`;
+        }
+        //-------------------------------------------------------------
+        const socket = io(serverURL);
+        socket.on("connection");
+        // force refresh
+        sendCommand("refresh");
+        
+        socket.on("message", (data) => {
+            displayData(data);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <style>
+        .senderName {
+            width: 10em;
+        }
+
+        #sendMessage {
+            font-size: large;
+        }
+
+        .emoji:hover {
+            border: 1px solid red;
+        }
+
+        .emoji {
+            margin-right: 5px;
+        }
+      #emojis{
+        width:13em;
+        box-shadow:3px 3px 3px gray;
+        border-radius:5px;
+        padding:5px;
+      }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="name" placeholder="Enter your name" /><br />
+    <input type="text" id="message" placeholder="Message - Press Enter/📨" />
+    <span onclick="sendMessage()" id="sendMessage">📨</span>
+    <div id="emojis"></div>
+
+    <div id="messages"></div>
+    <script>
+        const serverURL = '<%= commonData.appName %>';
+      
+        const txtName = document.getElementById("name");
+        const txtMessage = document.getElementById("message");
+      
+        const socket = io(serverURL);
+        socket.on("connection");
+      
+        // This one stopped emojis too!
+        // function encode(str) {
+        //     return String(str).replace(/[^\w. ]/gi, function (c) {
+        //         return '&#' + c.charCodeAt(0) + ';';
+        //     });
+        // }
+      
+        function encode(str) {
+            return String(str).replaceAll("<","&lt;").replace(">","&gt;");
+        }
+      
+        function sendMessage() {
+            if (txtName.value.trim().length == 0) {
+                alert('Please enter a name!')
+                txtName.focus();
+                return;
+            }
+            let msg = {
+                name: txtName.value,
+                body: encode(txtMessage.value)
+            };
+            socket.emit("message", msg);
+            txtMessage.value = "";
+            txtMessage.focus();
+        };
+
+        txtMessage.addEventListener("keyup", (event) => {
+            if (event.keyCode === 13) {
+                sendMessage();
+            }
+        });
+
+        // ---------- Emojis ---------------------------------
+        function emojiClick(e) {
+            txtMessage.value += e.innerHTML;
+            txtMessage.focus();
+        }
+        function getEmojis() {
+            let emojis = ["🙋🏼‍♂️","👍", "👎", "😊", "🍕", "🐧", "🍵","🌄", "☢️", "✔️", "❌", "❓", "🎉", "❤️", "🅰", "🅱", "1️⃣","2️⃣","3️⃣","4️⃣","5️⃣"];
+
+            var res = "";
+            emojis.forEach((e, i) => {
+                res += `<span class='emoji' onClick="emojiClick(this)">${e}</span>`;
+            });
+            return res;
+        }
+        document.getElementById("emojis").innerHTML = getEmojis();
+    </script>
+</body>
+</html>
+
+

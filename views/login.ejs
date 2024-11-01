@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <script>
+        function validate() {
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            if (username.length < 3) {
+                alert("Username must be greater than 2 chars");
+                return false;
+            }
+            if (password.length < 8) {
+                alert("password must be greater than 8 chars");
+                return false;
+            }
+
+            const regex = /^[a-zA-Z]+$/;
+            if (!regex.test(username)) {
+                alert("user names should only contain chars");
+                return false;
+            }
+
+            const specialCharPattern = /[!@#$%^&*(),.?":{}|<>£$]/;
+            let hasSpecialChar = specialCharPattern.test(password);
+            if (!hasSpecialChar) {
+                alert("password must have a special character like !@#$%^&");
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+</head>
+<body>
+    <form id="loginForm" onsubmit="return validate()">
+        <label for="username"> Username:</label>
+        <input type="text" id="username" name="username"> <br />
+        <label for="password"> Password:</label>
+        <input type="password" id="password" name="password"> <br />
+        <button type="submit" id="login"> Login</button>
+    </form>
+</body>
+</html>

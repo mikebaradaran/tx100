@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments</title>
+    <style>
+      h3 {
+        margin-bottom: 2px;
+      }
+
+      form {
+        background-color: lightblue;
+        margin-left: 1em;
+        border-radius: 5px;
+        padding: 1em;
+        width: 50%;
+        box-shadow: 2px 3px 2px gray;
+      }
+
+      #btnSave {
+        width: 5em;
+        height: 1.5em;
+        border-radius: 10px;
+        box-shadow: 2px 3px 2px gray;
+        font-size: large;
+      }
+
+      textarea {
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="/commentsSave" method="post">
+      <h3>Please write a few words about the course</h3>
+      <h3>Your full name:</h3>
+      <input type="text" name="txtName" />
+
+      <h3>What topics did you find useful and what was less useful?</h3>
+        <textarea name="txtComment1" rows="3" ></textarea>
+      <h3>
+        What do you think you should do to improve your skills after the course?
+      </h3>
+        <textarea name="txtComment2" rows="3"></textarea>
+      <div id="lblMessag"></div>
+      <p><button id="btnSave">Save</button></p>
+    </form>
+  </body>
+</html>
