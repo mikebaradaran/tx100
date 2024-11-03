@@ -46,11 +46,6 @@ function setupForm(data) {
     { title: "Coffee", msg: "Let's take a 15 minutes break ☕", timer: 15 },
     { title: "Lunch", msg: "Let's take 60 minutes for lunch 🍔", timer: 60 },
     {
-      title: "mini break",
-      msg: "Let's take a 5 minutes mini break ☕",
-      timer: 5,
-    },
-    {
       title: "Comment",
       msg: "Please write comments about the course",
       link: commentsUrl,
@@ -60,12 +55,6 @@ function setupForm(data) {
       title: "Evaluation",
       msg: "Please complete the course evaluation",
       link: evalLink,
-      timer: -1,
-    },
-    {
-      title: "Display intro",
-      link: "http://qa.somee.com/intro/display.aspx",
-      msg: "",
       timer: -1,
     },
   ];

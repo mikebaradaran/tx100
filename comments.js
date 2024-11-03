@@ -1,12 +1,12 @@
 const duration = "3";
-const recommendation =
-  "Practice designing and applying the Agile techniques and principles discussed in this course.";
 
+const recommendation =
+  "Practice designing and applying the techniques and principles discussed in this course.";
 
 function processComment(name, comment1, comment2) {
   // ------------------------------------------------------------
 
-  let firstname = name.split(" ")[0];
+  let firstname = capitalise(name.split(" ")[0]);
   let com1 = "";
   let com2 = "";
   if (comment1.trim() != "")
@@ -49,6 +49,9 @@ function saveComments(req, fs) {
       throw err;
     }
   });
+}
+function capitalise(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 module.exports = {

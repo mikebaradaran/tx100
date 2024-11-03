@@ -14,7 +14,22 @@
             reader.onload = function () {
                 getPCs(reader.result);
                 getLogin(reader.result);
+                displayForm();
             };
+        }
+      
+            
+        function LOD(){
+            const lodLink = "https://qa.learnondemand.net\n";
+            result = "";
+            for(let i= 0; i < 30; i++)
+              result += lodLink;
+            document.getElementById('pcs').value = result;
+            displayForm();
+        }
+        
+        function displayForm(){
+            document.getElementById('form1').style.display = "block";        
         }
 
         function getPCs(data) {
@@ -42,7 +57,6 @@
             document.getElementById('password1').value = email;
             document.getElementById('password2').value = password;
             document.getElementById('password3').value = accessCode;
-            document.getElementById('form1').style.display = "block";
         }
 
     </script>
@@ -56,15 +70,15 @@
   </style>
 </head>
 <body>
-    <h1>Files demo</h1>
-    <input id="my-file" type='file' accept='text/text'>
-    <button onclick="showFile()">set GoToMyPC values</button>
-    <div id="content"></div>
+    <h1>Setup class</h1>
 
+    <input id="my-file" type='file' accept='text/text'>
+    <button onclick="showFile">set GoToMyPC values</button>
+    <button onclick="LOD()">LOD setup</button>
+     
     <form action="/startSubmit" method="POST">
         <table id="form1" style="display:none">
-            <tr><td>Audio file:</td><td><input type="text" id="audio" name="audio" value="https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574"></td></tr>
-            <tr><td>Trainer:</td><td><input type="text" id="trainer" name="trainer" required></td></tr>
+            <tr><td>Trainer:</td><td><input type="text" id="trainer" name="trainer" placeholder="Your name and email" required></td></tr>
             <tr><td>Course title:</td><td><input type="text" id="course_title" name="course_title" required></td></tr>
             <tr><td>Course code:</td><td><input type="text" id="code" name="code" required placeholder="like ADXD2SD4M2"></td></tr>
             <tr><td>Pin:</td><td><input type="text" id="pin" name="pin" required placeholder="like 4810608-20"></td></tr>
@@ -79,6 +93,7 @@
             <tr><td>GoToMyPC access code:</td><td><input type="text" id="password3" name="password3" /></td></tr>
 
             <tr><td>Student names:</td><td><textarea rows="5" type="text" id="students" name="students" />Trainer, Trainer</textarea></td></tr>
+            <tr><td>Audio file:</td><td><input type="text" id="audio" name="audio" value="https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574"></td></tr>
 
             <tr><td></td><td><button type="submit">Submit</button></td></tr>
         </table>
