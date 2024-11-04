@@ -6,6 +6,8 @@
     <title>QA setup</title>
     <script>
         function showFile() {
+            console.log('Reading start')
+          
             var fileUpload = document.getElementById("my-file");
             var blob = fileUpload.files[0]; // Type = File
 
@@ -73,7 +75,7 @@
     <h1>Setup class</h1>
 
     <input id="my-file" type='file' accept='text/text'>
-    <button onclick="showFile">set GoToMyPC values</button>
+    <button onclick="showFile()">set GoToMyPC values</button>
     <button onclick="LOD()">LOD setup</button>
      
     <form action="/startSubmit" method="POST">
