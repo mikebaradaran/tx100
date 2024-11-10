@@ -1,6 +1,4 @@
 // server.js
-var customers = require("./customers.json");
-var orders = require("./orders.json");
 const commentJS = require("./comments.js");
 
 const commonData = require("./common.js");
@@ -122,23 +120,26 @@ app.post("/commentsSave", (req, res) => {
 });
 
 app.get("/customers", function (req, res) {
-  res.send(customers);
+  res.send(getCustomers());
 });
 
 app.get("/customers/:id", function (req, res) {
   let id = req.params.id;
+  var customers = getCustomers();
   var data = customers.filter(
     (c) => c.CustomerID.toLowerCase() == id.toLowerCase()
   );
   res.send(data);
 });
+var orders = undefined;
 
 app.get("/orders", function (req, res) {
-  res.send(orders);
+  res.send(getOrders());
 });
 
 app.get("/orders/:id", function (req, res) {
   let id = req.params.id;
+  var orders = getOrders();
   var data = orders.filter(
     (c) => c.CustomerID.toLowerCase() == id.toLowerCase()
   );
@@ -159,21 +160,9 @@ server.listen(
 //------------------------------------------------------------
 function initApp(req,res){
    var  {
-    audio,
-    trainer,
-    course_title,
-    code,
-    pin,
-    webex_email,
-    material,
-    mimeo,
-    pcs,
-    password1,
-    password2,
-    password3,
-    password4,
-    students,
-  } = req.body;
+      audio, trainer, course_title, code, pin, webex_email, material, mimeo,
+      pcs, password1, password2, password3, password4, students,
+    } = req.body;
   
   pcs = pcs.replace(/\r/g, ''); 
   students = students.replace(/\r/g, ''); 
@@ -233,6 +222,20 @@ function saveMessage(data) {
   if (found) found.body = data.body;
   else messages.push({ name: data.name, body: data.body });
 }
+//---------------------------------
+var customers = undefined;
+var orders = undefined;
+function getCustomers(){
+  if(customers === undefined)
+    customers = require("./customers.json");
+  return customers;
+}
+function getOrders(){
+  if(orders === undefined)
+    orders = require("./orders.json");
+  return orders;
+}
+//--------------------------------------
 
 io.on("connection", (socket) => {
   socket.on("message", (data) => {
@@ -245,3 +248,13 @@ io.on("connection", (socket) => {
     io.sockets.emit("message", messages);
   });
 });
+
+process.on('SIGINT', () => {
+  const data = JSON.stringify(messages);
+  fs.writeFile("studentNames.txt", data, (err) => {});
+  server.close(() => {
+      console.log('Closed out remaining connections.');
+      process.exit(0); 
+  });
+});
+

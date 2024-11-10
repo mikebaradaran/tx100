@@ -1,10 +1,4 @@
 const site = document.getElementById("site").innerHTML;
-const txMikeClear = `${site}/clear`;
-const commentsUrl = `${site}/comments`;
-var audioFile =
-  "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574";
-const afaPath =
-  "https://qa-learning.webex.com/webappng/sites/qa-learning/dashboard?siteurl=qa-learning";
 
 var courseData;
 fetch(site + "/startRead")
@@ -12,51 +6,34 @@ fetch(site + "/startRead")
     return response.json();
   })
   .then(function (data) {
-    setupForm(data);
+    courseData = data;
+    setupForm();
   })
   .catch(function (error) {
     alert(error);
   });
 
-function setupForm(data) {
-  courseData = data;
+function copy(str) {
+  navigator.clipboard.writeText(str);
+}
+
+function setupForm() {
   const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code}&pin=${courseData.pin}`;
-  audioFile = data.audio;
-  getElement("trainerEmail").innerHTML = courseData.trainer;
-  getElement("courseTitle").innerHTML = courseData.course_title;
-  getElement("email").value = courseData.password1;
-  getElement("password1").value = courseData.password2;
-  getElement("password2").value = courseData.password3;
-  getElement("courseMaterial").href = courseData.material;
-  getElement("mimeo").value = courseData.mimeo;
+  
+  getElement("trainer").innerHTML = courseData.trainer;
+  getElement("course_title").innerHTML = courseData.course_title;
+  getElement("material").href = courseData.material;
 
   // setup combobox
   const cboValues = [
     { title: "Select an item", msg: "", timer: 0 },
-    {
-      title: "Finish lab",
-      msg: "Please put a ✔ when you have completed the lab",
-      timer: -1,
-    },
-    {
-      title: "ready to start",
-      msg: "Please put a ✔ when you are ready to start 🏍",
-      timer: -1,
-    },
+    { title: "Finish lab", msg: "Please put a ✔ when you have completed the lab", timer: -1},
+    { title: "ready to start", msg: "Please put a ✔ when you are ready to start 🏍", timer: -1},
     { title: "Coffee", msg: "Let's take a 15 minutes break ☕", timer: 15 },
     { title: "Lunch", msg: "Let's take 60 minutes for lunch 🍔", timer: 60 },
-    {
-      title: "Comment",
-      msg: "Please write comments about the course",
-      link: commentsUrl,
-      timer: -1,
-    },
-    {
-      title: "Evaluation",
-      msg: "Please complete the course evaluation",
-      link: evalLink,
-      timer: -1,
-    },
+    { title: "mini break", msg: "Let's take a 5 minutes mini break ☕", timer: 5 },
+    { title: "Comment", msg: "Please write comments about the course", link: `${site}/comments`, timer: -1},
+    { title: "Evaluation", msg: "Please complete the course evaluation", link: evalLink, timer: -1}
   ];
 
   var cboMessages = getElement("cboMessages");
@@ -81,19 +58,23 @@ function setupForm(data) {
     } else {
       getElement("timer").value = cboTime;
       startTimer("timer", "divTimer");
-      //window.setTimerValue(cboTime);
     }
   });
-
+// End of setting up combobox --------------------------------------------- 
+  
+  courseData.students = ["Trainer, Trainer", ...courseData.students]
+  console.log(courseData.students);
   courseData.students.forEach((stu, i) => {
-    var ol = getElement("pcs");
-    var li = document.createElement("li");
-    var a = document.createElement("a");
-    a.href = courseData.pcs[i];
-    a.target = "_blank";
-    a.innerHTML = stu.split(",")[1];
-    li.appendChild(a);
-    ol.appendChild(li);
+    if(stu.length !== 0){
+      var ol = getElement("pcs");
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = courseData.pcs[i];
+      a.target = "_blank";
+      a.innerHTML = stu.split(",")[1];
+      li.appendChild(a);
+      ol.appendChild(li);
+    }
   });
 
   document.querySelectorAll("input").forEach((txt) =>
@@ -104,15 +85,9 @@ function setupForm(data) {
     })
   );
 }
+
 function afa() {
-  navigator.clipboard
-    .writeText(courseData.webex_email)
-    .then(() => {
-      //window.open(afaPath, "_blank");
-    })
-    .catch((error) => {
-      alert(`Copy failed! ${error}`);
-    });
+  copy(courseData.webex_email);
 }
 
 function getElement(id) {
@@ -139,7 +114,7 @@ function startTimer(timerName, divCountdown) {
     if (seconds < 0) {
       stopTimer();
       setMessage(mins + " minutes passed. Ended at " + getTime());
-      new Audio(audioFile).play();
+      new Audio(courseData.audio).play();
       return;
     }
     getElement(divCountdown).innerHTML =
