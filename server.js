@@ -1,15 +1,15 @@
 // server.js
 const commentJS = require("./comments.js");
-
 const commonData = require("./common.js");
+const serverUtils = require("./serverUtils.js");
 
 const fs = require("fs");
 const cors = require("cors");
-// const path = require('path');
 const express = require("express");
 const app = express();
 const server = require("http").createServer(app);
 const io = require("socket.io")(server, { cors: { origin: "*" } });
+
 
 app.set("view engine", "ejs");
 
@@ -44,18 +44,12 @@ app.get("/start", (req, res) => {
   res.render("txStart");
 });
 app.post("/startSubmit", (req, res) => {
-  initApp(req,res);
+  serverUtils.initApp(req, res, fs);
 });
 
 app.get("/startRead", (req, res) => {
   let data = fs.readFileSync("data.json", "utf8");
-  data = JSON.parse(data);
-  data.pcs = data.pcs;
-  data.students = data.students.replace("(REQS)", '');
-  data.students = data.students.replace("\t", '');
-  data.pcs = data.pcs.split("\n");
-  data.students = data.students.split("\n");
-  res.send(data);
+  res.send(serverUtils.processStartData(data));
 });
 
 app.get("/index", (req, res) => {
@@ -88,7 +82,6 @@ app.get("/admin", (req, res) => {
 });
 app.get("/clear", (req, res) => {
   doTrainerCommand({ name: "trainer", body: "clear" });
-  // res.end();
   res.render("index");
 });
 app.get("/comments", (req, res) => {
@@ -113,7 +106,7 @@ app.get("/commentsReadnames", (req, res) => {
   res.send(allNames);
 });
 
-// Handle form submission for comments
+// Handle the comment's form submission
 app.post("/commentsSave", (req, res) => {
   commentJS.saveComments(req, fs);
   res.send("Thank you 👍 Your comments are save.");
@@ -157,43 +150,6 @@ server.listen(
   }
 );
 
-//------------------------------------------------------------
-function initApp(req,res){
-   var  {
-      audio, trainer, course_title, code, pin, webex_email, material, mimeo,
-      pcs, password1, password2, password3, password4, students,
-    } = req.body;
-  
-  pcs = pcs.replace(/\r/g, ''); 
-  students = students.replace(/\r/g, ''); 
-  students = students.replace(/\t/g, ''); 
-  
-  const formData = {
-    audio:audio,
-    trainer: trainer,
-    course_title: course_title,
-    code: code,
-    pin: pin,
-    webex_email: webex_email,
-    material: material,
-    mimeo: mimeo,
-    pcs: pcs,
-    password1: password1,
-    password2: password2,
-    password3: password3,
-    students: students
-  };
-
-  fs.writeFile("data.json", JSON.stringify(formData, null, 2), (err) => {
-    if (err) {
-      console.error("Error writing to file:", err);
-      res.status(500).send("Error saving data");
-    } else {
-      console.log("Data saved successfully.");
-      res.render("index");
-    }
-  });
-}
 var messages = [];
 
 function doTrainerCommand(data) {
@@ -225,14 +181,12 @@ function saveMessage(data) {
 //---------------------------------
 var customers = undefined;
 var orders = undefined;
-function getCustomers(){
-  if(customers === undefined)
-    customers = require("./customers.json");
+function getCustomers() {
+  if (customers === undefined) customers = require("./customers.json");
   return customers;
 }
-function getOrders(){
-  if(orders === undefined)
-    orders = require("./orders.json");
+function getOrders() {
+  if (orders === undefined) orders = require("./orders.json");
   return orders;
 }
 //--------------------------------------
@@ -249,12 +203,11 @@ io.on("connection", (socket) => {
   });
 });
 
-process.on('SIGINT', () => {
-  const data = JSON.stringify(messages);
-  fs.writeFile("studentNames.txt", data, (err) => {});
-  server.close(() => {
-      console.log('Closed out remaining connections.');
-      process.exit(0); 
-  });
-});
-
+// process.on('SIGINT', () => {
+//   const data = JSON.stringify(messages);
+//   fs.writeFile("studentNames.txt", data, (err) => {});
+//   server.close(() => {
+//       console.log('Closed out remaining connections.');
+//       process.exit(0);
+//   });
+// });
