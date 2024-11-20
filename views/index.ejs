@@ -4,7 +4,9 @@
     <title>QA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js" defer></script>
+    <script src="MyTimer.js"></script>
     <link href="index.css" rel="stylesheet" />
+
 </head>
 <body>
     <div id="site" style="display:none;"><%= commonData.appName %></div>
@@ -14,14 +16,9 @@
             <div id="course_title"></div>
             <h3 id="trainer"></h3>
         </div>
-        <div class="timer" id="timerContainer">
-            <input type="range" id="timer" value="0" min="0" max="120" oninput="this.nextElementSibling.value = this.value" />
-            <output id="divTimer"></output>
-            <span onclick="startTimer('timer', 'divTimer')">
-                <emoji title="Click to start the timer">&#9200;</emoji>
-            </span>
-            <span id="message" onclick="this.innerHTML=''"></span>
-        </div>
+      <div id="timer_container">
+        <qa-timer id="qaTimer"></qa-timer> 
+      </div>
 
         <div class="passwords">
             <emoji>&#128218</emoji>
@@ -36,7 +33,7 @@
         <div class="pcs">
             <ol id="pcs"></ol>
             <div style="display: flex">
-              <textarea rows="8" id="txtArea"style="flex: 1"></textarea>
+                <textarea rows="8" id="txtArea"></textarea>
             </div>
         </div>
 
@@ -45,7 +42,7 @@
             <select id="cboMessages"></select>
             <a href="https://signin.qa.com/" target="_blank">Sign</a>
         </div>
-        
+
         <div class="students"><object id="studentMessages" data="<%= commonData.appName %>/student"></object></div>
         <div class="messages">
             <div class="MessagesDiv">
