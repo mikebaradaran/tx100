@@ -101,7 +101,7 @@ app.get("/commentsReadnames", (req, res) => {
   let names = fs.readFileSync("comments.txt", "utf8");
   let allNames = "";
   for (let name of names.split("--------------------------------")) {
-    allNames += name.substring(0, 10);
+    allNames += name.split("\n")[0]; 
   }
   res.send(allNames);
 });
@@ -138,7 +138,7 @@ app.get("/orders/:id", function (req, res) {
   );
   res.send(data);
 });
-
+//===============================================================
 server.listen(
   { port: process.env.PORT, host: "0.0.0.0" },
   function (err, address) {
