@@ -7,6 +7,7 @@ fetch(site + "/startRead")
   })
   .then(function (data) {
     courseData = data;
+    console.log(data);
     setupForm();
   })
   .catch(function (error) {
@@ -19,12 +20,11 @@ function copy(str) {
 
 function setupForm() {
   const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code}&pin=${courseData.pin}`;
-  const timerTag = document.querySelector("#qaTimer");
-  
-  timerTag.sound = courseData.audio;
-  document.getElementById("trainer").innerHTML = courseData.trainer;
-  document.getElementById("course_title").innerHTML = courseData.course_title;
-  document.getElementById("material").href = courseData.material;
+
+  getTimer().sound = courseData.audio;
+  getElement("trainer").innerHTML = courseData.trainer;
+  getElement("course_title").innerHTML = courseData.course_title;
+  getElement("material").href = courseData.material;
 
   // setup combobox
   const cboValues = [
@@ -60,7 +60,7 @@ function setupForm() {
     },
   ];
 
-  var cboMessages = document.getElementById("cboMessages");
+  var cboMessages = getElement("cboMessages");
   cboValues.forEach((x) => {
     var op = document.createElement("option");
     op.innerHTML = x.title;
@@ -69,30 +69,37 @@ function setupForm() {
 
   cboMessages.addEventListener("change", () => {
     let i = cboMessages.selectedIndex;
-    document.getElementById("txtArea").value = cboValues[i].msg;
+    getElement("txtArea").value = cboValues[i].msg;
     if (cboValues[i].link) window.open(cboValues[i].link, "_blank");
 
     var cboTime = cboValues[i].timer;
     if (cboTime == -1) return;
-    
+
     if (cboTime == 0) {
-      timerTag.stopTimer();
-      timerTag.message = "";
+      getTimer().stopTimer();
+      getTimer().message = "";
     } else {
-      timerTag.timerValue = cboTime * 60;
-      timerTag.startTimer();
+      getTimer().timerValue = cboTime * 60;
+      getTimer().startTimer();
     }
   });
 
+  function getTimer() {
+    return document.querySelector("#qaTimer");
+  }
   // End of setting up combobox ---------------------------------------------
 
   courseData.students = ["Trainer, Trainer", ...courseData.students];
-  
   courseData.students.forEach((stu, i) => {
     if (stu.length !== 0) {
+      var ol = getElement("pcs");
       var li = document.createElement("li");
-      li.innerHTML = `<a target="_blank" href="${courseData.pcs[i]}">${stu.split(",")[1]} </a>`;
-      document.getElementById("pcs").appendChild(li);
+      var a = document.createElement("a");
+      a.href = courseData.pcs[i];
+      a.target = "_blank";
+      a.innerHTML = stu.split(",")[1];
+      li.appendChild(a);
+      ol.appendChild(li);
     }
   });
 
@@ -107,4 +114,8 @@ function setupForm() {
 
 function afa() {
   copy(courseData.webex_email);
+}
+
+function getElement(id) {
+  return document.getElementById(id);
 }

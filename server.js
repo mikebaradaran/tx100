@@ -10,7 +10,6 @@ const app = express();
 const server = require("http").createServer(app);
 const io = require("socket.io")(server, { cors: { origin: "*" } });
 
-
 app.set("view engine", "ejs");
 
 // Middleware to parse urlencoded form data
@@ -44,6 +43,14 @@ app.get("/start", (req, res) => {
   res.render("txStart");
 });
 app.post("/startSubmit", (req, res) => {
+  //delete require.cache[require.resolve('./data.json')];
+  // delete data.json
+  // try {
+  //   fs.unlinkSync("./data.json");
+  //   console.log("File deleted successfully");
+  // } catch (err) {
+  //   console.error("Error deleting the file:", err);
+  // }
   serverUtils.initApp(req, res, fs);
 });
 
@@ -101,7 +108,7 @@ app.get("/commentsReadnames", (req, res) => {
   let names = fs.readFileSync("comments.txt", "utf8");
   let allNames = "";
   for (let name of names.split("--------------------------------")) {
-    allNames += name.split("\n")[0]; 
+    allNames += name.substring(0, 10);
   }
   res.send(allNames);
 });
@@ -138,7 +145,7 @@ app.get("/orders/:id", function (req, res) {
   );
   res.send(data);
 });
-//===============================================================
+
 server.listen(
   { port: process.env.PORT, host: "0.0.0.0" },
   function (err, address) {
@@ -211,4 +218,3 @@ io.on("connection", (socket) => {
 //       process.exit(0);
 //   });
 // });
-

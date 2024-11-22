@@ -15,11 +15,11 @@ function initApp(req, res, fs) {
     password4,
     students,
   } = req.body;
-
+  
   pcs = pcs.replace(/\r/g, "");
   students = students.replace(/\r/g, "");
   students = students.replace(/\t/g, "");
-
+  
   const formData = {
     audio: audio,
     trainer: trainer,
@@ -35,7 +35,7 @@ function initApp(req, res, fs) {
     password3: password3,
     students: students,
   };
-
+  
   fs.writeFile("data.json", JSON.stringify(formData, null, 2), (err) => {
     if (err) {
       console.error("Error writing to file:", err);
