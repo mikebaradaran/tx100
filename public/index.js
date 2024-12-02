@@ -13,8 +13,6 @@ fetch(site + "/startRead")
     alert(error);
   });
 
-
-
 function setupForm() {
   
   const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code}&pin=${courseData.pin}`;
