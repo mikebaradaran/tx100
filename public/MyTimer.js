@@ -5,6 +5,8 @@ class QA_Timer extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
         <link href="MyTimer.css" rel="stylesheet" />
+          <span id="break">🍵</span>
+          <span id="lunch">🍕</span>
           <span id="timerGoButton">▶️</span>
           <input id="timer" type="range" min="1" max="120"/>
           <span id="info"></span>
@@ -16,10 +18,12 @@ class QA_Timer extends HTMLElement {
     t.startTimer();
   }
   connectedCallback() {
-    const t = this.shadowRoot.querySelector("#timer");
-    t.addEventListener("input", this.sliding.bind(this));
+    //const t = this.shadowRoot.querySelector("#timer");
+    this.timer.addEventListener("input", this.sliding.bind(this));
     const btnGo= this.shadowRoot.querySelector("#timerGoButton");
     btnGo.addEventListener("click", this.timerGoButton_click.bind(this));
+    this.shadowRoot.querySelector("#break").addEventListener("click", ()=>{this.timerValue=(15*60); this.startTimer()});
+    this.shadowRoot.querySelector("#lunch").addEventListener("click", ()=>{this.timerValue=(60*60); this.startTimer()});
   }
 
   sliding() {

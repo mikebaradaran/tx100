@@ -1,6 +1,6 @@
-const duration = "3";
+const duration = "5";
 const recommendation =
-  "Practice designing and applying the Agile techniques and principles discussed in this course.";
+  "Practice designing and applying the techniques and principles discussed in this course.";
 
 
 function processComment(name, comment1, comment2) {

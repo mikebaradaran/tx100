@@ -1,0 +1,45 @@
+Nyasha Dzvoti<br /> 
+General comments:<br />
+Nyasha did well in this course and I am happy with Nyasha's progress.<br />
+Nyasha made the following comments about the course: I found everything useful, from working with vanilla JavaScript, to DOM manipulation and ultimately the way we worked with angular to create an app. Course was very enjoyable and well-structured for the fundamentals of web development.<br /><br />Punctuality & Engagement:<br />
+Nyasha was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Nyasha told me: I think I need to improve the way I use web frameworks; I have realised I am not taking full advantage of frameworks and should read more documentation when creating apps as some of these frameworks are extremely powerful and at times, I have found myself re-inventing the wheel where there is a built-in method capable of accomplishing what I am wanting to do.<br /><br />--------------------------------<br />Alexander Kron<br /> 
+General comments:<br />
+Alexander did well in this course and I am happy with Alexander's progress.<br />
+Alexander made the following comments about the course: I found all the content useful. This is my first real exposure to web development and I enjoyed the course. It is very useful to understand these concepts. AngularJS is very powerful and I can see why it is included here. <br /><br />Punctuality & Engagement:<br />
+Alexander was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Alexander told me: I will need to continue to practise these skills to reinforce the learning. I would like to improve my understanding of advanced CSS concepts to make my pages more attractive. I will work towards understanding Angular too.<br /><br />--------------------------------<br />Rebecca Harbury<br /> 
+General comments:<br />
+Rebecca did well in this course and I am happy with Rebecca's progress.<br />
+Rebecca made the following comments about the course: I found most of the topics very useful as my work team use javascript/typescript, html, and css. We don't use angularjs but we do use Angular2+ so it was still interesting. Thanks for a good and interesting week!<br /><br />Punctuality & Engagement:<br />
+Rebecca was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Rebecca told me: I had already done a fair amount of learning around javascript, html, and css. I will continue to develop my skills in these areas but I will definitely be looking to applying the new things I have learned this past week.<br /><br />--------------------------------<br />Wesley Richardson<br /> 
+General comments:<br />
+Wesley did well in this course and I am happy with Wesley's progress.<br />
+Wesley made the following comments about the course: I found JavaScript and Angular modules useful.<br />
+Thinking that it would be better to spend that time going deeper into vanilla JavaScript or becoming more proficient with Angular. Think this would empower students more.<br /><br />Punctuality & Engagement:<br />
+Wesley was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Wesley told me: Consolidate the course material by building applications, completing Jira tickets, and spending time with devs.<br /><br />--------------------------------<br />Keira Carr<br /> 
+General comments:<br />
+Keira did well in this course and I am happy with Keira's progress.<br />
+Keira made the following comments about the course: I have been working with HTML, CSS, Javascript and JQuery regularly for over a month in my workplace training, so I didn't learn anything new in these chapters. I had never seen AngularJS before this live event, and I'm still not totally confident in using it but I know where to look for more information.<br /><br />Punctuality & Engagement:<br />
+Keira was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Keira told me: I will keep practicing using HTML, CSS, Javascript and JQuery at work, and I will do further research into AngularJS - my DLA and coworkers have recommended resources that will help me.<br /><br />--------------------------------<br />Jake Mason<br /> 
+General comments:<br />
+Jake did well in this course and I am happy with Jake's progress.<br />
+Jake made the following comments about the course: I found the topics on JavaScript useful for helping me understand it in more depth. I found the topics about HTML the least, just due to having done it loads in the past already.<br /><br />Punctuality & Engagement:<br />
+Jake was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jake told me: To improve my skills more after the course I need to learn more about the different JS frameworks, as while I'm decent with standard, node js, my knowledge on different frameworks is limited.<br /><br />--------------------------------<br />Mobolaji Kuti<br /> 
+General comments:<br />
+Mobolaji did well in this course and I am happy with Mobolaji's progress.<br />
+Mobolaji made the following comments about the course: - Angular.JS framework was useful<br />- Everything felt perfectly appropriate; with each chapter feeling useful
+<br /><br />Punctuality & Engagement:<br />
+Mobolaji was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mobolaji told me: - Practice use of angular.js framework and any other frameworks in my spare time or apply it applicable in work environment<br />- Finish all labs + additional/extra content/questions<br /><br />--------------------------------<br />

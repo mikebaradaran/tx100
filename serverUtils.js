@@ -50,7 +50,7 @@ function initApp(req, res, fs) {
 function processStartData(data){
   data = JSON.parse(data);
   data.pcs = data.pcs;
-  data.students = data.students.replace("(REQS)", '');
+  data.students = data.students.replace(new RegExp("\\(REQS\\)", 'g'), '');
   data.students = data.students.replace("\t", '');
   data.pcs = data.pcs.split("\n");
   data.students = data.students.split("\n");
