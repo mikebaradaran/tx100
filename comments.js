@@ -1,4 +1,4 @@
-const duration = "5";
+const duration = "2";
 const recommendation =
   "Practice designing and applying the techniques and principles discussed in this course.";
 

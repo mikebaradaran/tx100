@@ -102,9 +102,9 @@ button:hover {
   font-weight:bolder;
   font-size:bolder;
 }
-/* #timer_container span{
-  margin-left:1em;
-  font-size: x-large;
-} */
+button:active {
+  transform: translateY(3px); /* Moves the button down */
+  box-shadow: 2px 4px 3px grey; 
+}
 
 

@@ -1,45 +1,82 @@
-Nyasha Dzvoti<br /> 
+Luke Matakitoga<br /> 
 General comments:<br />
-Nyasha did well in this course and I am happy with Nyasha's progress.<br />
-Nyasha made the following comments about the course: I found everything useful, from working with vanilla JavaScript, to DOM manipulation and ultimately the way we worked with angular to create an app. Course was very enjoyable and well-structured for the fundamentals of web development.<br /><br />Punctuality & Engagement:<br />
-Nyasha was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Luke did well in this course and I am happy with Luke's progress.<br />
+Luke made the following comments about the course: I've found the activity on AWS API Gateway the most useful<br /><br />Punctuality & Engagement:<br />
+Luke was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Nyasha told me: I think I need to improve the way I use web frameworks; I have realised I am not taking full advantage of frameworks and should read more documentation when creating apps as some of these frameworks are extremely powerful and at times, I have found myself re-inventing the wheel where there is a built-in method capable of accomplishing what I am wanting to do.<br /><br />--------------------------------<br />Alexander Kron<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Luke told me: I'm going to continue practicing using different AWS services to build my skills<br /><br />--------------------------------<br />Kamyar Rafiee<br /> 
 General comments:<br />
-Alexander did well in this course and I am happy with Alexander's progress.<br />
-Alexander made the following comments about the course: I found all the content useful. This is my first real exposure to web development and I enjoyed the course. It is very useful to understand these concepts. AngularJS is very powerful and I can see why it is included here. <br /><br />Punctuality & Engagement:<br />
-Alexander was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Kamyar did well in this course and I am happy with Kamyar's progress.<br />
+Kamyar made the following comments about the course: APIs<br /><br />Punctuality & Engagement:<br />
+Kamyar was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Alexander told me: I will need to continue to practise these skills to reinforce the learning. I would like to improve my understanding of advanced CSS concepts to make my pages more attractive. I will work towards understanding Angular too.<br /><br />--------------------------------<br />Rebecca Harbury<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Kamyar told me: Build APIs at work <br /><br />--------------------------------<br />Hayden Exley<br /> 
 General comments:<br />
-Rebecca did well in this course and I am happy with Rebecca's progress.<br />
-Rebecca made the following comments about the course: I found most of the topics very useful as my work team use javascript/typescript, html, and css. We don't use angularjs but we do use Angular2+ so it was still interesting. Thanks for a good and interesting week!<br /><br />Punctuality & Engagement:<br />
-Rebecca was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Hayden did well in this course and I am happy with Hayden's progress.<br />
+Hayden made the following comments about the course: I think all of the topics in this module were really useful and really enjoyed how easy it was in AWS to build the RESTful microservices.<br /><br />Punctuality & Engagement:<br />
+Hayden was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Rebecca told me: I had already done a fair amount of learning around javascript, html, and css. I will continue to develop my skills in these areas but I will definitely be looking to applying the new things I have learned this past week.<br /><br />--------------------------------<br />Wesley Richardson<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Hayden told me: As I mainly use Azure at work I'll look into whether I can implement some of the cloud features I used in AWS in Azure too.<br /><br />--------------------------------<br />Jane Harris<br /> 
 General comments:<br />
-Wesley did well in this course and I am happy with Wesley's progress.<br />
-Wesley made the following comments about the course: I found JavaScript and Angular modules useful.<br />
-Thinking that it would be better to spend that time going deeper into vanilla JavaScript or becoming more proficient with Angular. Think this would empower students more.<br /><br />Punctuality & Engagement:<br />
-Wesley was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Jane did well in this course and I am happy with Jane's progress.<br />
+Jane made the following comments about the course: All topics were useful as I had little knowledge of microservices & APIs.<br /><br />Punctuality & Engagement:<br />
+Jane was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Wesley told me: Consolidate the course material by building applications, completing Jira tickets, and spending time with devs.<br /><br />--------------------------------<br />Keira Carr<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jane told me: Redoing the hands on labs will help me gain a better understanding of AWS services. General research of microservices and APIs will help me gain more knowledge and help towards being able to implement them in the workplace<br /><br />--------------------------------<br />Alice Bocking<br /> 
 General comments:<br />
-Keira did well in this course and I am happy with Keira's progress.<br />
-Keira made the following comments about the course: I have been working with HTML, CSS, Javascript and JQuery regularly for over a month in my workplace training, so I didn't learn anything new in these chapters. I had never seen AngularJS before this live event, and I'm still not totally confident in using it but I know where to look for more information.<br /><br />Punctuality & Engagement:<br />
-Keira was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Alice did well in this course and I am happy with Alice's progress.<br />
+Alice made the following comments about the course: The worklabs are really useful to actually get to understand how everything works<br /><br />Punctuality & Engagement:<br />
+Alice was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Keira told me: I will keep practicing using HTML, CSS, Javascript and JQuery at work, and I will do further research into AngularJS - my DLA and coworkers have recommended resources that will help me.<br /><br />--------------------------------<br />Jake Mason<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Alice told me: Continue to practice working with microservices and APIs<br /><br />--------------------------------<br />Aiden Jaunzemis<br /> 
 General comments:<br />
-Jake did well in this course and I am happy with Jake's progress.<br />
-Jake made the following comments about the course: I found the topics on JavaScript useful for helping me understand it in more depth. I found the topics about HTML the least, just due to having done it loads in the past already.<br /><br />Punctuality & Engagement:<br />
-Jake was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Aiden did well in this course and I am happy with Aiden's progress.<br />
+Aiden made the following comments about the course: I found understanding AWS Step functions highly useful. Especially learning about the different components and how to configure AWS Step Functions. I would say that DynamoDB was less useful as I only really use SQL databases at work<br /><br />Punctuality & Engagement:<br />
+Aiden was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jake told me: To improve my skills more after the course I need to learn more about the different JS frameworks, as while I'm decent with standard, node js, my knowledge on different frameworks is limited.<br /><br />--------------------------------<br />Mobolaji Kuti<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Aiden told me: I will revisit course material. It is good to be aware of the resources covered in this course so that I can go away and research them in more depth.<br /><br />--------------------------------<br />Lee Wraith<br /> 
 General comments:<br />
-Mobolaji did well in this course and I am happy with Mobolaji's progress.<br />
-Mobolaji made the following comments about the course: - Angular.JS framework was useful<br />- Everything felt perfectly appropriate; with each chapter feeling useful
-<br /><br />Punctuality & Engagement:<br />
-Mobolaji was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Lee did well in this course and I am happy with Lee's progress.<br />
+Lee made the following comments about the course: All of this as I'm new to it all<br /><br />Punctuality & Engagement:<br />
+Lee was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mobolaji told me: - Practice use of angular.js framework and any other frameworks in my spare time or apply it applicable in work environment<br />- Finish all labs + additional/extra content/questions<br /><br />--------------------------------<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Lee told me: Dive in and sign up to AWS and start messing about building things<br /><br />--------------------------------<br />Yahya Sharif<br /> 
+General comments:<br />
+Yahya did well in this course and I am happy with Yahya's progress.<br />
+Yahya made the following comments about the course: I really like the DynamoDB and API gateway labs. I can see how to use them to get different microservices to communicate with each other.<br /><br />Punctuality & Engagement:<br />
+Yahya was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yahya told me: I will build a personal project where I can use what I've learnt, which will make it easier to apply in the real world. <br /><br />--------------------------------<br />Yahya Sharif<br /> 
+General comments:<br />
+Yahya did well in this course and I am happy with Yahya's progress.<br />
+Yahya made the following comments about the course: I really like the DynamoDB and API gateway labs. I can see how to use them to get different microservices to communicate with each other.<br /><br />Punctuality & Engagement:<br />
+Yahya was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yahya told me: I will build a personal project where I can use what I've learnt, which will make it easier to apply in the real world. <br /><br />--------------------------------<br />Yannis Lawrence<br /> 
+General comments:<br />
+Yannis did well in this course and I am happy with Yannis's progress.<br />
+Yannis made the following comments about the course: I found the section on the AWS API gateway interesting since the Azure APIs where already set up when I joined my organisation so it is a process I haven't seen before<br /><br />Punctuality & Engagement:<br />
+Yannis was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yannis told me: Continue to research setting up Microservices and experiment with a free AWS trial account<br /><br />--------------------------------<br />Sebastian van Geijt<br /> 
+General comments:<br />
+Sebastian did well in this course and I am happy with Sebastian's progress.<br />
+Sebastian made the following comments about the course: The actual topics are nice, and the discussions that was held around the labs were educational. However, I am not too sure of it being so AWS focused. I get that AWS is important, but the labs just make you blindly follow a to-do guide, without ever explaining how anything works or why it works.<br />I think the course would benefit going a little bit more bare-bone for the sake of learning how these things work under the hood, before automating it all with AWS.<br /><br />Punctuality & Engagement:<br />
+Sebastian was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Sebastian told me: I will probably end up hosting my own server to experiment on, and create an API ecosystem from scratch.<br /><br />--------------------------------<br />Mark Suaznabar<br /> 
+General comments:<br />
+Mark did well in this course and I am happy with Mark's progress.<br />
+Mark made the following comments about the course: AWS is such a massive topic it is a bit bewildering, but it was really good to start doing some practical setups using it. I did find that the Labs were a little too focused on following setup instructions rather than explaining what the settings were actually responsible for, I think a broader outline and a simpler explanation of what was being setup would have been useful for most of them.<br />As usual, Mike made the topics enjoyable and engaging and left me wanting to learn more independently.<br /><br />Punctuality & Engagement:<br />
+Mark was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mark told me: Do more AWS labs and look for alternative courses, e.g Amazon offer some free courses on AWS<br /><br />--------------------------------<br />Benjamin Roberts<br /> 
+General comments:<br />
+Benjamin did well in this course and I am happy with Benjamin's progress.<br />
+Benjamin made the following comments about the course: API Gateway - this felt closest to what I'd see in my day-to-day<br />
+DynamioDb seemed like an interesting NoSQL database solution. My initial impression of it is it's more friendly then MongoDB (although I'm still not convinced why you'd not just use MySQL or SQLite).
+
+Less useful - Pretty much everything else AWS to be honest. The course was too short to really make any of it memorable. My Employer uses Azure so I have no chance of applying it<br /><br />Punctuality & Engagement:<br />
+Benjamin was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Benjamin told me: - Compare AWS vs Azure services, see how a Microservice architecture would work on Azure<br />- Try building a few simple Microservices (maybe in Node.JS, Python or Java), packaged with a DB & deploying to Azure, making sure I can call these (via tools like Postman)<br /><br />--------------------------------<br />
