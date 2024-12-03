@@ -1,7 +1,7 @@
-const site = getElement("site").innerHTML;
+// const site = getElement("site").innerHTML;
 
 var courseData;
-fetch(site + "/startRead")
+fetch("/startRead")
   .then(function (response) {
     return response.json();
   })
@@ -31,7 +31,7 @@ function setupForm() {
     { title: "Coffee", msg: "Let's take a 15 minutes break ☕", timer: 15 },
     { title: "Lunch", msg: "Let's take 60 minutes for lunch 🍔", timer: 60 },
     { title: "mini break", msg: "Let's take a 5 minutes mini break ☕", timer: 5 },
-    { title: "Comment",    msg: "Please write comments about the course", link: `${site}/comments`, timer: -1},
+    { title: "Comment",    msg: "Please write comments about the course", link: `/comments`, timer: -1},
     { title: "Evaluation", msg: "Please complete the course evaluation",  link: evalLink, timer: -1 },
   ];
 

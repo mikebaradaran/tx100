@@ -40,7 +40,7 @@ app.get("/help", (req, res) => {
 });
 
 app.get("/start", (req, res) => {
-  res.render("txStart");
+  res.render("start");
 });
 app.post("/startSubmit", (req, res) => {
   //delete require.cache[require.resolve('./data.json')];

@@ -79,4 +79,10 @@ DynamioDb seemed like an interesting NoSQL database solution. My initial impress
 Less useful - Pretty much everything else AWS to be honest. The course was too short to really make any of it memorable. My Employer uses Azure so I have no chance of applying it<br /><br />Punctuality & Engagement:<br />
 Benjamin was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Benjamin told me: - Compare AWS vs Azure services, see how a Microservice architecture would work on Azure<br />- Try building a few simple Microservices (maybe in Node.JS, Python or Java), packaged with a DB & deploying to Azure, making sure I can call these (via tools like Postman)<br /><br />--------------------------------<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Benjamin told me: - Compare AWS vs Azure services, see how a Microservice architecture would work on Azure<br />- Try building a few simple Microservices (maybe in Node.JS, Python or Java), packaged with a DB & deploying to Azure, making sure I can call these (via tools like Postman)<br /><br />--------------------------------<br />Colin Breslin<br /> 
+General comments:<br />
+Colin did well in this course and I am happy with Colin's progress.<br />
+Colin made the following comments about the course: The course provided by Mike was good, he explained the material well, As we currently do not employ AWS web the course was a good oversight <br /><br />Punctuality & Engagement:<br />
+Colin was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Colin told me: I would need to review the labs available to better embed the course<br /><br />--------------------------------<br />
