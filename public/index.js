@@ -67,7 +67,7 @@ function setupForm() {
 
   // End of setting up combobox ---------------------------------------------
 
-  courseData.students = ["Trainer, Trainer", ...courseData.students];
+  courseData.students = ["Trainer", ...courseData.students];
   courseData.students.forEach((stu, i) => {
     if (stu.length !== 0) {
       var ol = getElement("pcs");
@@ -75,7 +75,7 @@ function setupForm() {
       var a = document.createElement("a");
       a.href = courseData.pcs[i];
       a.target = "_blank";
-      a.innerHTML = stu.split(",")[1];
+      a.innerHTML = stu; //.split(",")[1];
       li.appendChild(a);
       ol.appendChild(li);
     }

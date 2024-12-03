@@ -17,8 +17,14 @@ function initApp(req, res, fs) {
   } = req.body;
   
   pcs = pcs.replace(/\r/g, "");
+  pcs = pcs.split("\n");
+  
   students = students.replace(/\r/g, "");
   students = students.replace(/\t/g, "");
+  students = students.replace(new RegExp("\\(REQS\\)", 'g'), '');
+  students = students.split("\n");
+  for(var i = 0; i < students.length; i++)
+    students[i] = students[i].split(",")[0];
   
   const formData = {
     audio: audio,
@@ -35,7 +41,7 @@ function initApp(req, res, fs) {
     password3: password3,
     students: students,
   };
-  
+  console.log(formData);
   fs.writeFile("data.json", JSON.stringify(formData, null, 2), (err) => {
     if (err) {
       console.error("Error writing to file:", err);
@@ -47,16 +53,18 @@ function initApp(req, res, fs) {
   });
 }
 
-function processStartData(data){
-  data = JSON.parse(data);
-  data.pcs = data.pcs;
-  data.students = data.students.replace(new RegExp("\\(REQS\\)", 'g'), '');
-  data.students = data.students.replace("\t", '');
-  data.pcs = data.pcs.split("\n");
-  data.students = data.students.split("\n");
-  return data;
-}
+// function processStartData(data){
+//   //data = JSON.parse(data);
+//   //data.pcs = data.pcs;
+//   //data.students = data.students.replace(new RegExp("\\(REQS\\)", 'g'), '');
+//   //data.students = data.students.replace(new RegExp("\\(REQS\\)", 'g'), '');
+//   //data.students = data.students.replace("\t", '');
+//   // data.pcs = data.pcs.split("\n");
+//   //data.students = data.students.split("\n");
+//   //return data;
+// }
 
 module.exports = {
-  processStartData, initApp
+  //processStartData, initApp
+  initApp
 };

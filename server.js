@@ -56,7 +56,8 @@ app.post("/startSubmit", (req, res) => {
 
 app.get("/startRead", (req, res) => {
   let data = fs.readFileSync("data.json", "utf8");
-  res.send(serverUtils.processStartData(data));
+  // res.send(serverUtils.processStartData(data));
+  res.send(JSON.parse(data));
 });
 
 app.get("/index", (req, res) => {
