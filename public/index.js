@@ -95,4 +95,9 @@ function getElement(id) {
   return document.getElementById(id);
 }
 
+function mimeo(){
+  copy(courseData.mimeo);
+  window.open("https://mimeo.digital/QALtd/distributions", "_blank");
+}
+
 

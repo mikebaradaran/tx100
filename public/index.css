@@ -52,7 +52,7 @@
 
 .passwords * {
   margin-left: 1.5em;
-  border-radius: 3em;
+/*   border-radius: 3em; */
 }
 
 .pcs {
@@ -105,6 +105,10 @@ button:hover {
 button:active {
   transform: translateY(3px); /* Moves the button down */
   box-shadow: 2px 4px 3px grey; 
+}
+
+button{
+  border-radius: 7px;
 }
 
 
