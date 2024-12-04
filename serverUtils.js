@@ -24,7 +24,7 @@ function initApp(req, res, fs) {
   students = students.replace(new RegExp("\\(REQS\\)", 'g'), '');
   students = students.split("\n");
   for(var i = 0; i < students.length; i++)
-    students[i] = students[i].split(",")[0];
+    students[i] = students[i].split(",")[1];
   
   const formData = {
     audio: audio,
