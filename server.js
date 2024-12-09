@@ -66,7 +66,7 @@ app.post("/startSubmit", (req, res) => {
   serverUtils.initApp(req, res, fs);
 });
 
-app.get("/startRead", (req, res) => {
+app.get("/start/Read", (req, res) => {
   let data = fs.readFileSync("data.json", "utf8");
   // res.send(serverUtils.processStartData(data));
   res.send(JSON.parse(data));
@@ -108,22 +108,26 @@ app.get("/comments", (req, res) => {
   res.render("comments");
 });
 
-app.get("/commentsRead", (req, res) => {
+app.get("/comments/Read", (req, res) => {
   res.send(fs.readFileSync("comments.txt", "utf8"));
 });
 
-app.get("/commentsDelete", (req, res) => {
+app.get("/comments/Delete", (req, res) => {
   commentJS.deleteComments(fs);
   res.send("File deleted");
 });
 
-app.get("/commentsReadnames", (req, res) => {
-  let names = fs.readFileSync("comments.txt", "utf8");
-  let allNames = "";
-  for (let name of names.split("--------------------------------")) {
-    allNames += name.substring(0, 10);
+app.get("/comments/Read/names", (req, res) => {
+  let data = fs.readFileSync("comments.txt", "utf8");
+  data = data.split("<br />");
+  let names = data[0] + "<br />";
+  for (var i = 1; i < data.length; i++) {
+    if (data[i].startsWith("----")) {
+      names += data[++i] + "<br />";
+    }
   }
-  res.send(allNames);
+  res.send(names);
+  
 });
 
 // Handle the comment's form submission
@@ -195,7 +199,7 @@ function saveMessage(data) {
 
   if (found) found.body = data.body;
   else messages.push({ name: data.name, body: data.body });
-    //~~~~~~~~~~~~~~~~~~~~~
+  //~~~~~~~~~~~~~~~~~~~~~
   fs.writeFileSync(historyFile, JSON.stringify(messages, null, 2));
 }
 //-------------------------------
