@@ -2,6 +2,7 @@
 const commentJS = require("./comments.js");
 const commonData = require("./common.js");
 const serverUtils = require("./serverUtils.js");
+const path = require("path");
 
 const fs = require("fs");
 const cors = require("cors");
@@ -29,6 +30,17 @@ app.use((req, res, next) => {
   res.locals.commonData = commonData;
   next();
 });
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+var messages = [];
+const historyFile = path.join(__dirname, "chatHistory.json");
+if (fs.existsSync(historyFile)) {
+  try {
+    const data = fs.readFileSync(historyFile, "utf-8");
+    messages = JSON.parse(data);
+  } catch (error) {
+    console.error("Error reading chat history file:", error);
+  }
+}
 
 // Define routes
 app.get("/", (req, res) => {
@@ -158,8 +170,6 @@ server.listen(
   }
 );
 
-var messages = [];
-
 function doTrainerCommand(data) {
   if (data.body == "delete") {
     messages = [];
@@ -185,8 +195,10 @@ function saveMessage(data) {
 
   if (found) found.body = data.body;
   else messages.push({ name: data.name, body: data.body });
+    //~~~~~~~~~~~~~~~~~~~~~
+  fs.writeFileSync(historyFile, JSON.stringify(messages, null, 2));
 }
-//---------------------------------
+//-------------------------------
 var customers = undefined;
 var orders = undefined;
 function getCustomers() {

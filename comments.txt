@@ -85,4 +85,65 @@ Colin did well in this course and I am happy with Colin's progress.<br />
 Colin made the following comments about the course: The course provided by Mike was good, he explained the material well, As we currently do not employ AWS web the course was a good oversight <br /><br />Punctuality & Engagement:<br />
 Colin was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Colin told me: I would need to review the labs available to better embed the course<br /><br />--------------------------------<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Colin told me: I would need to review the labs available to better embed the course<br /><br />--------------------------------<br />Maria Sonetto<br /> 
+General comments:<br />
+Maria did well in this course and I am happy with Maria's progress.<br />
+Maria made the following comments about the course: The whole course was very useful. I really enjoyed working with Docker and Jenkins, as there were lots of practical exercises. It was my first time using them and learning about them, so it was very beneficial and I really enjoyed it.<br /><br />Punctuality & Engagement:<br />
+Maria was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Maria told me: Practice more with Docker, Jenkins, and other similar tools that automate CI/CD processes.<br /><br />--------------------------------<br />Alexander Schudel<br /> 
+General comments:<br />
+Alexander did well in this course and I am happy with Alexander's progress.<br />
+Alexander made the following comments about the course: I foudn the DevOps overview useful as I had not really had much exposure to it. <br />
+I thought the docker labs were useful.<br /><br />Punctuality & Engagement:<br />
+Alexander was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Alexander told me: Work on implementing this in my day to day job. <br /><br />--------------------------------<br />Liam<br /> 
+General comments:<br />
+Liam did well in this course and I am happy with Liam's progress.<br />
+Liam made the following comments about the course: Docker appears useful on the outside, but we cannot use it as it is no longer free<br /><br />Punctuality & Engagement:<br />
+Liam was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Liam told me: I will primarily be using docker at home on personal projects, if at all<br /><br />--------------------------------<br />Conal O'Driscoll<br /> 
+General comments:<br />
+Conal did well in this course and I am happy with Conal's progress.<br />
+Conal made the following comments about the course: I enjoyed getting a new experience with dockers and Jenkins, they were quite interesting to work with and useful. DevOps and the SDLC less so only because I was already experienced with it but all very good and infrmative from mike as usual<br /><br />Punctuality & Engagement:<br />
+Conal was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Conal told me: Get more experience with dockers and jenkins in the future. <br /><br />--------------------------------<br />Jordon Kirby<br /> 
+General comments:<br />
+Jordon did well in this course and I am happy with Jordon's progress.<br />
+Jordon made the following comments about the course: Overall the Jenkins topic is very useful as not only is it a helpful subject but also one of personal interest.<br /><br />Punctuality & Engagement:<br />
+Jordon was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jordon told me: For me personally I would like to dig even deeper into Jenkins and try to gain a deeper understanding potentially though other courses or free educational material online, either way developing my understanding is my key goal moving forward.<br /><br /><br />--------------------------------<br />Mike Gibson<br /> 
+General comments:<br />
+Mike did well in this course and I am happy with Mike's progress.<br />
+Mike made the following comments about the course: I found the course interesting especially around the dockers and CI-CD material because it is not part of my current role in engineering.<br /><br />Punctuality & Engagement:<br />
+Mike was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mike told me: After the course it would be beneficial for me to approach the DevOps and cloud engineering teams at my company to see how the learning compares to the processes of the business. <br /><br />--------------------------------<br />Andrew Walls<br /> 
+General comments:<br />
+Andrew did well in this course and I am happy with Andrew's progress.<br />
+Andrew made the following comments about the course: The material on Docker was extremely useful. The exercises were comprehensive, and prompted lots of questions for Mike, who was always able and willing to answer these. Incorporating Python and building webpages using Docker was fascinating, and  has really piqued my interest.<br /><br />Punctuality & Engagement:<br />
+Andrew was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Andrew told me: I am going to find out more about how DevOps is employed within my company, and I am going to begin by presenting the benefits of version control (GitHub) to my manager, in the hope that we may start incorporating this within our BAU work. I am also going to learn much more about Docker, and practise lots of examples.<br /><br />--------------------------------<br />Romila Jeevapalan<br /> 
+General comments:<br />
+Romila did well in this course and I am happy with Romila's progress.<br />
+Romila made the following comments about the course: I found it useful to learn topics like Docker basics, Dockerizing a Node.js app, setting up MySQL with Docker, Docker networking, and using Docker Compose. These helped me learn how to put apps in containers and manage multiple containers at once. I enjoyed the challenge of doing lab exercises, especially when my code worked. Docker Compose was helpful for managing different containers together, and learning about Docker networking made it easier to set up isolated environments. Even though some parts were a bit difficult, the hands-on practice made everything clearer and more useful.<br /><br />Punctuality & Engagement:<br />
+Romila was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Romila told me: After the course, I plan to continue learning more about Docker and Jenkins. I will focus on advanced Docker topics such as multi-stage builds and security. I also aim to learn how to use Jenkins with Docker for continuous integration and deployment. Through practicing with real projects and keeping up with new tools, I hope to improve my skills in Docker and Jenkins.<br /><br />--------------------------------<br />Mohammad Choudhury<br /> 
+General comments:<br />
+Mohammad did well in this course and I am happy with Mohammad's progress.<br />
+Mohammad made the following comments about the course: the overall understanding of devops and how dockers can be utilised. This was also my first time using dockers so the experience has been good.<br /><br />Punctuality & Engagement:<br />
+Mohammad was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mohammad told me: Learn more about my own companies processes and how to integrate and apply what I've learnt.<br /><br />--------------------------------<br />Cameron Bishop<br /> 
+General comments:<br />
+Cameron did well in this course and I am happy with Cameron's progress.<br />
+Cameron made the following comments about the course: Docker felt incredibly useful to understand since I know how prevalent it is in the codebases I've worked in before<br /><br />Punctuality & Engagement:<br />
+Cameron was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Cameron told me: Practice using Jenkins and Docker for my own projects<br /><br />--------------------------------<br />
