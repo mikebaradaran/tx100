@@ -1,7 +1,7 @@
 // const site = getElement("site").innerHTML;
 
 var courseData;
-fetch("/startRead")
+fetch("/start/Read")
   .then(function (response) {
     return response.json();
   })
