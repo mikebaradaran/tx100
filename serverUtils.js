@@ -52,6 +52,18 @@ function initApp(req, res, fs) {
     }
   });
 }
+//-------------------------------
+var customers = undefined;
+var orders = undefined;
+function getCustomers() {
+  if (customers === undefined) customers = require("./customers.json");
+  return customers;
+}
+function getOrders() {
+  if (orders === undefined) orders = require("./orders.json");
+  return orders;
+}
+//--------------------------------------
 
 // function processStartData(data){
 //   //data = JSON.parse(data);
@@ -66,5 +78,5 @@ function initApp(req, res, fs) {
 
 module.exports = {
   //processStartData, initApp
-  initApp
+  initApp, getCustomers, getOrders
 };

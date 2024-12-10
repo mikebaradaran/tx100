@@ -61,7 +61,7 @@
                 return;
             }
             let msg = {
-                name: txtName.value,
+                name: txtName.value.trim(),
                 body: encode(txtMessage.value)
             };
             socket.emit("message", msg);

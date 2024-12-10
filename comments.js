@@ -2,7 +2,6 @@ const duration = "2";
 const recommendation =
   "Practice designing and applying the techniques and principles discussed in this course.";
 
-
 function processComment(name, comment1, comment2) {
   // ------------------------------------------------------------
 
@@ -51,8 +50,21 @@ function saveComments(req, fs) {
   });
 }
 
+function getNames(fs) {
+  let data = fs.readFileSync("comments.txt", "utf8");
+  data = data.split("<br />");
+  let names = data[0] + "<br />";
+  for (var i = 1; i < data.length; i++) {
+    if (data[i].startsWith("----")) {
+      names += data[++i] + "<br />";
+    }
+  }
+  return names;
+}
+
 module.exports = {
   processComment,
   deleteComments,
   saveComments,
+  getNames
 };

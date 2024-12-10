@@ -7,6 +7,7 @@ const path = require("path");
 const fs = require("fs");
 const cors = require("cors");
 const express = require("express");
+
 const app = express();
 const server = require("http").createServer(app);
 const io = require("socket.io")(server, { cors: { origin: "*" } });
@@ -33,6 +34,7 @@ app.use((req, res, next) => {
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 var messages = [];
 const historyFile = path.join(__dirname, "chatHistory.json");
+
 if (fs.existsSync(historyFile)) {
   try {
     const data = fs.readFileSync(historyFile, "utf-8");
@@ -55,20 +57,11 @@ app.get("/start", (req, res) => {
   res.render("start");
 });
 app.post("/startSubmit", (req, res) => {
-  //delete require.cache[require.resolve('./data.json')];
-  // delete data.json
-  // try {
-  //   fs.unlinkSync("./data.json");
-  //   console.log("File deleted successfully");
-  // } catch (err) {
-  //   console.error("Error deleting the file:", err);
-  // }
   serverUtils.initApp(req, res, fs);
 });
 
 app.get("/start/Read", (req, res) => {
   let data = fs.readFileSync("data.json", "utf8");
-  // res.send(serverUtils.processStartData(data));
   res.send(JSON.parse(data));
 });
 
@@ -118,16 +111,7 @@ app.get("/comments/Delete", (req, res) => {
 });
 
 app.get("/comments/Read/names", (req, res) => {
-  let data = fs.readFileSync("comments.txt", "utf8");
-  data = data.split("<br />");
-  let names = data[0] + "<br />";
-  for (var i = 1; i < data.length; i++) {
-    if (data[i].startsWith("----")) {
-      names += data[++i] + "<br />";
-    }
-  }
-  res.send(names);
-  
+  res.send(commentJS.getNames(fs));
 });
 
 // Handle the comment's form submission
@@ -137,31 +121,62 @@ app.post("/commentsSave", (req, res) => {
 });
 
 app.get("/customers", function (req, res) {
-  res.send(getCustomers());
+  res.send(serverUtils.getCustomers());
 });
 
 app.get("/customers/:id", function (req, res) {
   let id = req.params.id;
-  var customers = getCustomers();
+  var customers = serverUtils.getCustomers();
   var data = customers.filter(
     (c) => c.CustomerID.toLowerCase() == id.toLowerCase()
   );
   res.send(data);
 });
-var orders = undefined;
 
 app.get("/orders", function (req, res) {
-  res.send(getOrders());
+  res.send(serverUtils.getOrders());
 });
 
 app.get("/orders/:id", function (req, res) {
   let id = req.params.id;
-  var orders = getOrders();
+  var orders = serverUtils.getOrders();
   var data = orders.filter(
     (c) => c.CustomerID.toLowerCase() == id.toLowerCase()
   );
   res.send(data);
 });
+
+function doTrainerCommand(data) {
+  if (data.body == "delete") {
+    messages = [];
+  }
+  else if (data.body == "clear") {
+    messages.forEach((m) => (m.body = ""));
+  }
+  else if (data.body.startsWith("deletename")) {
+    // 11 is "deletename ".length
+    const studentName = data.body.substring(11).toLowerCase();
+
+    let index = messages.findIndex((m) => m.name.toLowerCase() == studentName);
+
+    if (index != -1) messages.splice(index, 1);
+  }
+  saveMessageHistory();
+}
+
+function saveMessage(data) {
+  const found = messages.find(
+    (m) => m.name.toLowerCase() == data.name.toLowerCase()
+  );
+
+  if (found) found.body = data.body;
+  else messages.push({ name: data.name, body: data.body });
+  saveMessageHistory();
+}
+
+function saveMessageHistory(){
+  fs.writeFileSync(historyFile, JSON.stringify(messages, null, 2));
+}
 
 server.listen(
   { port: process.env.PORT, host: "0.0.0.0" },
@@ -174,47 +189,6 @@ server.listen(
   }
 );
 
-function doTrainerCommand(data) {
-  if (data.body == "delete") {
-    messages = [];
-    return;
-  }
-  if (data.body == "clear") {
-    messages.forEach((m) => (m.body = ""));
-    return;
-  }
-  if (data.body.startsWith("deletename")) {
-    const studentName = data.body.substring(11).toLowerCase();
-
-    let index = messages.findIndex((m) => m.name.toLowerCase() == studentName);
-
-    if (index != -1) messages.splice(index, 1);
-  }
-}
-
-function saveMessage(data) {
-  const found = messages.find(
-    (m) => m.name.toLowerCase() == data.name.toLowerCase()
-  );
-
-  if (found) found.body = data.body;
-  else messages.push({ name: data.name, body: data.body });
-  //~~~~~~~~~~~~~~~~~~~~~
-  fs.writeFileSync(historyFile, JSON.stringify(messages, null, 2));
-}
-//-------------------------------
-var customers = undefined;
-var orders = undefined;
-function getCustomers() {
-  if (customers === undefined) customers = require("./customers.json");
-  return customers;
-}
-function getOrders() {
-  if (orders === undefined) orders = require("./orders.json");
-  return orders;
-}
-//--------------------------------------
-
 io.on("connection", (socket) => {
   socket.on("message", (data) => {
     if (data.name.toLowerCase() == "trainer") {
@@ -226,12 +200,3 @@ io.on("connection", (socket) => {
     io.sockets.emit("message", messages);
   });
 });
-
-// process.on('SIGINT', () => {
-//   const data = JSON.stringify(messages);
-//   fs.writeFile("studentNames.txt", data, (err) => {});
-//   server.close(() => {
-//       console.log('Closed out remaining connections.');
-//       process.exit(0);
-//   });
-// });
