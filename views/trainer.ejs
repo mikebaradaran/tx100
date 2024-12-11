@@ -8,20 +8,14 @@
     <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
 
     <style>
-        td:first-child {
-            padding-right: 20px;
-            font-weight: bold;
-            width: 18em;
-        }
-      table td:nth-child(2){
-        width:1800px;
-/*         border:1px solid blue; */
+      td:first-child {
+          font-weight: bold;
+          width:10em;
       }
-      table{
-/*         margin-top:5px; */
-        width:20em;
+      td :nth-child(2){
+          white-space: nowrap; 
       }
-      
+
       #clearButton{
         font-size:large;
       }
@@ -45,19 +39,20 @@
         const divMessages = document.getElementById("messages");
 
         function displayData(data) {
-            var found = false;
-          
             let messages = '<table class="table table-bordered table-striped">';
 
             data.forEach((d) => {
-                messages += `<tr><td>${d.name}</td><td>${d.body}</td></tr>`;
-                found = true;
+                messages += `<tr><td>${d.name}</td><td title='click to copy' onClick='copyme(this)'>${d.body}</td></tr>`;
             });
 
             divMessages.innerHTML = messages + "</table>";
-            document.getElementById("clearButton").style.display = (found)?"block":"none";  
+            document.getElementById("clearButton").style.display = (data.length > 0)?"block":"none";  
         }
         
+        function copyme(td){
+          navigator.clipboard.writeText(td.innerHTML);
+        }
+      
         function sendCommand(command) {
             let msg = {
                 name: "trainer",
@@ -68,7 +63,7 @@
         //-------------------------------------------------------------
         const socket = io(serverURL);
         socket.on("connection");
-        sendCommand("refresh");
+        sendCommand("refresh");  // any text will refresh the display!
       
         socket.on("message", (data) => {
             displayData(data);
