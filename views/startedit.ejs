@@ -15,18 +15,20 @@
   </style>
 </head>
 <body>
-  <form>
-       <span>trainer:</span><input type="text" value="<%= data.trainer %>"  /><br/>
-       <span>course code:</span><input type="text" value="<%= data.code %>"  /><br/>
-       <span>pin: </span><input type="text" value="<%= data.pin %>"  /><br/>
-       <span>webex email:</span><input type="text" value="<%= data.webex_email %>"  /><br/>
-       <span>course material:</span><input type="text" value="<%= data.material %>"  /><br/>
-       <span>mimeo:</span><input type="text" value="<%= data.mimeo %>"  /><br/>
-       <span>PCs: </span><textarea type="text" id="pcs" rows="10"><%= data.pcs %></textarea><br/>
-       <span>VPC email:</span><input type="text" value="<%= data.password1 %>"  /><br/>
-       <span>password:</span><input type="text" value="<%= data.password2 %>"  /><br/>
-       <span>access code:</span><input type="text" value="<%= data.password3 %>"  /><br/>
-       <span>Students:</span><textarea type="text" id="students" rows="10"><%= data.students %></textarea><br/>
+  <form action="/startSubmit" method="POST">
+       <span>trainer:</span><input name="trainer" type="text" value="<%= data.trainer %>"  /><br/>
+       <span>course title:</span><input name="course_title" ype="text" value="<%= data.code %>"  /><br/>
+       <span>pin: </span><input name="pin" type="text" name="pin" value="<%= data.pin %>"  /><br/>
+       <span>webex email:</span><input name="webex_email" type="text" value="<%= data.webex_email %>"  /><br/>
+       <span>course material:</span><name="" input name="material" type="text" value="<%= data.material %>"  /><br/>
+       <span>mimeo:</span><input name="mimeo" type="text" value="<%= data.mimeo %>"  /><br/>
+       <span>PCs: </span><textarea name="pcs" type="text" id="pcs" rows="10"><%= data.pcs %></textarea><br/>
+       <span>VPC email:</span><input name="password1" type="text" value="<%= data.password1 %>"  /><br/>
+       <span>password:</span><input name="password2" type="text" value="<%= data.password2 %>"  /><br/>
+       <span>access code:</span><input name="password3" type="text" value="<%= data.password3 %>"  /><br/>
+       <span>students:</span></span><textarea type="text" id="students" rows="10"><%= data.students %></textarea><br/>
+       <span>Audio file:</span><input type="text" id="audio" name="audio" value="https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574"></td></tr>
+      
     <button>submit</button>
     </form>
 
