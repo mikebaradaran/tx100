@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA read setup</title>
+  <style>
+    input, textarea{
+      width:60em;
+    }
+    span{
+      display:inline-block;
+      width:7em;
+    }
+  </style>
+</head>
+<body>
+  <form>
+       <span>trainer:</span><input type="text" value="<%= data.trainer %>"  /><br/>
+       <span>course code:</span><input type="text" value="<%= data.code %>"  /><br/>
+       <span>pin: </span><input type="text" value="<%= data.pin %>"  /><br/>
+       <span>webex email:</span><input type="text" value="<%= data.webex_email %>"  /><br/>
+       <span>course material:</span><input type="text" value="<%= data.material %>"  /><br/>
+       <span>mimeo:</span><input type="text" value="<%= data.mimeo %>"  /><br/>
+       <span>PCs: </span><textarea type="text" id="pcs" rows="10"><%= data.pcs %></textarea><br/>
+       <span>VPC email:</span><input type="text" value="<%= data.password1 %>"  /><br/>
+       <span>password:</span><input type="text" value="<%= data.password2 %>"  /><br/>
+       <span>access code:</span><input type="text" value="<%= data.password3 %>"  /><br/>
+       <span>Students:</span><textarea type="text" id="students" rows="10"><%= data.students %></textarea><br/>
+    <button>submit</button>
+    </form>
+
+      <script>
+        let txtArea = document.getElementById("students");
+        txtArea.value = txtArea.value.replaceAll(",","\n");
+        txtArea = document.getElementById("pcs");
+        txtArea.value = txtArea.value.replaceAll(",","\n");
+
+      </script>
+</body>
+</html>
