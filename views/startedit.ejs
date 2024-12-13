@@ -3,41 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QA read setup</title>
+    <title>QA setup</title>
+    
   <style>
-    input, textarea{
-      width:60em;
+    body{
+      background-color:lightgrey;
     }
-    span{
-      display:inline-block;
-      width:7em;
-    }
+    table tr td:nth-child(2) { width:50em;}
+    input,textarea{ width:100%;}
   </style>
 </head>
 <body>
-  <form action="/startSubmit" method="POST">
-       <span>trainer:</span><input name="trainer" type="text" value="<%= data.trainer %>"  /><br/>
-       <span>course title:</span><input name="course_title" ype="text" value="<%= data.code %>"  /><br/>
-       <span>pin: </span><input name="pin" type="text" name="pin" value="<%= data.pin %>"  /><br/>
-       <span>webex email:</span><input name="webex_email" type="text" value="<%= data.webex_email %>"  /><br/>
-       <span>course material:</span><name="" input name="material" type="text" value="<%= data.material %>"  /><br/>
-       <span>mimeo:</span><input name="mimeo" type="text" value="<%= data.mimeo %>"  /><br/>
-       <span>PCs: </span><textarea name="pcs" type="text" id="pcs" rows="10"><%= data.pcs %></textarea><br/>
-       <span>VPC email:</span><input name="password1" type="text" value="<%= data.password1 %>"  /><br/>
-       <span>password:</span><input name="password2" type="text" value="<%= data.password2 %>"  /><br/>
-       <span>access code:</span><input name="password3" type="text" value="<%= data.password3 %>"  /><br/>
-       <span>students:</span></span><textarea type="text" id="students" rows="10"><%= data.students %></textarea><br/>
-       <span>Audio file:</span><input type="text" id="audio" name="audio" value="https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574"></td></tr>
-      
-    <button>submit</button>
+    <h1>Setup class</h1>
+    <form action="/startSubmit" method="POST" onsubmit="addSurname()">
+        <table id="form1">
+            <tr><td>Trainer:</td><td><input type="text" id="trainer" name="trainer" required value="<%= data.trainer %>"></td></tr>
+            <tr><td>Course title:</td><td><input type="text" id="course_title" name="course_title" required value="<%= data.course_title %>"></td></tr>
+            <tr><td>Course code:</td><td><input type="text" id="code" name="code" required value="<%= data.code %>"></td></tr>
+            <tr><td>Pin:</td><td><input type="text" id="pin" name="pin" required value="<%= data.pin %>"></td></tr>
+            <tr><td>WebEx email:</td><td><input type="text" id="webex_email" name="webex_email" required value="<%= data.webex_email %>" ></td></tr>
+            <tr><td>Extra material <br />(like OneDrive):</td><td><input type="text" id="material" name="material" value="<%= data.material %>"></td></tr>
+            <tr><td>Mimeo:</td><td><input type="text" id="mimeo" name="mimeo" value="<%= data.mimeo %>"></td></tr>
+
+            <tr><td>GoToMyPC links:</td><td><textarea rows="5" type="text" id="pcs" name="pcs" /><%= data.pcs %></textarea></td></tr>
+
+            <tr><td>GoToMyPC email:</td><td><input type="text" id="password1" name="password1" value="<%= data.password1 %>"></td></tr>
+            <tr><td>GoToMyPC password:</td><td><input type="text" id="password2" name="password2"  value="<%= data.password2 %>"/></td></tr>
+            <tr><td>GoToMyPC access code:</td><td><input type="text" id="password3" name="password3"  value="<%= data.password3 %>"/></td></tr>
+
+            <tr><td>Student names:</td><td><textarea rows="5" type="text" id="students" name="students" /> <%= data.students %></textarea></td></tr>
+
+            <tr><td>Audio file:</td><td><input type="text"  value="<%= data.audio %>"id="audio" name="audio" value="https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574"></td></tr>
+            <tr><td></td><td><button type="submit">Submit</button></td></tr>
+        </table>
     </form>
-
-      <script>
-        let txtArea = document.getElementById("students");
-        txtArea.value = txtArea.value.replaceAll(",","\n");
-        txtArea = document.getElementById("pcs");
-        txtArea.value = txtArea.value.replaceAll(",","\n");
-
-      </script>
+    <script>
+      splitIt("pcs");
+      splitIt("students");
+      
+      function splitIt(id){
+        let tag = document.getElementById(id);
+        tag.value = tag.value.trim().replaceAll(", ",",").replaceAll(",","\n");
+      }
+      
+      function addSurname(){
+        let tag = document.getElementById("students");
+        let names = tag.value.split("\n");
+        let result = "";
+        for(let name of names)
+            if(name.trim().length > 1)
+              result += "surname," + name + "\n";
+        tag.value = result.substr(0, result.length - 1);
+      }
+  </script>
 </body>
 </html>
