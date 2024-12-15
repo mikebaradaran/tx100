@@ -1,24 +1,24 @@
 // const site = getElement("site").innerHTML;
 
-var courseData;
 fetch("/start/Read")
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
-    courseData = data;
-    setupForm();
+    setupForm(data);
   })
   .catch(function (error) {
     alert(error);
   });
 
-function setupForm() {
+var courseData;
+
+function setupForm(data) {
+  courseData = data;
   
   const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code}&pin=${courseData.pin}`;
-  let timer = getElement("qaTimer");
 
-  timer.sound = courseData.audio;
+  getElement("qaTimer").sound = courseData.audio;
   getElement("trainer").innerHTML = courseData.trainer;
   getElement("course_title").innerHTML = courseData.course_title;
   getElement("material").href = courseData.material;
@@ -54,16 +54,16 @@ function setupForm() {
     if (duration == -1)
       return;
     
-    if (duration == 0) {
-      timer.stopTimer();
-      timer.message = "";
-    } else {
-      timer.timerValue = duration * 60;
-      timer.startTimer();
-    }
-    
-  });
+    let qaTimer = getElement("qaTimer");
 
+    if (duration == 0) {
+      qaTimer.stopTimer();
+      qaTimer.message = "";
+    } else {
+      qaTimer.timerValue = duration * 60;
+      qaTimer.startTimer();
+    }
+  });
 
   // End of setting up combobox ---------------------------------------------
 

@@ -48,6 +48,9 @@ if (fs.existsSync(historyFile)) {
 app.get("/", (req, res) => {
   res.render("index");
 });
+app.get("/index2", (req, res) => {
+  res.render("index2");
+});
 
 app.get("/help", (req, res) => {
   res.render("help");

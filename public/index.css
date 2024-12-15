@@ -27,10 +27,10 @@
   margin-top: 0.5em;
 }
 
-#txtArea{
+/* #txtArea{
   font-size: x-large;
 }
-
+ */
 #trainer {
   text-align:center;
   margin-top: 0.5em;
@@ -97,10 +97,10 @@ button:hover {
 }
 
 #txtArea{
-/*   display:flex; */
   flex:1;
   font-weight:bolder;
   font-size:bolder;
+  font-size: x-large;
 }
 button:active {
   transform: translateY(3px); /* Moves the button down */
