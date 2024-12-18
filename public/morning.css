@@ -63,3 +63,8 @@ h2 {
 #pcs {
   color: black;
 }
+.header {
+  background-color: black;
+  color: white;
+  grid-column: 1/3;
+}

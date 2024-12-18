@@ -7,6 +7,11 @@
     <link href="index.css" rel="stylesheet" />
     <link href="morning.css" rel="stylesheet" />
     <script src="morning.js" defer></script>
+  <style>
+    .grid-container{
+       padding:5em; 
+    }
+  </style>
 </head>
 <body>
     <div class="grid-container">
@@ -15,16 +20,16 @@
             <div id="course_title"></div>
             <h3 id="trainer"></h3>
         </div>
-      <div id="timer_container">
-        <qa-timer id="qaTimer"></qa-timer> 
-      </div>
-      <div class="pcs">
-          <ol id="pcs"></ol>
-          <div style="display: flex">
-              <textarea rows="2"  id="txtArea"></textarea>
-          </div>
-          <h2  class="camText"><img src="webcam.svg" /> Please turn your webcam on 😊</h2>
-      </div>
+        <div id="timer_container">
+          <qa-timer id="qaTimer"></qa-timer> 
+        </div>
+        <div class="pcs">
+            <ol id="pcs"></ol>
+            <div style="display: flex">
+                <textarea rows="2"  id="txtArea"></textarea>
+            </div>
+            <h2  class="camText"><img src="webcam.svg" /> Please turn your webcam on 😊</h2>
+        </div>
     </div>
 </body>
 </html>
