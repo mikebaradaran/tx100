@@ -43,4 +43,4 @@ if (secondsToStart > 0) {
   timer.startTimer();
 }
 document.getElementById("txtArea").value =
-  "We'll be starting class at 9:30.\nPlease make sure you're ready on time";
+  "We'll be starting class at 9:30\nPlease make sure you're ready on time";
