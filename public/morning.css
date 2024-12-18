@@ -1,0 +1,65 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  /*display: flex;
+            justify-content: center;*/
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(120deg, darkblue, black, darkgreen);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.content {
+  text-align: center;
+  font-size: 2rem;
+}
+h2 {
+  margin-left: 5em;
+}
+
+#trainer,
+#course_title {
+  text-align: left;
+}
+#course_title {
+  margin-left: 10em;
+}
+#trainer {
+  margin-left: 15em;
+}
+
+#txtArea {
+  padding: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: rgb(75, 0, 0);
+  color: white;
+}
+.camText {
+  color: rgb(75, 0, 0);
+  text-shadow: 2px 2px 3px grey;
+}
+#pcs {
+  color: black;
+}
