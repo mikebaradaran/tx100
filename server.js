@@ -48,6 +48,11 @@ if (fs.existsSync(historyFile)) {
 app.get("/", (req, res) => {
   res.render("index");
 });
+
+app.get("/morning", (req, res) => {
+  res.render("morning");
+});
+
 app.get("/index2", (req, res) => {
   res.render("index2");
 });

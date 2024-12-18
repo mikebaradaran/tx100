@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <script src="MyTimer.js"></script>
+    <link href="index.css" rel="stylesheet" />
+  
+  
+  <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            /*display: flex;
+            justify-content: center;*/
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(120deg, darkblue, black, darkgreen);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .content {
+            text-align: center;
+            font-size: 2rem;
+        }
+    h2{
+      margin-left:5em;
+    }
+    
+   
+    #trainer, #course_title{
+       text-align: left;
+    }
+     #course_title {
+      margin-left:10em;
+    }
+    #trainer {
+       margin-left:15em;
+    }
+    
+
+
+    #txtArea{
+      padding:20px;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-color:rgb(75, 0, 0);
+      color:white;
+    }
+    .camText{
+      color:rgb(75, 0, 0);
+      text-shadow:2px 2px 3px grey;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="qaLogo"> <img src="qa_logo.svg" /> </div>
+            <div id="course_title"></div>
+            <h3 id="trainer"></h3>
+        </div>
+      <div id="timer_container">
+        <qa-timer id="qaTimer"></qa-timer> 
+      </div>
+
+        <div class="passwords" style="display:none">
+            <emoji>&#128218</emoji>
+            <a id="material" href="" target="_blank">
+                Course material
+            </a>
+            <button onclick="copy(courseData.password1)">Copy email</button>
+            <button onclick="copy(courseData.password2)">Copy password</button>
+            <button onclick="copy(courseData.password3)">Copy access code</button>
+            <button onclick="mimeo()">Mimeo</button> 
+        </div>
+        <div class="pcs">
+            <ol id="pcs"></ol>
+            <div style="display: flex">
+                <textarea rows="2"  id="txtArea"></textarea>
+            </div>
+  <h2  class="camText"><img src="webcam.svg" /> Please turn your webcam on 😊</h2>
+          
+        </div>
+
+        <div class="afa"  style="display:none">
+            <button onclick="afa()">Copy WebEx</button>
+            <select id="cboMessages"></select>
+            <a href="https://signin.qa.com/" target="_blank">Sign</a>
+            <h3><img src="webcam.svg" /> Please turn your webcam on 😊</h3>
+        </div>
+
+<!--         <div class="students"><object id="studentMessages" data="/student"></object></div>
+        <div class="messages">
+            <div class="MessagesDiv">
+                <object data="/trainer" height="750" width="100%"></object>
+            </div>
+        </div> -->
+    </div>
+  <script>
+  let futureTime = new Date();
+        futureTime.setHours(9);
+        futureTime.setMinutes(30);
+
+        // Convert milliseconds to seconds
+        let secondsToStart = Math.floor((futureTime - new Date()) / 1000);
+
+        if (secondsToStart > 0){
+            let timer = document.getElementById("qaTimer");
+            timer.timerValue = secondsToStart;
+            timer.startTimer();
+        }
+      const textarea = document.getElementById('txtArea');
+      textarea.value = "We'll be starting class at 9:30.\nPlease make sure you're ready on time";
+  </script>
+</body>
+</html>
