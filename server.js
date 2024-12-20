@@ -98,6 +98,9 @@ app.get("/getpcs", (req, res) => {
 app.get("/all", (req, res) => {
   res.render("all");
 });
+app.get("/chat", (req, res) => {
+  res.render("all");
+});
 
 app.get("/student", (req, res) => {
   res.render("student");
