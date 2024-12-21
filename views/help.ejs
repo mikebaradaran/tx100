@@ -11,9 +11,8 @@
       .inline_a{
         display:inline;
       }
-      a:hover{
-/*         border:2px solid blue; */
-        font-weight: bold;      
+      tr:hover{
+        background-color:#f5f5f5;
       }
       h3{
         margin-bottom:2px;
@@ -44,9 +43,70 @@
       details[open]>summary {
 /*         margin-bottom: 0.5rem; */
       }
+      
+      td{
+/*         padding:5px;
+        padding-left:1em;
+        padding-right:2em; */
+        border: 1px solid black; /* Single-line borders */
+      }
+      
+      table {
+        border-collapse: collapse; /* Ensures single borders */
+      }
+      td:nth-child(2){
+        padding-left:1em;
+        color:blue;
+        width:15em;
+        
+      }
+      td:nth-child(1){
+        width:25em;
+      }
     </style>
 </head>
 <body>
+  
+  <details>
+      <summary>
+        <h3>Setting up class data</h3>
+      </summary>
+        <a href="/start">Setup this app with class data</a>
+        <a href="/start/edit">Edit the class data</a>
+   </details>
+  
+
+    <details>
+      <summary>
+            <h3>Chat</h3>
+      </summary>
+      <a href="/chat">Show both comment components</a>
+      <a href="/student">Show only the student message entry components</a>
+      <a href="/trainer">Show only the the messages components</a>
+      <a href="/admin">Manage messages (delete student name, clear, close class)</a>
+      <a href="/clear">Clear all messages</a>
+    </details>
+    <details>
+      <summary>
+            <h3>End of course comments</h3>
+      </summary>
+      <a href="/comments">Show the tutor report comment entry form</a>
+      <a href="/comments/Read">Read all the tutor report comments</a>
+      <a href="/comments/Delete">Delete all the tutor report comments</a>
+      <a href="/comments/Read/names">Read the names of all students who have made a comment</a>
+    </details>
+
+   
+
+      <details>
+      <summary>
+            <h3>Morning screen and Login</h3>
+      </summary>
+        <a href="/morning">View the morning screen</a>
+        <a href="/login">Login for (not used!)</a>
+        
+    </details>
+  
   <details>
         <summary>
             <h3>How to install this app?</h3>
@@ -64,30 +124,7 @@
             <li>Edit the line:  <b>appName: `https://tx100.glitch.me`</b> and change <b>tx100</b> to your project name</li>
         </ol>
     </details>
-    <h3><a href="/start">Setup this app with students, PCs...</a></h3><br />
-    <h3><a href="/morning">View the morning screen</a></h3>
-
-    <details>
-      <summary>
-            <h3>Chat</h3>
-      </summary>
-      <a href="/all">Show both comment components</a>
-      <a href="/student">Show only the student message entry components</a>
-      <a href="/trainer">Show only the the messages components</a>
-      <a href="/admin">Manage messages (delete student name, clear, close class)</a>
-      <a href="/clear">Clear all messages</a>
-    </details>
-    <details>
-      <summary>
-            <h3>End of course comments</h3>
-      </summary>
-      <a href="/comments">Show the tutor report comment entry form</a>
-      <a href="/comments/Read">Read all the tutor report comments</a>
-      <a href="/comments/Delete">Delete all the tutor report comments</a>
-      <a href="/comments/Read/names">Read the names of all students who have made a comment</a>
-    </details>
-
-    <details>
+   <details>
       <summary>
             <h3>APIs</h3>
       </summary>
@@ -96,9 +133,18 @@
       <a href="/orders">get all orders</a>
       <a class="aException" href="/orders/alfki">Get orders by customer ID</a>
     </details>
+  
+  <script>
+    let currentURL = window.location.href.replace('/help','/');
+    let arefs = document.getElementsByTagName("a");
+    for(let x of arefs)
+      {
+        if(x.className == "inline_a")
+          continue;
+        x.innerHTML = `<table><tr><td>${x.textContent}</td><td>${x.href}</td></tr></table>`;
+      }
 
-    <h3>Misc</h3>
-    <a href="/login">Login for (not used!)</a>    
+  </script>
 </body>
 </html>
 

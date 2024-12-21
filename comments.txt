@@ -1,149 +1,49 @@
-Luke Matakitoga<br /> 
+Mital Patel<br /> 
 General comments:<br />
-Luke did well in this course and I am happy with Luke's progress.<br />
-Luke made the following comments about the course: I've found the activity on AWS API Gateway the most useful<br /><br />Punctuality & Engagement:<br />
-Luke was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Mital did well in this course and I am happy with Mital's progress.<br />
+Mital made the following comments about the course: SOLID recap, Refactoring were useful.<br /><br />Punctuality & Engagement:<br />
+Mital was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Luke told me: I'm going to continue practicing using different AWS services to build my skills<br /><br />--------------------------------<br />Kamyar Rafiee<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mital told me: Revise SOLID and practice refactoring.<br /><br />--------------------------------<br />Zaki Tayyab<br /> 
 General comments:<br />
-Kamyar did well in this course and I am happy with Kamyar's progress.<br />
-Kamyar made the following comments about the course: APIs<br /><br />Punctuality & Engagement:<br />
-Kamyar was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Zaki did well in this course and I am happy with Zaki's progress.<br />
+Zaki made the following comments about the course: Software testing and design patters was useful. <br /><br />Punctuality & Engagement:<br />
+Zaki was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Kamyar told me: Build APIs at work <br /><br />--------------------------------<br />Hayden Exley<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Zaki told me: more coding<br /><br />--------------------------------<br />Oliver Patrick<br /> 
 General comments:<br />
-Hayden did well in this course and I am happy with Hayden's progress.<br />
-Hayden made the following comments about the course: I think all of the topics in this module were really useful and really enjoyed how easy it was in AWS to build the RESTful microservices.<br /><br />Punctuality & Engagement:<br />
-Hayden was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Oliver did well in this course and I am happy with Oliver's progress.<br />
+Oliver made the following comments about the course: Testing. Particularly BDD as I have not touched on this before.<br /><br />Punctuality & Engagement:<br />
+Oliver was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Hayden told me: As I mainly use Azure at work I'll look into whether I can implement some of the cloud features I used in AWS in Azure too.<br /><br />--------------------------------<br />Jane Harris<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Oliver told me: Do more testing within my workflow. Especially within C# as i have not done this.<br /><br />--------------------------------<br />Yusef Jones<br /> 
 General comments:<br />
-Jane did well in this course and I am happy with Jane's progress.<br />
-Jane made the following comments about the course: All topics were useful as I had little knowledge of microservices & APIs.<br /><br />Punctuality & Engagement:<br />
-Jane was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Yusef did well in this course and I am happy with Yusef's progress.<br />
+Yusef made the following comments about the course: The example of BDD was excellent and made me want to do more of it.<br />Some of the labs done in pairs were hard to do if the students weren’t familiar with the same coding language.<br /><br />Punctuality & Engagement:<br />
+Yusef was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jane told me: Redoing the hands on labs will help me gain a better understanding of AWS services. General research of microservices and APIs will help me gain more knowledge and help towards being able to implement them in the workplace<br /><br />--------------------------------<br />Alice Bocking<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yusef told me: Practice more BDD<br /><br />--------------------------------<br />Jed Ryan<br /> 
 General comments:<br />
-Alice did well in this course and I am happy with Alice's progress.<br />
-Alice made the following comments about the course: The worklabs are really useful to actually get to understand how everything works<br /><br />Punctuality & Engagement:<br />
-Alice was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Jed did well in this course and I am happy with Jed's progress.<br />
+Jed made the following comments about the course: Learning about design and testing patterns was very useful. I appreciated the websites and resources Mike gave so I could look into them further.<br /><br />Punctuality & Engagement:<br />
+Jed was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Alice told me: Continue to practice working with microservices and APIs<br /><br />--------------------------------<br />Aiden Jaunzemis<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jed told me: Learn more about software design patterns<br /><br />--------------------------------<br />Jasmine Brooks<br /> 
 General comments:<br />
-Aiden did well in this course and I am happy with Aiden's progress.<br />
-Aiden made the following comments about the course: I found understanding AWS Step functions highly useful. Especially learning about the different components and how to configure AWS Step Functions. I would say that DynamoDB was less useful as I only really use SQL databases at work<br /><br />Punctuality & Engagement:<br />
-Aiden was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Jasmine did well in this course and I am happy with Jasmine's progress.<br />
+Jasmine made the following comments about the course: I found the Github section most useful as this is what i use within my company on a daily basis<br /><br />Punctuality & Engagement:<br />
+Jasmine was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Aiden told me: I will revisit course material. It is good to be aware of the resources covered in this course so that I can go away and research them in more depth.<br /><br />--------------------------------<br />Lee Wraith<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jasmine told me: Take over the monitoring and updating of our GitHub Repositories<br /><br />--------------------------------<br />Sumayah Hassani<br /> 
 General comments:<br />
-Lee did well in this course and I am happy with Lee's progress.<br />
-Lee made the following comments about the course: All of this as I'm new to it all<br /><br />Punctuality & Engagement:<br />
-Lee was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Sumayah did well in this course and I am happy with Sumayah's progress.<br />
+Sumayah made the following comments about the course: I found all topics useful, particularly TDD and BDD as it is used in my workplace.<br /><br />Punctuality & Engagement:<br />
+Sumayah was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Lee told me: Dive in and sign up to AWS and start messing about building things<br /><br />--------------------------------<br />Yahya Sharif<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Sumayah told me: Find some courses online on Udemy related to Software Craft and clean code.<br /><br />--------------------------------<br />Matt Brassington<br /> 
 General comments:<br />
-Yahya did well in this course and I am happy with Yahya's progress.<br />
-Yahya made the following comments about the course: I really like the DynamoDB and API gateway labs. I can see how to use them to get different microservices to communicate with each other.<br /><br />Punctuality & Engagement:<br />
-Yahya was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Matt did well in this course and I am happy with Matt's progress.<br />
+Matt made the following comments about the course: I found the BDD the most useful aspect of the course, as well as the refresher on Github and version control. <br /><br />Punctuality & Engagement:<br />
+Matt was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yahya told me: I will build a personal project where I can use what I've learnt, which will make it easier to apply in the real world. <br /><br />--------------------------------<br />Yahya Sharif<br /> 
-General comments:<br />
-Yahya did well in this course and I am happy with Yahya's progress.<br />
-Yahya made the following comments about the course: I really like the DynamoDB and API gateway labs. I can see how to use them to get different microservices to communicate with each other.<br /><br />Punctuality & Engagement:<br />
-Yahya was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yahya told me: I will build a personal project where I can use what I've learnt, which will make it easier to apply in the real world. <br /><br />--------------------------------<br />Yannis Lawrence<br /> 
-General comments:<br />
-Yannis did well in this course and I am happy with Yannis's progress.<br />
-Yannis made the following comments about the course: I found the section on the AWS API gateway interesting since the Azure APIs where already set up when I joined my organisation so it is a process I haven't seen before<br /><br />Punctuality & Engagement:<br />
-Yannis was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yannis told me: Continue to research setting up Microservices and experiment with a free AWS trial account<br /><br />--------------------------------<br />Sebastian van Geijt<br /> 
-General comments:<br />
-Sebastian did well in this course and I am happy with Sebastian's progress.<br />
-Sebastian made the following comments about the course: The actual topics are nice, and the discussions that was held around the labs were educational. However, I am not too sure of it being so AWS focused. I get that AWS is important, but the labs just make you blindly follow a to-do guide, without ever explaining how anything works or why it works.<br />I think the course would benefit going a little bit more bare-bone for the sake of learning how these things work under the hood, before automating it all with AWS.<br /><br />Punctuality & Engagement:<br />
-Sebastian was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Sebastian told me: I will probably end up hosting my own server to experiment on, and create an API ecosystem from scratch.<br /><br />--------------------------------<br />Mark Suaznabar<br /> 
-General comments:<br />
-Mark did well in this course and I am happy with Mark's progress.<br />
-Mark made the following comments about the course: AWS is such a massive topic it is a bit bewildering, but it was really good to start doing some practical setups using it. I did find that the Labs were a little too focused on following setup instructions rather than explaining what the settings were actually responsible for, I think a broader outline and a simpler explanation of what was being setup would have been useful for most of them.<br />As usual, Mike made the topics enjoyable and engaging and left me wanting to learn more independently.<br /><br />Punctuality & Engagement:<br />
-Mark was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mark told me: Do more AWS labs and look for alternative courses, e.g Amazon offer some free courses on AWS<br /><br />--------------------------------<br />Benjamin Roberts<br /> 
-General comments:<br />
-Benjamin did well in this course and I am happy with Benjamin's progress.<br />
-Benjamin made the following comments about the course: API Gateway - this felt closest to what I'd see in my day-to-day<br />
-DynamioDb seemed like an interesting NoSQL database solution. My initial impression of it is it's more friendly then MongoDB (although I'm still not convinced why you'd not just use MySQL or SQLite).
-
-Less useful - Pretty much everything else AWS to be honest. The course was too short to really make any of it memorable. My Employer uses Azure so I have no chance of applying it<br /><br />Punctuality & Engagement:<br />
-Benjamin was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Benjamin told me: - Compare AWS vs Azure services, see how a Microservice architecture would work on Azure<br />- Try building a few simple Microservices (maybe in Node.JS, Python or Java), packaged with a DB & deploying to Azure, making sure I can call these (via tools like Postman)<br /><br />--------------------------------<br />Colin Breslin<br /> 
-General comments:<br />
-Colin did well in this course and I am happy with Colin's progress.<br />
-Colin made the following comments about the course: The course provided by Mike was good, he explained the material well, As we currently do not employ AWS web the course was a good oversight <br /><br />Punctuality & Engagement:<br />
-Colin was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Colin told me: I would need to review the labs available to better embed the course<br /><br />--------------------------------<br />Maria Sonetto<br /> 
-General comments:<br />
-Maria did well in this course and I am happy with Maria's progress.<br />
-Maria made the following comments about the course: The whole course was very useful. I really enjoyed working with Docker and Jenkins, as there were lots of practical exercises. It was my first time using them and learning about them, so it was very beneficial and I really enjoyed it.<br /><br />Punctuality & Engagement:<br />
-Maria was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Maria told me: Practice more with Docker, Jenkins, and other similar tools that automate CI/CD processes.<br /><br />--------------------------------<br />Alexander Schudel<br /> 
-General comments:<br />
-Alexander did well in this course and I am happy with Alexander's progress.<br />
-Alexander made the following comments about the course: I foudn the DevOps overview useful as I had not really had much exposure to it. <br />
-I thought the docker labs were useful.<br /><br />Punctuality & Engagement:<br />
-Alexander was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Alexander told me: Work on implementing this in my day to day job. <br /><br />--------------------------------<br />Liam<br /> 
-General comments:<br />
-Liam did well in this course and I am happy with Liam's progress.<br />
-Liam made the following comments about the course: Docker appears useful on the outside, but we cannot use it as it is no longer free<br /><br />Punctuality & Engagement:<br />
-Liam was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Liam told me: I will primarily be using docker at home on personal projects, if at all<br /><br />--------------------------------<br />Conal O'Driscoll<br /> 
-General comments:<br />
-Conal did well in this course and I am happy with Conal's progress.<br />
-Conal made the following comments about the course: I enjoyed getting a new experience with dockers and Jenkins, they were quite interesting to work with and useful. DevOps and the SDLC less so only because I was already experienced with it but all very good and infrmative from mike as usual<br /><br />Punctuality & Engagement:<br />
-Conal was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Conal told me: Get more experience with dockers and jenkins in the future. <br /><br />--------------------------------<br />Jordon Kirby<br /> 
-General comments:<br />
-Jordon did well in this course and I am happy with Jordon's progress.<br />
-Jordon made the following comments about the course: Overall the Jenkins topic is very useful as not only is it a helpful subject but also one of personal interest.<br /><br />Punctuality & Engagement:<br />
-Jordon was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jordon told me: For me personally I would like to dig even deeper into Jenkins and try to gain a deeper understanding potentially though other courses or free educational material online, either way developing my understanding is my key goal moving forward.<br /><br /><br />--------------------------------<br />Mike Gibson<br /> 
-General comments:<br />
-Mike did well in this course and I am happy with Mike's progress.<br />
-Mike made the following comments about the course: I found the course interesting especially around the dockers and CI-CD material because it is not part of my current role in engineering.<br /><br />Punctuality & Engagement:<br />
-Mike was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mike told me: After the course it would be beneficial for me to approach the DevOps and cloud engineering teams at my company to see how the learning compares to the processes of the business. <br /><br />--------------------------------<br />Andrew Walls<br /> 
-General comments:<br />
-Andrew did well in this course and I am happy with Andrew's progress.<br />
-Andrew made the following comments about the course: The material on Docker was extremely useful. The exercises were comprehensive, and prompted lots of questions for Mike, who was always able and willing to answer these. Incorporating Python and building webpages using Docker was fascinating, and  has really piqued my interest.<br /><br />Punctuality & Engagement:<br />
-Andrew was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Andrew told me: I am going to find out more about how DevOps is employed within my company, and I am going to begin by presenting the benefits of version control (GitHub) to my manager, in the hope that we may start incorporating this within our BAU work. I am also going to learn much more about Docker, and practise lots of examples.<br /><br />--------------------------------<br />Romila Jeevapalan<br /> 
-General comments:<br />
-Romila did well in this course and I am happy with Romila's progress.<br />
-Romila made the following comments about the course: I found it useful to learn topics like Docker basics, Dockerizing a Node.js app, setting up MySQL with Docker, Docker networking, and using Docker Compose. These helped me learn how to put apps in containers and manage multiple containers at once. I enjoyed the challenge of doing lab exercises, especially when my code worked. Docker Compose was helpful for managing different containers together, and learning about Docker networking made it easier to set up isolated environments. Even though some parts were a bit difficult, the hands-on practice made everything clearer and more useful.<br /><br />Punctuality & Engagement:<br />
-Romila was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Romila told me: After the course, I plan to continue learning more about Docker and Jenkins. I will focus on advanced Docker topics such as multi-stage builds and security. I also aim to learn how to use Jenkins with Docker for continuous integration and deployment. Through practicing with real projects and keeping up with new tools, I hope to improve my skills in Docker and Jenkins.<br /><br />--------------------------------<br />Mohammad Choudhury<br /> 
-General comments:<br />
-Mohammad did well in this course and I am happy with Mohammad's progress.<br />
-Mohammad made the following comments about the course: the overall understanding of devops and how dockers can be utilised. This was also my first time using dockers so the experience has been good.<br /><br />Punctuality & Engagement:<br />
-Mohammad was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mohammad told me: Learn more about my own companies processes and how to integrate and apply what I've learnt.<br /><br />--------------------------------<br />Cameron Bishop<br /> 
-General comments:<br />
-Cameron did well in this course and I am happy with Cameron's progress.<br />
-Cameron made the following comments about the course: Docker felt incredibly useful to understand since I know how prevalent it is in the codebases I've worked in before<br /><br />Punctuality & Engagement:<br />
-Cameron was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Cameron told me: Practice using Jenkins and Docker for my own projects<br /><br />--------------------------------<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Matt told me: Coding and development projects over the past year in my role have unfortunately been rarer than I'd like - meaning I need to put more focus on building my coding skills.  <br /><br />--------------------------------<br />
