@@ -95,23 +95,20 @@ app.get("/getpcs", (req, res) => {
   res.render("getpcs");
 });
 
-app.get("/all", (req, res) => {
-  res.render("all");
-});
 app.get("/chat", (req, res) => {
-  res.render("all");
+  res.render("chat");
 });
 
-app.get("/student", (req, res) => {
+app.get("/chat/student", (req, res) => {
   res.render("student");
 });
-app.get("/trainer", (req, res) => {
+app.get("/chat/trainer", (req, res) => {
   res.render("trainer");
 });
-app.get("/admin", (req, res) => {
+app.get("/chat/admin", (req, res) => {
   res.render("admin");
 });
-app.get("/clear", (req, res) => {
+app.get("/chat/clear", (req, res) => {
   doTrainerCommand({ name: "trainer", body: "clear" });
   res.render("index");
 });
