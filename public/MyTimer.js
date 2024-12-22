@@ -79,7 +79,12 @@ class QA_Timer extends HTMLElement {
         new Audio(this.audio).play();
         return;
       }
-      this.message = mins + ":" + (this.seconds - mins * 60);
+      
+      var hours = Math.floor(mins / 60);          
+      var minutes = mins % 60;
+      hours = (hours > 0)? hours +"h : ": "";
+      
+      this.message = hours + minutes + "m : " + (this.seconds - mins * 60);
       this.seconds--;
     }, 1000);
   }
