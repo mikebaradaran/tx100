@@ -99,19 +99,21 @@ app.get("/chat", (req, res) => {
   res.render("chat");
 });
 
-app.get("/chat/student", (req, res) => {
+app.get("/chatstudent", (req, res) => {
   res.render("student");
 });
-app.get("/chat/trainer", (req, res) => {
+app.get("/chattrainer", (req, res) => {
   res.render("trainer");
 });
-app.get("/chat/admin", (req, res) => {
+app.get("/chatadmin", (req, res) => {
   res.render("admin");
 });
-app.get("/chat/clear", (req, res) => {
+
+app.get("/chatclear", (req, res) => {
   doTrainerCommand({ name: "trainer", body: "clear" });
   res.render("index");
 });
+
 app.get("/comments", (req, res) => {
   res.render("comments");
 });
