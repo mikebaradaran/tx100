@@ -3,15 +3,15 @@
 <head>
     <title>QA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js" defer></script>
-    <script src="MyTimer.js"></script>
-    <link href="index.css" rel="stylesheet" />
+    <script src="/index.js" defer></script>
+    <script src="/MyTimer.js"></script>
+    <link href="/index.css" rel="stylesheet" />
 
 </head>
 <body>
     <div class="grid-container">
         <div class="header">
-            <div class="qaLogo"> <img src="qa_logo.svg" /> </div>
+            <div class="qaLogo"> <img src="/qa_logo.svg" /> </div>
             <div id="course_title"></div>
             <h3 id="trainer"></h3>
         </div>
@@ -40,13 +40,13 @@
             <button onclick="afa()">Copy WebEx</button>
             <select id="cboMessages"></select>
             <a href="https://signin.qa.com/" target="_blank">Sign</a>
-            <h3><img src="webcam.svg" /> Please turn your webcam on 😊</h3>
+            <h3><img src="/webcam.svg" /> Please turn your webcam on 😊</h3>
         </div>
 
-        <div class="students"><object id="studentMessages" data="/chatstudent"></object></div>
+        <div class="students"><object id="studentMessages" data="/chat/student"></object></div>
         <div class="messages">
             <div class="MessagesDiv">
-                <object data="/chattrainer" height="550" width="100%"></object>
+                <object data="/chat/trainer" height="550" width="100%"></object>
             </div>
         </div>
     </div>
