@@ -9,11 +9,8 @@
 
     <style>
       td:first-child {
-          font-weight: bold;
           width:10em;
-      }
-      td :nth-child(2){
-          white-space: nowrap; 
+        font-weight:bold;
       }
 
       #clearButton{
@@ -26,6 +23,19 @@
         text-align:center;
         border-radius:30%;
       }
+       .popup {
+            position: absolute;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            padding: 8px 12px;
+            font-size: 14px;
+            z-index: 1000;
+            display: none;
+            pointer-events: none; /* Prevent interfering with clicks */
+            white-space: nowrap;
+        }
     </style>
 </head>
 
@@ -43,15 +53,25 @@
             let messages = '<table class="table table-bordered table-striped">';
 
             data.forEach((d) => {
-                messages += `<tr><td>${d.name}</td><td title='click to copy' onClick='copyme(this)'>${d.body}</td></tr>`;
+                messages += `<tr><td>${d.name}</td><td title='click to copy' onClick='copyText(this.innerHTML,event)'>${d.body}</td></tr>`;
             });
 
             divMessages.innerHTML = messages + "</table>";
             document.getElementById("clearButton").style.display = (data.length > 0)?"block":"none";  
         }
         
-        function copyme(td){
-          navigator.clipboard.writeText(td.innerHTML);
+       
+        function copyText(txt, event) {
+            navigator.clipboard.writeText(txt);
+
+            const popup = document.getElementById('popup');
+            popup.style.left = event.pageX + 'px'; 
+            popup.style.top = event.pageY + 'px'; 
+            popup.style.display = 'block';
+
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 500);
         }
       
         function sendCommand(command) {
@@ -70,5 +90,8 @@
             displayData(data);
         });
     </script>
+  
+    <div class="popup" id="popup">Copied!</div>
+
 </body>
 </html>
