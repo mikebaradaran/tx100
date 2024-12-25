@@ -48,12 +48,18 @@
         // const serverURL = '<%= commonData.appName %>';
         const serverURL = '/';
         const divMessages = document.getElementById("messages");
-
+        let allMessages = [];
+      
+        function trunc(str) {
+          return str.length > 70 ? str.substring(0, 70) + "..." : str;
+        }
+      
         function displayData(data) {
+            allMessages = data;
             let messages = '<table class="table table-bordered table-striped">';
 
             data.forEach((d) => {
-                messages += `<tr><td>${d.name}</td><td title='click to copy' onClick='copyText(this.innerHTML,event)'>${d.body}</td></tr>`;
+                messages += `<tr><td>${d.name}</td><td title='click to copy' onClick='copyText(event)'>${trunc(d.body)}</td></tr>`;
             });
 
             divMessages.innerHTML = messages + "</table>";
@@ -61,9 +67,11 @@
         }
         
        
-        function copyText(txt, event) {
-            navigator.clipboard.writeText(txt);
-
+        function copyText(event) {
+          
+            const index = event.target.parentNode.rowIndex; 
+            navigator.clipboard.writeText(allMessages[index].body);
+          
             const popup = document.getElementById('popup');
             popup.style.left = event.pageX + 'px'; 
             popup.style.top = event.pageY + 'px'; 
