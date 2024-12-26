@@ -1,3 +1,4 @@
+delete require.cache[require.resolve('./data.json')];
 const courseData = require("./data.json");
 
 let duration = courseData.courseDuration;
