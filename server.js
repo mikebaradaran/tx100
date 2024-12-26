@@ -53,8 +53,8 @@ app.get("/morning", (req, res) => {
   res.render("morning");
 });
 
-app.get("/index2", (req, res) => {
-  res.render("index2");
+app.get("/student", (req, res) => {
+  res.render("studentView");
 });
 
 app.get("/help", (req, res) => {
