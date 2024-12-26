@@ -1,16 +1,5 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
-  align-items: center;
-  font-family: Arial, sans-serif;
-  color: white;
-  background: linear-gradient(120deg, grey, black, cyan);
+  background: linear-gradient(120deg, white, black, cyan);
   background-size: 300% 300%;
   animation: gradientAnimation 10s ease infinite;
 }
@@ -57,7 +46,7 @@ body {
 .camText {
   margin-left: 3em;
   color: rgb(75, 0, 0);
-  text-shadow: 2px 2px 3px grey;
+  text-shadow: 1px 1px 3px grey;
 }
 
 .header {
