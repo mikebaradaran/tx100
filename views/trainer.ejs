@@ -36,6 +36,18 @@
             pointer-events: none; /* Prevent interfering with clicks */
             white-space: nowrap;
         }
+      
+      table {
+        table-layout: fixed; 
+        width: 100%;
+      }
+      td {
+        white-space: nowrap; 
+        overflow: hidden;    
+        text-overflow: ellipsis; /* Add ... for overflowes */
+      }
+      
+
     </style>
 </head>
 
@@ -45,32 +57,32 @@
       🪄
     </span>
     <script>
-        // const serverURL = '<%= commonData.appName %>';
         const serverURL = '/';
-        const divMessages = document.getElementById("messages");
-        let allMessages = [];
+        const divMessages   = document.getElementById("messages");
       
-        function trunc(str) {
-          return str.length > 70 ? str.substring(0, 70) + "..." : str;
-        }
-      
-        function displayData(data) {
-            allMessages = data;
-            let messages = '<table class="table table-bordered table-striped">';
+        function   displayData(data) {
+          let displayMode = "none";
+          let messages = "No messages!";
+          
+          if(data.length > 0){
+              displayMode = "block";
+              
+              messages = '<table class="table table-bordered table-striped">';
 
-            data.forEach((d) => {
-                messages += `<tr><td>${d.name}</td><td title='click to copy' onClick='copyText(event)'>${trunc(d.body)}</td></tr>`;
-            });
-
-            divMessages.innerHTML = messages + "</table>";
-            document.getElementById("clearButton").style.display = (data.length > 0)?"block":"none";  
+              data.forEach((d) => {
+                messages += `<tr><td>${d.name}</td><td title='click to copy' onClick='copyText(event)'>${d.body}</td></tr>`;
+              });
+              messages += "</table>";
+          }
+          divMessages.innerHTML = messages;
+          document.getElementById("clearButton").style.display = displayMode;
+          
         }
         
        
         function copyText(event) {
           
-            const index = event.target.parentNode.rowIndex; 
-            navigator.clipboard.writeText(allMessages[index].body);
+            navigator.clipboard.writeText(event.target.innerText);
           
             const popup = document.getElementById('popup');
             popup.style.left = event.pageX + 'px'; 

@@ -167,6 +167,7 @@ app.get("/orders/:id", function (req, res) {
 function doTrainerCommand(data) {
   if (data.body == "delete") {
     messages = [];
+    console.log("deleted messages!")
   }
   else if (data.body == "clear") {
     messages.forEach((m) => (m.body = ""));
@@ -194,6 +195,7 @@ function saveMessage(data) {
 
 function saveMessageHistory(){
   fs.writeFileSync(historyFile, JSON.stringify(messages, null, 2));
+  console.log("saveMessageHistory() called! " + historyFile)
 }
 
 server.listen(
