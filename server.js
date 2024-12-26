@@ -101,10 +101,10 @@ app.get("/chat", (req, res) => {
 });
 
 app.get("/chat/student", (req, res) => {
-  res.render("student");
+  res.render("chat_message_entry");
 });
 app.get("/chat/trainer", (req, res) => {
-  res.render("trainer");
+  res.render("chat_messages");
 });
 app.get("/chat/admin", (req, res) => {
   res.render("admin");

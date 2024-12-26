@@ -35,7 +35,6 @@
 
     <div id="messages"></div>
     <script>
-        // const serverURL = '<%= commonData.appName %>';
         const serverURL = '/';
       
         const txtName = document.getElementById("name");
@@ -43,13 +42,6 @@
       
         const socket = io(serverURL);
         socket.on("connection");
-      
-        // This one stopped emojis too!
-        // function encode(str) {
-        //     return String(str).replace(/[^\w. ]/gi, function (c) {
-        //         return '&#' + c.charCodeAt(0) + ';';
-        //     });
-        // }
       
         function encode(str) {
             return String(str).replaceAll("<","&lt;").replace(">","&gt;");
