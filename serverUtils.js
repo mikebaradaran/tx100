@@ -14,6 +14,7 @@ function initApp(req, res, fs) {
     password3,
     password4,
     students,
+    courseDuration
   } = req.body;
   
   pcs = pcs.replace(/\r/g, "");
@@ -40,8 +41,8 @@ function initApp(req, res, fs) {
     password2: password2,
     password3: password3,
     students: students,
+    courseDuration:courseDuration
   };
-  console.log(formData);
   fs.writeFile("data.json", JSON.stringify(formData, null, 2), (err) => {
     if (err) {
       console.error("Error writing to file:", err);
@@ -63,20 +64,8 @@ function getOrders() {
   if (orders === undefined) orders = require("./orders.json");
   return orders;
 }
-//--------------------------------------
 
-// function processStartData(data){
-//   //data = JSON.parse(data);
-//   //data.pcs = data.pcs;
-//   //data.students = data.students.replace(new RegExp("\\(REQS\\)", 'g'), '');
-//   //data.students = data.students.replace(new RegExp("\\(REQS\\)", 'g'), '');
-//   //data.students = data.students.replace("\t", '');
-//   // data.pcs = data.pcs.split("\n");
-//   //data.students = data.students.split("\n");
-//   //return data;
-// }
 
 module.exports = {
-  //processStartData, initApp
   initApp, getCustomers, getOrders
 };

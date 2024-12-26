@@ -15,11 +15,10 @@ var courseData;
 
 function setupForm(data) {
   courseData = data;
-  
   const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code}&pin=${courseData.pin}`;
 
   getElement("qaTimer").sound = courseData.audio;
-  getElement("trainer").innerHTML = courseData.trainer;
+  getElement("trainer").innerHTML = courseData.trainer + ` - (${courseData.courseDuration} days)`;
   getElement("course_title").innerHTML = courseData.course_title;
   getElement("material").href = courseData.material;
 

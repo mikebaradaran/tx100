@@ -77,7 +77,7 @@ app.get('/start/edit', (req, res) => {
   const obj = {
     data: JSON.parse(fs.readFileSync("data.json", "utf8"))
   };
-    res.render('startedit', obj);
+  res.render('startedit', obj);
 });
 
 app.get("/index", (req, res) => {

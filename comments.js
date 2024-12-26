@@ -1,9 +1,13 @@
-const duration = "3";
+const courseData = require("./data.json");
+
+let duration = courseData.courseDuration;
+console.log(duration);
+//let duration = "3";
+
 const recommendation =
   "Practice designing and applying the techniques and principles discussed in this course.";
 
 function processComment(name, comment1, comment2) {
-  // ------------------------------------------------------------
 
   let firstname = name.split(" ")[0];
   let com1 = "";
