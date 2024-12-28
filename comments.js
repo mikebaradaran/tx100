@@ -2,6 +2,8 @@ delete require.cache[require.resolve('./data.json')];
 const courseData = require("./data.json");
 
 let duration = courseData.courseDuration;
+console.log(duration);
+//let duration = "3";
 
 const recommendation =
   "Practice designing and applying the techniques and principles discussed in this course.";

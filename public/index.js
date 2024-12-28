@@ -1,9 +1,26 @@
-setupForm();
+// const site = getElement("site").innerHTML;
 
-function setupForm() {
+fetch("/start/Read")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    setupForm(data);
+  })
+  .catch(function (error) {
+    alert(error);
+  });
+
+var courseData;
+
+function setupForm(data) {
+  courseData = data;
   const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code}&pin=${courseData.pin}`;
 
   getElement("qaTimer").sound = courseData.audio;
+  getElement("trainer").innerHTML = courseData.trainer + ` - (${courseData.courseDuration} days)`;
+  getElement("course_title").innerHTML = courseData.course_title;
+  getElement("material").href = courseData.material;
 
   // setup combobox
   const cboValues = [
@@ -57,7 +74,7 @@ function setupForm() {
       var a = document.createElement("a");
       a.href = courseData.pcs[i];
       a.target = "_blank";
-      a.innerHTML = stu; 
+      a.innerHTML = stu; //.split(",")[1];
       li.appendChild(a);
       ol.appendChild(li);
     }
@@ -65,17 +82,21 @@ function setupForm() {
 
 }
 
-function mimeo(){
-  copy(courseData.mimeo);
-  window.open("https://mimeo.digital/QALtd/distributions", "_blank");
-}
-
 function copy(str) {
   navigator.clipboard.writeText(str);
 }
 
+function afa() {
+  copy(courseData.webex_email);
+}
+
 function getElement(id) {
   return document.getElementById(id);
+}
+
+function mimeo(){
+  copy(courseData.mimeo);
+  window.open("https://mimeo.digital/QALtd/distributions", "_blank");
 }
 
 
