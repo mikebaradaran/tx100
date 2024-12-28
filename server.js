@@ -56,7 +56,7 @@ app.get("/morning", (req, res) => {
 });
 
 app.get("/student", (req, res) => {
-  res.render("studentView");
+  res.render("studentView",{courseData});
 });
 
 app.get("/help", (req, res) => {
