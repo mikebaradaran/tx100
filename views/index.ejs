@@ -3,6 +3,10 @@
 <head>
     <title>QA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      const courseData = <%- JSON.stringify(courseData) %>;
+    </script>
+
     <script src="/index.js" defer></script>
     <script src="/MyTimer.js"></script>
     <link href="/index.css" rel="stylesheet" />
@@ -12,8 +16,8 @@
     <div class="grid-container">
         <div class="header">
             <div class="qaLogo"> <img src="/qa_logo.svg" /> </div>
-            <div id="course_title"></div>
-            <h3 id="trainer"></h3>
+            <div id="course_title"><%= courseData.course_title %></div>
+            <h3 id="trainer"><%= courseData.trainer %> - (<%= courseData.courseDuration %> days)</h3>
         </div>
       <div id="timer_container">
         <qa-timer id="qaTimer"></qa-timer> 
@@ -21,7 +25,7 @@
 
         <div class="passwords">
             <emoji>&#128218</emoji>
-            <a id="material" href="" target="_blank">
+            <a id="material" href="<%= courseData.material %>" target="_blank">
                 Course material
             </a>
             <button onclick="copy(courseData.password1)">Copy email</button>
@@ -37,7 +41,7 @@
         </div>
 
         <div class="afa">
-            <button onclick="afa()">Copy WebEx</button>
+            <button onclick="copy(courseData.webex_email)">Copy WebEx</button>
             <select id="cboMessages"></select>
             <a href="https://signin.qa.com/" target="_blank">Sign</a>
             <h3><img src="/webcam.svg" /> Please turn your webcam on 😊</h3>
@@ -50,8 +54,5 @@
             </div>
         </div>
     </div>
-
-  <span id="courseDuration"></span>
-  
 </body>
 </html>

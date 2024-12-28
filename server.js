@@ -2,6 +2,8 @@
 const commentJS = require("./comments.js");
 const commonData = require("./common.js");
 const serverUtils = require("./serverUtils.js");
+const courseData = require("./data.json");
+
 const path = require("path");
 
 const fs = require("fs");
@@ -46,7 +48,7 @@ if (fs.existsSync(historyFile)) {
 
 // Define routes
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index",{courseData});
 });
 
 app.get("/morning", (req, res) => {
