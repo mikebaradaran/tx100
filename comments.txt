@@ -1,85 +1,7 @@
-Mital Patel<br /> 
-General comments:<br />
-Mital did well in this course and I am happy with Mital's progress.<br />
-Mital made the following comments about the course: SOLID recap, Refactoring were useful.<br /><br />Punctuality & Engagement:<br />
-Mital was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mital told me: Revise SOLID and practice refactoring.<br /><br />--------------------------------<br />Zaki Tayyab<br /> 
-General comments:<br />
-Zaki did well in this course and I am happy with Zaki's progress.<br />
-Zaki made the following comments about the course: Software testing and design patters was useful. <br /><br />Punctuality & Engagement:<br />
-Zaki was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Zaki told me: more coding<br /><br />--------------------------------<br />Oliver Patrick<br /> 
-General comments:<br />
-Oliver did well in this course and I am happy with Oliver's progress.<br />
-Oliver made the following comments about the course: Testing. Particularly BDD as I have not touched on this before.<br /><br />Punctuality & Engagement:<br />
-Oliver was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Oliver told me: Do more testing within my workflow. Especially within C# as i have not done this.<br /><br />--------------------------------<br />Yusef Jones<br /> 
-General comments:<br />
-Yusef did well in this course and I am happy with Yusef's progress.<br />
-Yusef made the following comments about the course: The example of BDD was excellent and made me want to do more of it.<br />Some of the labs done in pairs were hard to do if the students weren’t familiar with the same coding language.<br /><br />Punctuality & Engagement:<br />
-Yusef was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yusef told me: Practice more BDD<br /><br />--------------------------------<br />Jed Ryan<br /> 
-General comments:<br />
-Jed did well in this course and I am happy with Jed's progress.<br />
-Jed made the following comments about the course: Learning about design and testing patterns was very useful. I appreciated the websites and resources Mike gave so I could look into them further.<br /><br />Punctuality & Engagement:<br />
-Jed was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jed told me: Learn more about software design patterns<br /><br />--------------------------------<br />Jasmine Brooks<br /> 
-General comments:<br />
-Jasmine did well in this course and I am happy with Jasmine's progress.<br />
-Jasmine made the following comments about the course: I found the Github section most useful as this is what i use within my company on a daily basis<br /><br />Punctuality & Engagement:<br />
-Jasmine was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jasmine told me: Take over the monitoring and updating of our GitHub Repositories<br /><br />--------------------------------<br />Sumayah Hassani<br /> 
-General comments:<br />
-Sumayah did well in this course and I am happy with Sumayah's progress.<br />
-Sumayah made the following comments about the course: I found all topics useful, particularly TDD and BDD as it is used in my workplace.<br /><br />Punctuality & Engagement:<br />
-Sumayah was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Sumayah told me: Find some courses online on Udemy related to Software Craft and clean code.<br /><br />--------------------------------<br />Matt Brassington<br /> 
-General comments:<br />
-Matt did well in this course and I am happy with Matt's progress.<br />
-Matt made the following comments about the course: I found the BDD the most useful aspect of the course, as well as the refresher on Github and version control. <br /><br />Punctuality & Engagement:<br />
-Matt was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Matt told me: Coding and development projects over the past year in my role have unfortunately been rarer than I'd like - meaning I need to put more focus on building my coding skills.  <br /><br />--------------------------------<br />Mike Baradaran<br /> 
+Mike Baradaran<br /> 
 General comments:<br />
 Mike did well in this course and I am happy with Mike's progress.<br />
-Mike made the following comments about the course: All of it<br /><br />Punctuality & Engagement:<br />
-Mike was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mike told me: Practice more!<br /><br />--------------------------------<br />Laichee Baradaran<br /> 
-General comments:<br />
-Laichee did well in this course and I am happy with Laichee's progress.<br />
-Laichee made the following comments about the course: Most of it<br /><br />Punctuality & Engagement:<br />
-Laichee was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Laichee told me: OK!<br /><br />--------------------------------<br />Mike Baradaran2<br /> 
-General comments:<br />
-Mike did well in this course and I am happy with Mike's progress.<br />
-Mike made the following comments about the course: aaaaaaaaaaaa<br /><br />Punctuality & Engagement:<br />
+Mike made the following comments about the course: aaaaaaaaaaaaa<br /><br />Punctuality & Engagement:<br />
 Mike was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mike told me: bbbbbbbbbbbbbbbbbb<br /><br />--------------------------------<br />Dave clint<br /> 
-General comments:<br />
-Dave did well in this course and I am happy with Dave's progress.<br />
-Dave made the following comments about the course: jhasjhgasghasg<br /><br />Punctuality & Engagement:<br />
-Dave was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Dave told me: ksbhdcjhsbdcjhbsdc<br /><br />--------------------------------<br />Dave clint2<br /> 
-General comments:<br />
-Dave did well in this course and I am happy with Dave's progress.<br />
-Dave made the following comments about the course: aaaaaaaaaaaaaaaaaaaaaaaaa<br /><br />Punctuality & Engagement:<br />
-Dave was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Dave told me: ksbhdcjhsbdcjhbsdc<br /><br />--------------------------------<br />Sean barad<br /> 
-General comments:<br />
-Sean did well in this course and I am happy with Sean's progress.<br />
-Sean made the following comments about the course: kajsbndcjhbsdjhb<br /><br />Punctuality & Engagement:<br />
-Sean was always punctual during the 7 days of the course and was engaged during the lectures.<br /><br />
-Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Sean told me: kjndckjsndc<br /><br />--------------------------------<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mike told me: bbbbbbbbbbb<br /><br />--------------------------------<br />

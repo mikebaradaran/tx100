@@ -1,6 +1,6 @@
 // server.js
+// const commonData = require("./common.js");
 const commentJS = require("./comments.js");
-const commonData = require("./common.js");
 const serverUtils = require("./serverUtils.js");
 const path = require("path");
 
@@ -27,10 +27,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Middleware to make common data accessible in all views
-app.use((req, res, next) => {
-  res.locals.commonData = commonData;
-  next();
-});
+// app.use((req, res, next) => {
+//   res.locals.commonData = commonData;
+//   next();
+// });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 var messages = [];
 const historyFile = path.join(__dirname, "chatHistory.json");
@@ -124,8 +124,8 @@ app.get("/comments/Read", (req, res) => {
 });
 
 app.get("/comments/Delete", (req, res) => {
-  commentJS.deleteComments(fs);
-  res.send("File deleted");
+    commentJS.deleteComments(fs);
+    res.send("File deleted");
 });
 
 app.get("/comments/Read/names", (req, res) => {
