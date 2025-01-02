@@ -1,7 +1,7 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": " Software Craft - Chat app",
+  "course_title": " Learn and install Mike's APP",
   "code": "ADXD2SD4M5",
   "pin": "4803460-20",
   "webex_email": "qa.webex028@qa.com",
@@ -31,7 +31,8 @@
   "password2": "QARemoteLearning#1",
   "password3": "password6867",
   "students": [
-    "Mike Barad",
+    "Sean",
+    "Mike",
     "Yusef",
     "Jasmine",
     "Jed",
@@ -41,5 +42,5 @@
     "Mital",
     "Matthew"
   ],
-  "courseDuration": "6"
+  "courseDuration": "5"
 }
