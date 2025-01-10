@@ -69,14 +69,14 @@
   background-color: lightcyan;
   grid-column: 1/2;
   grid-row: 5;
-  padding: 1em;
+  padding-left: 1em;
 }
 
 .students {
   background-color: lightcyan;
   grid-column: 2/3;
   grid-row: 5;
-  padding-left:3em;
+/*   padding-left:3em; */
 }
 
 .messages {
@@ -92,23 +92,29 @@ li a:hover {
   font-weight: bolder;
 }
 
-button:hover {
-  box-shadow: 3px 3px 3px grey;
-}
-
 #txtArea{
   flex:1;
   font-weight:bolder;
   font-size:bolder;
   font-size: x-large;
 }
+
+button{
+  border-radius: 7px;
+}
+
+button:hover {
+  box-shadow: 3px 3px 3px grey;
+}
+
 button:active {
   transform: translateY(3px); /* Moves the button down */
   box-shadow: 2px 4px 3px grey; 
 }
 
-button{
-  border-radius: 7px;
+#webcam{
+  padding-top:2em;
 }
+
 
 
