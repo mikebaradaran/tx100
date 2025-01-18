@@ -69,14 +69,14 @@
   background-color: lightcyan;
   grid-column: 1/2;
   grid-row: 5;
-  padding-left: 1em;
+  padding: 1em;
 }
 
 .students {
   background-color: lightcyan;
   grid-column: 2/3;
   grid-row: 5;
-/*   padding-left:3em; */
+  padding-left:3em;
 }
 
 .messages {
@@ -113,7 +113,7 @@ button:active {
 }
 
 #webcam{
-  padding-top:2em;
+ margin-top:2.3em; 
 }
 
 

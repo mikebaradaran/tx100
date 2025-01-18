@@ -1,7 +1,43 @@
-Mike Baradaran<br /> 
+Sumayah Hassani<br /> 
 General comments:<br />
-Mike did well in this course and I am happy with Mike's progress.<br />
-Mike made the following comments about the course: aaaaaaaaaaaaa<br /><br />Punctuality & Engagement:<br />
-Mike was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Sumayah did well in this course and I am happy with Sumayah's progress.<br />
+Sumayah made the following comments about the course: I found all topics useful, especially on AWS Lambda and EC2 as this is used in my workplace.<br /><br />Punctuality & Engagement:<br />
+Sumayah was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mike told me: bbbbbbbbbbb<br /><br />--------------------------------<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Sumayah told me: I would like to find courses online on Udemy relating to AWS and Amazon Dynamo DB.<br /><br />--------------------------------<br />Mital Patel<br /> 
+General comments:<br />
+Mital did well in this course and I am happy with Mital's progress.<br />
+Mital made the following comments about the course: API creation via AWS.<br /><br />Punctuality & Engagement:<br />
+Mital was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mital told me: Try to utilise what I've learnt in my job.<br /><br />--------------------------------<br />Yusef Jones<br /> 
+General comments:<br />
+Yusef did well in this course and I am happy with Yusef's progress.<br />
+Yusef made the following comments about the course: I enjoyed learning about how to create AWS endpoints in the lab.<br />I think the course could have been a little longer to go into more detail.<br /><br />Punctuality & Engagement:<br />
+Yusef was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yusef told me: I will do more research on creating AWS endpoints for use in my day to day work.<br /><br />--------------------------------<br />Oliver Patrick<br /> 
+General comments:<br />
+Oliver did well in this course and I am happy with Oliver's progress.<br />
+Oliver made the following comments about the course: Learning and defining what microservices are. This was new to me so was good to understand what they are and how they can be used.<br /><br />Punctuality & Engagement:<br />
+Oliver was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Oliver told me: I enjoyed the lab around services and API's specifically as I feel this could be useful within the workplace.<br /><br />--------------------------------<br />Jed Ryan<br /> 
+General comments:<br />
+Jed did well in this course and I am happy with Jed's progress.<br />
+Jed made the following comments about the course: Every topic! The introduction to micro services and how the concept evolved from earlier methods like SOAP was interesting and made it easier to understand. Working with loud resources was extremely useful.<br /><br />Punctuality & Engagement:<br />
+Jed was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jed told me: Use AWS cloud resources to build, scale and deploy real world/my own applications to get a real grasp of the technologies.<br /><br />--------------------------------<br />Zaki Tayyab<br /> 
+General comments:<br />
+Zaki did well in this course and I am happy with Zaki's progress.<br />
+Zaki made the following comments about the course: learning about microservices in aws especially the api gateway and working with lambdas.<br /><br />Punctuality & Engagement:<br />
+Zaki was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Zaki told me: more work on aws services<br /><br />--------------------------------<br />Jasmine Brooks<br /> 
+General comments:<br />
+Jasmine did well in this course and I am happy with Jasmine's progress.<br />
+Jasmine made the following comments about the course: Found all useful as we use Microservices and APIs at work.<br /><br />Punctuality & Engagement:<br />
+Jasmine was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jasmine told me: Work more with the Microservices and APIs at my workplace to gain experience and further my skills.<br /><br />--------------------------------<br />
