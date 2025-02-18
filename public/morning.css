@@ -61,7 +61,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 40% 20% 40%;
-  grid-template-rows: 9em 3em 1em 25em 11em;
+  grid-template-rows: 9em 3em 1em 30em 19em;
   padding:2em; 
 }
 
@@ -92,8 +92,8 @@ body {
 
 .greetings {
   background-color: darkblue;
-  height: 4em;
-  padding-top: 1em;
+  height: 8em;
+  padding-top: 3em;
 }
 .greetings span {
   display:inline-block;
