@@ -89,3 +89,15 @@ body {
   color: black;
   font-size: 20px;
 }
+
+.greetings {
+  background-color: darkblue;
+  color: white;
+  display: block;
+  height: 3em;
+  font-size: 25px;
+  margin-top: 2em;
+}
+.greetings span {
+  margin-left: 1.8em;
+}

@@ -1,43 +1,49 @@
-Sumayah Hassani<br /> 
+David Akilapa<br /> 
 General comments:<br />
-Sumayah did well in this course and I am happy with Sumayah's progress.<br />
-Sumayah made the following comments about the course: I found all topics useful, especially on AWS Lambda and EC2 as this is used in my workplace.<br /><br />Punctuality & Engagement:<br />
-Sumayah was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+David did well in this course and I am happy with David's progress.<br />
+David made the following comments about the course: I found useful HTML, CSS, JavaScript. And probably not VBScript<br /><br />Punctuality & Engagement:<br />
+David was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Sumayah told me: I would like to find courses online on Udemy relating to AWS and Amazon Dynamo DB.<br /><br />--------------------------------<br />Mital Patel<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, David told me: Learn the documentation and syntax of the languages<br /><br />--------------------------------<br />Catherine<br /> 
 General comments:<br />
-Mital did well in this course and I am happy with Mital's progress.<br />
-Mital made the following comments about the course: API creation via AWS.<br /><br />Punctuality & Engagement:<br />
-Mital was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Catherine did well in this course and I am happy with Catherine's progress.<br />
+Catherine made the following comments about the course: Jquery was more interesting to me than AngularJS. I thought the recap on HTML and CSS before we moved on to new content helped me to warm up and be more engaged.<br /><br />Punctuality & Engagement:<br />
+Catherine was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mital told me: Try to utilise what I've learnt in my job.<br /><br />--------------------------------<br />Yusef Jones<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Catherine told me: Keep practicing and stay consistent with Practice. I might investigate other Javascript frameworks like React.<br /><br />--------------------------------<br />Ye Kuang<br /> 
 General comments:<br />
-Yusef did well in this course and I am happy with Yusef's progress.<br />
-Yusef made the following comments about the course: I enjoyed learning about how to create AWS endpoints in the lab.<br />I think the course could have been a little longer to go into more detail.<br /><br />Punctuality & Engagement:<br />
-Yusef was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Ye did well in this course and I am happy with Ye's progress.<br />
+Ye made the following comments about the course: All topics are useful to me.<br /><br />Punctuality & Engagement:<br />
+Ye was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yusef told me: I will do more research on creating AWS endpoints for use in my day to day work.<br /><br />--------------------------------<br />Oliver Patrick<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Ye told me: Get more real life cases to practice.<br /><br />--------------------------------<br />Jake Evans<br /> 
 General comments:<br />
-Oliver did well in this course and I am happy with Oliver's progress.<br />
-Oliver made the following comments about the course: Learning and defining what microservices are. This was new to me so was good to understand what they are and how they can be used.<br /><br />Punctuality & Engagement:<br />
-Oliver was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Jake did well in this course and I am happy with Jake's progress.<br />
+Jake made the following comments about the course: I found all the topics extremely useful but especially comparing tools like ajax and jQuery and explaining why they are more effective and how they make developers lives easier.<br /><br />Punctuality & Engagement:<br />
+Jake was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Oliver told me: I enjoyed the lab around services and API's specifically as I feel this could be useful within the workplace.<br /><br />--------------------------------<br />Jed Ryan<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jake told me: I would like to research more integrations with different softwares for example I've seen 3d models and and environments animated on websites and coming from a 3d modelling background this is very interesting to me.<br /><br />--------------------------------<br />Victoria Greatorex<br /> 
 General comments:<br />
-Jed did well in this course and I am happy with Jed's progress.<br />
-Jed made the following comments about the course: Every topic! The introduction to micro services and how the concept evolved from earlier methods like SOAP was interesting and made it easier to understand. Working with loud resources was extremely useful.<br /><br />Punctuality & Engagement:<br />
-Jed was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Victoria did well in this course and I am happy with Victoria's progress.<br />
+Victoria made the following comments about the course: All the topics were useful, would have liked to spend more time on JSONs.<br /><br />Punctuality & Engagement:<br />
+Victoria was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jed told me: Use AWS cloud resources to build, scale and deploy real world/my own applications to get a real grasp of the technologies.<br /><br />--------------------------------<br />Zaki Tayyab<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Victoria told me: Review the material more<br /><br />--------------------------------<br />David Smith<br /> 
 General comments:<br />
-Zaki did well in this course and I am happy with Zaki's progress.<br />
-Zaki made the following comments about the course: learning about microservices in aws especially the api gateway and working with lambdas.<br /><br />Punctuality & Engagement:<br />
-Zaki was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+David did well in this course and I am happy with David's progress.<br />
+David made the following comments about the course: I found all the topics to be valuable. While I may not use many of them in my current role, they have significantly enhanced my overall knowledge and will undoubtedly be beneficial in the future.<br /><br />Punctuality & Engagement:<br />
+David was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Zaki told me: more work on aws services<br /><br />--------------------------------<br />Jasmine Brooks<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, David told me: I found the 'Events in jQuery' section a bit challenging to follow. As a result, I plan to review the course material on my own to ensure I gain a solid understanding. This is more a reflection of my learning style rather than the quality of the course. Now that I have a good grasp of the subjects, I intend to experiment with all the provided code, as I find this is the most effective way for me to learn.<br /><br />--------------------------------<br />Nikki Millard<br /> 
 General comments:<br />
-Jasmine did well in this course and I am happy with Jasmine's progress.<br />
-Jasmine made the following comments about the course: Found all useful as we use Microservices and APIs at work.<br /><br />Punctuality & Engagement:<br />
-Jasmine was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Nikki did well in this course and I am happy with Nikki's progress.<br />
+Nikki made the following comments about the course: Angularjs was probably my favourite to learn and would be most useful in what I'm looking to do within my company. All of it was useful given my technical troubleshooting experience in my company and all can be further implemented in my role. <br /><br />Punctuality & Engagement:<br />
+Nikki was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jasmine told me: Work more with the Microservices and APIs at my workplace to gain experience and further my skills.<br /><br />--------------------------------<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Nikki told me: I will continue to explore and play with code to see how it works and what I can do with it. I have a great many resources available, both within my work environment as well as my personal environment with tutorials. I will likely explore React as well as Bootstrap in the future as well as further my skills with C++ for game development. <br /><br />--------------------------------<br />Freddie Fernando<br /> 
+General comments:<br />
+Freddie did well in this course and I am happy with Freddie's progress.<br />
+Freddie made the following comments about the course: I found all of the topics very useful especially JavaScript as it is used alot<br /><br />Punctuality & Engagement:<br />
+Freddie was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Freddie told me: i need to practice the languages that are relevant often<br /><br />--------------------------------<br />
