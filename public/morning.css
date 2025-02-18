@@ -92,12 +92,12 @@ body {
 
 .greetings {
   background-color: darkblue;
-  color: white;
-  display: block;
-  height: 3em;
-  font-size: 25px;
-  margin-top: 2em;
+  height: 4em;
+  padding-top: 1em;
 }
 .greetings span {
-  margin-left: 1.8em;
+  display:inline-block;
+  color: white;
+  font-size: 25px;
+  margin-left: 1.5em;
 }
