@@ -1,49 +1,121 @@
-David Akilapa<br /> 
+Alba Marquez<br /> 
 General comments:<br />
-David did well in this course and I am happy with David's progress.<br />
-David made the following comments about the course: I found useful HTML, CSS, JavaScript. And probably not VBScript<br /><br />Punctuality & Engagement:<br />
-David was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Alba did well in this course and I am happy with Alba's progress.<br />
+Alba made the following comments about the course: Unit testing, TDD<br /><br />Punctuality & Engagement:<br />
+Alba was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, David told me: Learn the documentation and syntax of the languages<br /><br />--------------------------------<br />Catherine<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Alba told me: Continue trying to incorporate more unit tests into my workplace<br /><br />--------------------------------<br />Conal O'Driscoll<br /> 
 General comments:<br />
-Catherine did well in this course and I am happy with Catherine's progress.<br />
-Catherine made the following comments about the course: Jquery was more interesting to me than AngularJS. I thought the recap on HTML and CSS before we moved on to new content helped me to warm up and be more engaged.<br /><br />Punctuality & Engagement:<br />
-Catherine was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Conal did well in this course and I am happy with Conal's progress.<br />
+Conal made the following comments about the course: I found all the testing information useful, as well as TDD. I found BDD more difficult to grasp but still was informative.<br /><br />Punctuality & Engagement:<br />
+Conal was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Catherine told me: Keep practicing and stay consistent with Practice. I might investigate other Javascript frameworks like React.<br /><br />--------------------------------<br />Ye Kuang<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Conal told me: Look more into BDD and Jenkins.<br /><br />--------------------------------<br />Maria Sonetto<br /> 
 General comments:<br />
-Ye did well in this course and I am happy with Ye's progress.<br />
-Ye made the following comments about the course: All topics are useful to me.<br /><br />Punctuality & Engagement:<br />
-Ye was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Maria did well in this course and I am happy with Maria's progress.<br />
+Maria made the following comments about the course: TDD and BDD were very useful to practice.<br /><br />Punctuality & Engagement:<br />
+Maria was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Ye told me: Get more real life cases to practice.<br /><br />--------------------------------<br />Jake Evans<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Maria told me: I think I should try my best to improve on writing clean and understandable code as much as I can, follow good code practice and  practice more on TDD and BDD testing methodology.  <br /><br />--------------------------------<br />Jordon Kirby<br /> 
+General comments:<br />
+Jordon did well in this course and I am happy with Jordon's progress.<br />
+Jordon made the following comments about the course: The most useful was by far the TDD work, helped me understand the idea more than just write code to pass tests, helped put me at a level where I think I could apply it.<br /><br />Punctuality & Engagement:<br />
+Jordon was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jordon told me: Personally I would love to create a project for myself where my aim is to use what I learned around TDD to try and cover as much of the code as possible while keeping it effective.<br /><br />--------------------------------<br />Anneka Shial<br /> 
+General comments:<br />
+Anneka did well in this course and I am happy with Anneka's progress.<br />
+Anneka made the following comments about the course: I found learning more details about TDD and BDD really useful as I currently don't do this at work. Being about to practice TDD and writing the tests before the code really helped shaped my understanding of it. Some of the labs took longer than needed but were very helpful. I am hoping that what I do not implement in my current role, I will do in future roles.<br /><br />Punctuality & Engagement:<br />
+Anneka was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Anneka told me: Continue reviewing those concepts that I do not cover in my day to day role, especially TDD <br /><br />--------------------------------<br />Dalal <br /> 
+General comments:<br />
+Dalal did well in this course and I am happy with Dalal's progress.<br />
+Dalal made the following comments about the course: I liked the topic about unit testing and TDD, the less useful part was probably the amount of different design patterns there are, it can be confusing. <br /><br />Punctuality & Engagement:<br />
+Dalal was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Dalal told me: Read and practise! <br /><br />--------------------------------<br />Mazen El-Ghonemy<br /> 
+General comments:<br />
+Mazen did well in this course and I am happy with Mazen's progress.<br />
+Mazen made the following comments about the course: I thought BDD and TDD were interesting and went into more depth than previously. I found the unit testing less useful as I already felt quite comfortable with it from previous courses.<br /><br />Punctuality & Engagement:<br />
+Mazen was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mazen told me: I would like to give TDD/BDD a try in a future project. <br /><br />--------------------------------<br />Peter Longley<br /> 
+General comments:<br />
+Peter did well in this course and I am happy with Peter's progress.<br />
+Peter made the following comments about the course: TDD was very useful, we currently use BDD at work but in many cases are switching over to TDD<br /><br />Punctuality & Engagement:<br />
+Peter was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Peter told me: Constantly trying to put into practice what I've learnt<br /><br />--------------------------------<br />James Holt<br /> 
+General comments:<br />
+James did well in this course and I am happy with James's progress.<br />
+James made the following comments about the course: BDD and Cucumber was very useful!<br /><br />Punctuality & Engagement:<br />
+James was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, James told me: Learn more about BDD and practice with it<br /><br />--------------------------------<br />Thomas Drury<br /> 
+General comments:<br />
+Thomas did well in this course and I am happy with Thomas's progress.<br />
+Thomas made the following comments about the course: I found BDD really useful as I was struggling to tell the difference between that and TDD previously<br /><br />Punctuality & Engagement:<br />
+Thomas was always punctual during the 3 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Thomas told me: I will carry on researching the broader topic, I'm currently looking at using Qodana in the IDE for code checking :)<br /><br /><br />--------------------------------<br />Ziyad Patel<br /> 
+General comments:<br />
+Ziyad did well in this course and I am happy with Ziyad's progress.<br />
+Ziyad made the following comments about the course: I was not as experienced with testing and mocking so that was very useful.<br /><br />Punctuality & Engagement:<br />
+Ziyad was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Ziyad told me: Continue trying to test different aspects of applications, especially databases.<br /><br />--------------------------------<br />Faatimah Patel<br /> 
+General comments:<br />
+Faatimah did well in this course and I am happy with Faatimah's progress.<br />
+Faatimah made the following comments about the course: How testing is included in the SDLC and details of unit testing.<br /><br />Punctuality & Engagement:<br />
+Faatimah was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Faatimah told me: Practice writing unit tests more. <br /><br />--------------------------------<br />Oliver Patrick<br /> 
+General comments:<br />
+Oliver did well in this course and I am happy with Oliver's progress.<br />
+Oliver made the following comments about the course: Testing with C#. Good to get more experience with this as I don't get to do much at work.<br /><br />Punctuality & Engagement:<br />
+Oliver was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Oliver told me: More testing. Introduce mocking.<br /><br />--------------------------------<br />Yutong Gang<br /> 
+General comments:<br />
+Yutong did well in this course and I am happy with Yutong's progress.<br />
+Yutong made the following comments about the course: The most useful topics in the unit test course module were Test-Driven Development (TDD), mocking frameworks (Mockito), and dependency injection for better testability.<br /><br />Punctuality & Engagement:<br />
+Yutong was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Yutong told me: I should practice writing real-world unit tests using TDD, explore advanced mocking techniques and contribute to open-source projects<br /><br />--------------------------------<br />Alexander Kron<br /> 
+General comments:<br />
+Alexander did well in this course and I am happy with Alexander's progress.<br />
+Alexander made the following comments about the course: JUnit testing is a valuable knowledge set and learning how to use mocking will be super handy<br /><br />Punctuality & Engagement:<br />
+Alexander was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
+Recommendations for further learning:<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Alexander told me: Keep practise using the TDD mindset<br /><br />--------------------------------<br />Jake Mason<br /> 
 General comments:<br />
 Jake did well in this course and I am happy with Jake's progress.<br />
-Jake made the following comments about the course: I found all the topics extremely useful but especially comparing tools like ajax and jQuery and explaining why they are more effective and how they make developers lives easier.<br /><br />Punctuality & Engagement:<br />
-Jake was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Jake made the following comments about the course: I found the section on how to setup unit tests in C# the most useful. Previously I only was testing by using console.writeline everywhere, and unit tests are a much better than this. <br /><br />Punctuality & Engagement:<br />
+Jake was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jake told me: I would like to research more integrations with different softwares for example I've seen 3d models and and environments animated on websites and coming from a 3d modelling background this is very interesting to me.<br /><br />--------------------------------<br />Victoria Greatorex<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Jake told me: I think I need to improve my skills with unit tests some more, while I did learn a lot from this it's still not my strongest suit.<br /><br />--------------------------------<br />Nyasha Dzvoti<br /> 
 General comments:<br />
-Victoria did well in this course and I am happy with Victoria's progress.<br />
-Victoria made the following comments about the course: All the topics were useful, would have liked to spend more time on JSONs.<br /><br />Punctuality & Engagement:<br />
-Victoria was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Nyasha did well in this course and I am happy with Nyasha's progress.<br />
+Nyasha made the following comments about the course: Mocking, but the whole course was useful as I was doing something I have never done. Mike did a great job of showing me how TDD is applied in enterprise projects and that was also great.<br /><br />Punctuality & Engagement:<br />
+Nyasha was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Victoria told me: Review the material more<br /><br />--------------------------------<br />David Smith<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Nyasha told me: Starting using a more TDD way of thinking, looking at requirements, writing tests and then writing code.<br /><br />--------------------------------<br />Finlay Carter<br /> 
 General comments:<br />
-David did well in this course and I am happy with David's progress.<br />
-David made the following comments about the course: I found all the topics to be valuable. While I may not use many of them in my current role, they have significantly enhanced my overall knowledge and will undoubtedly be beneficial in the future.<br /><br />Punctuality & Engagement:<br />
-David was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Finlay did well in this course and I am happy with Finlay's progress.<br />
+Finlay made the following comments about the course: I found JUnit useful and the understanding of testing frameworks, unit testing, etc, and how they work. As well as mocking too. All the content has been good but maybe less useful Selenium.<br /><br />Punctuality & Engagement:<br />
+Finlay was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, David told me: I found the 'Events in jQuery' section a bit challenging to follow. As a result, I plan to review the course material on my own to ensure I gain a solid understanding. This is more a reflection of my learning style rather than the quality of the course. Now that I have a good grasp of the subjects, I intend to experiment with all the provided code, as I find this is the most effective way for me to learn.<br /><br />--------------------------------<br />Nikki Millard<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Finlay told me: Do some more practice with mocking and unit testing frameworks. E.g., Junit and Mockito. <br /><br />--------------------------------<br />Mobolaji Kuti<br /> 
 General comments:<br />
-Nikki did well in this course and I am happy with Nikki's progress.<br />
-Nikki made the following comments about the course: Angularjs was probably my favourite to learn and would be most useful in what I'm looking to do within my company. All of it was useful given my technical troubleshooting experience in my company and all can be further implemented in my role. <br /><br />Punctuality & Engagement:<br />
-Nikki was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Mobolaji did well in this course and I am happy with Mobolaji's progress.<br />
+Mobolaji made the following comments about the course: I'd say unit tests was the most useful as it is applicable to what I do at work currently and quite actively. I wouldn't say anything wasn't useful.<br /><br />Punctuality & Engagement:<br />
+Mobolaji was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Nikki told me: I will continue to explore and play with code to see how it works and what I can do with it. I have a great many resources available, both within my work environment as well as my personal environment with tutorials. I will likely explore React as well as Bootstrap in the future as well as further my skills with C++ for game development. <br /><br />--------------------------------<br />Freddie Fernando<br /> 
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Mobolaji told me: I'll be looking to write more unit tests as part of my development and less so after I've finished or near finished development of the actual components.<br /><br />--------------------------------<br />Kadhim Al-Quzweeni<br /> 
 General comments:<br />
-Freddie did well in this course and I am happy with Freddie's progress.<br />
-Freddie made the following comments about the course: I found all of the topics very useful especially JavaScript as it is used alot<br /><br />Punctuality & Engagement:<br />
-Freddie was always punctual during the 5 days of the course and was engaged during the lectures.<br /><br />
+Kadhim did well in this course and I am happy with Kadhim's progress.<br />
+Kadhim made the following comments about the course: Unit Testing as I can definitely see myself using that for work.<br /><br />Punctuality & Engagement:<br />
+Kadhim was always punctual during the 2 days of the course and was engaged during the lectures.<br /><br />
 Recommendations for further learning:<br />
-Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Freddie told me: i need to practice the languages that are relevant often<br /><br />--------------------------------<br />
+Practice designing and applying the techniques and principles discussed in this course.<br /> When I asked what to do after the course, Kadhim told me: I can practice writing more unit tests<br /><br />--------------------------------<br />
