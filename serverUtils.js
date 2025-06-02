@@ -56,6 +56,8 @@ function initApp(req, res, fs) {
 //-------------------------------
 var customers = undefined;
 var orders = undefined;
+var products = undefined;
+
 function getCustomers() {
   if (customers === undefined) customers = require("./customers.json");
   return customers;
@@ -65,7 +67,12 @@ function getOrders() {
   return orders;
 }
 
+function getProducts() {
+  if (products === undefined) products = require("./products.json");
+  return products;
+}
+
 
 module.exports = {
-  initApp, getCustomers, getOrders
+  initApp, getCustomers, getOrders, getProducts
 };

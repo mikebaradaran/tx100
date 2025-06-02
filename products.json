@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse 1",
+    "description": "Wireless Mouse - Stylish and modern look.",
+    "price": 100.11,
+    "in_stock": true,
+    "stock_quantity": 40,
+    "categories": ["books", "electronics"],
+    "category": "books"
+  },
+  {
+    "id": 2,
+    "name": "T-Shirt 2",
+    "description": "T-Shirt - Ergonomic design for comfort.",
+    "price": 141.84,
+    "in_stock": true,
+    "stock_quantity": 83,
+    "categories": ["electronics"],
+    "category": "electronics"
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Tracker 3",
+    "description": "Bluetooth Tracker - High quality and durable.",
+    "price": 194.37,
+    "in_stock": true,
+    "stock_quantity": 66,
+    "categories": ["audio"],
+    "category": "audio"
+  },
+  {
+    "id": 4,
+    "name": "Smart Speaker 4",
+    "description": "Smart Speaker - High quality and durable.",
+    "price": 28.72,
+    "in_stock": true,
+    "stock_quantity": 67,
+    "categories": ["kitchen", "clothing", "outdoor"],
+    "category": "kitchen"
+  },
+  {
+    "id": 5,
+    "name": "T-Shirt 5",
+    "description": "T-Shirt - High quality and durable.",
+    "price": 163.7,
+    "in_stock": true,
+    "stock_quantity": 32,
+    "categories": ["accessories", "outdoor"],
+    "category": "accessories"
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Tracker 6",
+    "description": "Bluetooth Tracker - User-friendly and efficient.",
+    "price": 64.6,
+    "in_stock": true,
+    "stock_quantity": 7,
+    "categories": ["outdoor", "kitchen", "fitness"],
+    "category": "outdoor"
+  },
+  {
+    "id": 7,
+    "name": "Bluetooth Tracker 7",
+    "description": "Bluetooth Tracker - Compact and portable.",
+    "price": 31.36,
+    "in_stock": true,
+    "stock_quantity": 4,
+    "categories": ["home", "fitness"],
+    "category": "home"
+  },
+  {
+    "id": 8,
+    "name": "USB-C Hub 8",
+    "description": "USB-C Hub - Stylish and modern look.",
+    "price": 94.53,
+    "in_stock": true,
+    "stock_quantity": 37,
+    "categories": ["books"],
+    "category": "books"
+  },
+  {
+    "id": 9,
+    "name": "Coffee Maker 9",
+    "description": "Coffee Maker - Compact and portable.",
+    "price": 59.45,
+    "in_stock": true,
+    "stock_quantity": 84,
+    "categories": ["audio"],
+    "category": "audio"
+  },
+  {
+    "id": 10,
+    "name": "Smart Speaker 10",
+    "description": "Smart Speaker - High quality and durable.",
+    "price": 101.14,
+    "in_stock": true,
+    "stock_quantity": 8,
+    "categories": ["electronics", "adapters", "keyboards"],
+    "category": "electronics"
+  },
+  {
+    "id": 11,
+    "name": "Headphones 11",
+    "description": "Headphones - High quality and durable.",
+    "price": 178.27,
+    "in_stock": true,
+    "stock_quantity": 21,
+    "categories": ["outdoor"],
+    "category": "outdoor"
+  },
+  {
+    "id": 12,
+    "name": "T-Shirt 12",
+    "description": "T-Shirt - High quality and durable.",
+    "price": 83.89,
+    "in_stock": true,
+    "stock_quantity": 88,
+    "categories": ["audio", "keyboards"],
+    "category": "audio"
+  },
+  {
+    "id": 13,
+    "name": "Yoga Mat 13",
+    "description": "Yoga Mat - Ergonomic design for comfort.",
+    "price": 103.87,
+    "in_stock": true,
+    "stock_quantity": 48,
+    "categories": ["audio", "adapters"],
+    "category": "audio"
+  },
+  {
+    "id": 14,
+    "name": "Smart Speaker 14",
+    "description": "Smart Speaker - High quality and durable.",
+    "price": 130.71,
+    "in_stock": true,
+    "stock_quantity": 83,
+    "categories": ["books", "toys"],
+    "category": "books"
+  },
+  {
+    "id": 15,
+    "name": "USB-C Hub 15",
+    "description": "USB-C Hub - High quality and durable.",
+    "price": 101.18,
+    "in_stock": true,
+    "stock_quantity": 66,
+    "categories": ["outdoor"],
+    "category": "outdoor"
+  },
+  {
+    "id": 16,
+    "name": "USB-C Hub 16",
+    "description": "USB-C Hub - Compact and portable.",
+    "price": 21.75,
+    "in_stock": true,
+    "stock_quantity": 74,
+    "categories": ["outdoor", "adapters", "clothing"],
+    "category": "outdoor"
+  },
+  {
+    "id": 17,
+    "name": "Yoga Mat 17",
+    "description": "Yoga Mat - Stylish and modern look.",
+    "price": 27.29,
+    "in_stock": true,
+    "stock_quantity": 68,
+    "categories": ["adapters", "toys"],
+    "category": "adapters"
+  },
+  {
+    "id": 18,
+    "name": "Coffee Maker 18",
+    "description": "Coffee Maker - Compact and portable.",
+    "price": 43.28,
+    "in_stock": true,
+    "stock_quantity": 53,
+    "categories": ["fitness"],
+    "category": "fitness"
+  },
+  {
+    "id": 19,
+    "name": "Keyboard 19",
+    "description": "Keyboard - High quality and durable.",
+    "price": 78.4,
+    "in_stock": true,
+    "stock_quantity": 38,
+    "categories": ["clothing", "adapters", "home"],
+    "category": "clothing"
+  },
+  {
+    "id": 20,
+    "name": "Coffee Maker 20",
+    "description": "Coffee Maker - Compact and portable.",
+    "price": 147.5,
+    "in_stock": true,
+    "stock_quantity": 8,
+    "categories": ["adapters"],
+    "category": "adapters"
+  },
+  {
+    "id": 21,
+    "name": "T-Shirt 21",
+    "description": "T-Shirt - Ergonomic design for comfort.",
+    "price": 104.7,
+    "in_stock": true,
+    "stock_quantity": 88,
+    "categories": ["accessories"],
+    "category": "accessories"
+  },
+  {
+    "id": 22,
+    "name": "Smart Speaker 22",
+    "description": "Smart Speaker - User-friendly and efficient.",
+    "price": 64.83,
+    "in_stock": true,
+    "stock_quantity": 63,
+    "categories": ["outdoor", "home", "toys"],
+    "category": "outdoor"
+  },
+  {
+    "id": 23,
+    "name": "Portable Charger 23",
+    "description": "Portable Charger - Compact and portable.",
+    "price": 45.19,
+    "in_stock": true,
+    "stock_quantity": 53,
+    "categories": ["adapters", "keyboards"],
+    "category": "adapters"
+  },
+  {
+    "id": 24,
+    "name": "Smart Speaker 24",
+    "description": "Smart Speaker - Compact and portable.",
+    "price": 115.75,
+    "in_stock": true,
+    "stock_quantity": 98,
+    "categories": ["adapters", "audio"],
+    "category": "adapters"
+  },
+  {
+    "id": 25,
+    "name": "Wireless Mouse 25",
+    "description": "Wireless Mouse - High quality and durable.",
+    "price": 14.43,
+    "in_stock": true,
+    "stock_quantity": 52,
+    "categories": ["outdoor", "fitness", "toys"],
+    "category": "outdoor"
+  },
+  {
+    "id": 26,
+    "name": "T-Shirt 26",
+    "description": "T-Shirt - User-friendly and efficient.",
+    "price": 159.06,
+    "in_stock": true,
+    "stock_quantity": 83,
+    "categories": ["keyboards", "adapters", "books"],
+    "category": "keyboards"
+  },
+  {
+    "id": 27,
+    "name": "Bluetooth Tracker 27",
+    "description": "Bluetooth Tracker - User-friendly and efficient.",
+    "price": 141.67,
+    "in_stock": true,
+    "stock_quantity": 34,
+    "categories": ["home", "fitness", "toys"],
+    "category": "home"
+  },
+  {
+    "id": 28,
+    "name": "USB-C Hub 28",
+    "description": "USB-C Hub - User-friendly and efficient.",
+    "price": 78.32,
+    "in_stock": true,
+    "stock_quantity": 19,
+    "categories": ["fitness", "clothing"],
+    "category": "fitness"
+  },
+  {
+    "id": 29,
+    "name": "Headphones 29",
+    "description": "Headphones - Stylish and modern look.",
+    "price": 100.44,
+    "in_stock": true,
+    "stock_quantity": 99,
+    "categories": ["kitchen", "outdoor", "home"],
+    "category": "kitchen"
+  },
+  {
+    "id": 30,
+    "name": "Coffee Maker 30",
+    "description": "Coffee Maker - User-friendly and efficient.",
+    "price": 91.77,
+    "in_stock": true,
+    "stock_quantity": 84,
+    "categories": ["kitchen", "audio", "clothing"],
+    "category": "kitchen"
+  },
+  {
+    "id": 31,
+    "name": "Wireless Mouse 31",
+    "description": "Wireless Mouse - Ergonomic design for comfort.",
+    "price": 148.07,
+    "in_stock": true,
+    "stock_quantity": 42,
+    "categories": ["kitchen"],
+    "category": "kitchen"
+  },
+  {
+    "id": 32,
+    "name": "Coffee Maker 32",
+    "description": "Coffee Maker - Ergonomic design for comfort.",
+    "price": 64.81,
+    "in_stock": true,
+    "stock_quantity": 15,
+    "categories": ["outdoor", "kitchen", "audio"],
+    "category": "outdoor"
+  },
+  {
+    "id": 33,
+    "name": "USB-C Hub 33",
+    "description": "USB-C Hub - High quality and durable.",
+    "price": 137.16,
+    "in_stock": true,
+    "stock_quantity": 63,
+    "categories": ["accessories"],
+    "category": "accessories"
+  },
+  {
+    "id": 34,
+    "name": "Portable Charger 34",
+    "description": "Portable Charger - Compact and portable.",
+    "price": 74.56,
+    "in_stock": true,
+    "stock_quantity": 6,
+    "categories": ["outdoor", "clothing", "audio"],
+    "category": "outdoor"
+  },
+  {
+    "id": 35,
+    "name": "Headphones 35",
+    "description": "Headphones - User-friendly and efficient.",
+    "price": 73.57,
+    "in_stock": false,
+    "stock_quantity": 0,
+    "categories": ["clothing"],
+    "category": "clothing"
+  },
+  {
+    "id": 36,
+    "name": "Yoga Mat 36",
+    "description": "Yoga Mat - High quality and durable.",
+    "price": 11.62,
+    "in_stock": true,
+    "stock_quantity": 35,
+    "categories": ["home"],
+    "category": "home"
+  },
+  {
+    "id": 37,
+    "name": "Coffee Maker 37",
+    "description": "Coffee Maker - Ergonomic design for comfort.",
+    "price": 75.67,
+    "in_stock": true,
+    "stock_quantity": 96,
+    "categories": ["keyboards", "audio"],
+    "category": "keyboards"
+  },
+  {
+    "id": 38,
+    "name": "Portable Charger 38",
+    "description": "Portable Charger - High quality and durable.",
+    "price": 120.35,
+    "in_stock": true,
+    "stock_quantity": 45,
+    "categories": ["electronics", "fitness", "home"],
+    "category": "electronics"
+  },
+  {
+    "id": 39,
+    "name": "Coffee Maker 39",
+    "description": "Coffee Maker - Compact and portable.",
+    "price": 131.7,
+    "in_stock": true,
+    "stock_quantity": 51,
+    "categories": ["clothing", "books", "toys"],
+    "category": "clothing"
+  },
+  {
+    "id": 40,
+    "name": "Bluetooth Tracker 40",
+    "description": "Bluetooth Tracker - User-friendly and efficient.",
+    "price": 67.08,
+    "in_stock": true,
+    "stock_quantity": 85,
+    "categories": ["clothing", "accessories"],
+    "category": "clothing"
+  },
+  {
+    "id": 41,
+    "name": "Headphones 41",
+    "description": "Headphones - Stylish and modern look.",
+    "price": 127.33,
+    "in_stock": true,
+    "stock_quantity": 77,
+    "categories": ["outdoor"],
+    "category": "outdoor"
+  },
+  {
+    "id": 42,
+    "name": "Bluetooth Tracker 42",
+    "description": "Bluetooth Tracker - Ergonomic design for comfort.",
+    "price": 194.4,
+    "in_stock": true,
+    "stock_quantity": 54,
+    "categories": ["audio", "outdoor"],
+    "category": "audio"
+  },
+  {
+    "id": 43,
+    "name": "USB-C Hub 43",
+    "description": "USB-C Hub - Compact and portable.",
+    "price": 142.22,
+    "in_stock": true,
+    "stock_quantity": 95,
+    "categories": ["accessories", "adapters"],
+    "category": "accessories"
+  },
+  {
+    "id": 44,
+    "name": "Bluetooth Tracker 44",
+    "description": "Bluetooth Tracker - Compact and portable.",
+    "price": 99.15,
+    "in_stock": false,
+    "stock_quantity": 0,
+    "categories": ["home", "adapters"],
+    "category": "home"
+  },
+  {
+    "id": 45,
+    "name": "Yoga Mat 45",
+    "description": "Yoga Mat - High quality and durable.",
+    "price": 145.59,
+    "in_stock": true,
+    "stock_quantity": 44,
+    "categories": ["electronics", "audio"],
+    "category": "electronics"
+  },
+  {
+    "id": 46,
+    "name": "Coffee Maker 46",
+    "description": "Coffee Maker - Stylish and modern look.",
+    "price": 101.11,
+    "in_stock": true,
+    "stock_quantity": 91,
+    "categories": ["clothing", "electronics", "books"],
+    "category": "clothing"
+  },
+  {
+    "id": 47,
+    "name": "Bluetooth Tracker 47",
+    "description": "Bluetooth Tracker - Compact and portable.",
+    "price": 121.43,
+    "in_stock": true,
+    "stock_quantity": 85,
+    "categories": ["books", "adapters", "audio"],
+    "category": "books"
+  },
+  {
+    "id": 48,
+    "name": "Coffee Maker 48",
+    "description": "Coffee Maker - High quality and durable.",
+    "price": 164.2,
+    "in_stock": true,
+    "stock_quantity": 89,
+    "categories": ["electronics"],
+    "category": "electronics"
+  },
+  {
+    "id": 49,
+    "name": "USB-C Hub 49",
+    "description": "USB-C Hub - Compact and portable.",
+    "price": 27.13,
+    "in_stock": true,
+    "stock_quantity": 9,
+    "categories": ["home", "clothing", "fitness"],
+    "category": "home"
+  },
+  {
+    "id": 50,
+    "name": "Bluetooth Tracker 50",
+    "description": "Bluetooth Tracker - High quality and durable.",
+    "price": 27.74,
+    "in_stock": true,
+    "stock_quantity": 100,
+    "categories": ["audio", "clothing", "accessories"],
+    "category": "audio"
+  },
+  {
+    "id": 51,
+    "name": "Smart Speaker 51",
+    "description": "Smart Speaker - High quality and durable.",
+    "price": 34.03,
+    "in_stock": true,
+    "stock_quantity": 99,
+    "categories": ["clothing", "toys", "home"],
+    "category": "clothing"
+  },
+  {
+    "id": 52,
+    "name": "Smart Speaker 52",
+    "description": "Smart Speaker - Ergonomic design for comfort.",
+    "price": 67.05,
+    "in_stock": true,
+    "stock_quantity": 19,
+    "categories": ["books"],
+    "category": "books"
+  },
+  {
+    "id": 53,
+    "name": "Yoga Mat 53",
+    "description": "Yoga Mat - Compact and portable.",
+    "price": 168.89,
+    "in_stock": true,
+    "stock_quantity": 8,
+    "categories": ["home", "keyboards", "toys"],
+    "category": "home"
+  },
+  {
+    "id": 54,
+    "name": "Yoga Mat 54",
+    "description": "Yoga Mat - Ergonomic design for comfort.",
+    "price": 142.44,
+    "in_stock": true,
+    "stock_quantity": 10,
+    "categories": ["clothing", "keyboards"],
+    "category": "clothing"
+  },
+  {
+    "id": 55,
+    "name": "T-Shirt 55",
+    "description": "T-Shirt - Stylish and modern look.",
+    "price": 16.36,
+    "in_stock": true,
+    "stock_quantity": 84,
+    "categories": ["keyboards", "audio"],
+    "category": "keyboards"
+  },
+  {
+    "id": 56,
+    "name": "Bluetooth Tracker 56",
+    "description": "Bluetooth Tracker - User-friendly and efficient.",
+    "price": 106.39,
+    "in_stock": true,
+    "stock_quantity": 22,
+    "categories": ["accessories", "outdoor"],
+    "category": "accessories"
+  },
+  {
+    "id": 57,
+    "name": "Yoga Mat 57",
+    "description": "Yoga Mat - User-friendly and efficient.",
+    "price": 159.38,
+    "in_stock": true,
+    "stock_quantity": 42,
+    "categories": ["books"],
+    "category": "books"
+  },
+  {
+    "id": 58,
+    "name": "USB-C Hub 58",
+    "description": "USB-C Hub - High quality and durable.",
+    "price": 63.34,
+    "in_stock": true,
+    "stock_quantity": 24,
+    "categories": ["audio", "outdoor"],
+    "category": "audio"
+  },
+  {
+    "id": 59,
+    "name": "Headphones 59",
+    "description": "Headphones - High quality and durable.",
+    "price": 195.15,
+    "in_stock": true,
+    "stock_quantity": 56,
+    "categories": ["books", "electronics"],
+    "category": "books"
+  },
+  {
+    "id": 60,
+    "name": "Coffee Maker 60",
+    "description": "Coffee Maker - High quality and durable.",
+    "price": 146.83,
+    "in_stock": true,
+    "stock_quantity": 50,
+    "categories": ["accessories"],
+    "category": "accessories"
+  },
+  {
+    "id": 61,
+    "name": "Yoga Mat 61",
+    "description": "Yoga Mat - Ergonomic design for comfort.",
+    "price": 184.99,
+    "in_stock": true,
+    "stock_quantity": 59,
+    "categories": ["home"],
+    "category": "home"
+  },
+  {
+    "id": 62,
+    "name": "Keyboard 62",
+    "description": "Keyboard - Stylish and modern look.",
+    "price": 10.71,
+    "in_stock": true,
+    "stock_quantity": 12,
+    "categories": ["keyboards", "toys", "electronics"],
+    "category": "keyboards"
+  },
+  {
+    "id": 63,
+    "name": "Headphones 63",
+    "description": "Headphones - High quality and durable.",
+    "price": 15.8,
+    "in_stock": true,
+    "stock_quantity": 36,
+    "categories": ["audio"],
+    "category": "audio"
+  },
+  {
+    "id": 64,
+    "name": "Smart Speaker 64",
+    "description": "Smart Speaker - Ergonomic design for comfort.",
+    "price": 169.39,
+    "in_stock": true,
+    "stock_quantity": 73,
+    "categories": ["audio", "adapters", "electronics"],
+    "category": "audio"
+  },
+  {
+    "id": 65,
+    "name": "Coffee Maker 65",
+    "description": "Coffee Maker - Stylish and modern look.",
+    "price": 95.37,
+    "in_stock": true,
+    "stock_quantity": 47,
+    "categories": ["electronics", "books"],
+    "category": "electronics"
+  },
+  {
+    "id": 66,
+    "name": "T-Shirt 66",
+    "description": "T-Shirt - Compact and portable.",
+    "price": 75.17,
+    "in_stock": true,
+    "stock_quantity": 72,
+    "categories": ["audio", "books"],
+    "category": "audio"
+  },
+  {
+    "id": 67,
+    "name": "USB-C Hub 67",
+    "description": "USB-C Hub - Compact and portable.",
+    "price": 133.53,
+    "in_stock": true,
+    "stock_quantity": 2,
+    "categories": ["outdoor", "audio"],
+    "category": "outdoor"
+  },
+  {
+    "id": 68,
+    "name": "Yoga Mat 68",
+    "description": "Yoga Mat - User-friendly and efficient.",
+    "price": 94.87,
+    "in_stock": true,
+    "stock_quantity": 31,
+    "categories": ["fitness", "books"],
+    "category": "fitness"
+  },
+  {
+    "id": 69,
+    "name": "Yoga Mat 69",
+    "description": "Yoga Mat - Compact and portable.",
+    "price": 86.98,
+    "in_stock": true,
+    "stock_quantity": 86,
+    "categories": ["home"],
+    "category": "home"
+  },
+  {
+    "id": 70,
+    "name": "USB-C Hub 70",
+    "description": "USB-C Hub - Stylish and modern look.",
+    "price": 167.82,
+    "in_stock": true,
+    "stock_quantity": 16,
+    "categories": ["clothing", "home", "audio"],
+    "category": "clothing"
+  },
+  {
+    "id": 71,
+    "name": "Yoga Mat 71",
+    "description": "Yoga Mat - Ergonomic design for comfort.",
+    "price": 149.15,
+    "in_stock": true,
+    "stock_quantity": 19,
+    "categories": ["adapters", "accessories"],
+    "category": "adapters"
+  },
+  {
+    "id": 72,
+    "name": "T-Shirt 72",
+    "description": "T-Shirt - Ergonomic design for comfort.",
+    "price": 146.47,
+    "in_stock": true,
+    "stock_quantity": 64,
+    "categories": ["toys", "kitchen"],
+    "category": "toys"
+  },
+  {
+    "id": 73,
+    "name": "Coffee Maker 73",
+    "description": "Coffee Maker - Ergonomic design for comfort.",
+    "price": 135.13,
+    "in_stock": true,
+    "stock_quantity": 16,
+    "categories": ["home", "outdoor"],
+    "category": "home"
+  },
+  {
+    "id": 74,
+    "name": "USB-C Hub 74",
+    "description": "USB-C Hub - User-friendly and efficient.",
+    "price": 139.39,
+    "in_stock": true,
+    "stock_quantity": 15,
+    "categories": ["audio", "outdoor", "toys"],
+    "category": "audio"
+  },
+  {
+    "id": 75,
+    "name": "Smart Speaker 75",
+    "description": "Smart Speaker - High quality and durable.",
+    "price": 134.81,
+    "in_stock": true,
+    "stock_quantity": 38,
+    "categories": ["books", "audio"],
+    "category": "books"
+  },
+  {
+    "id": 76,
+    "name": "Headphones 76",
+    "description": "Headphones - Compact and portable.",
+    "price": 52.81,
+    "in_stock": true,
+    "stock_quantity": 19,
+    "categories": ["books", "toys", "clothing"],
+    "category": "books"
+  },
+  {
+    "id": 77,
+    "name": "Portable Charger 77",
+    "description": "Portable Charger - Ergonomic design for comfort.",
+    "price": 122.89,
+    "in_stock": true,
+    "stock_quantity": 31,
+    "categories": ["electronics", "kitchen"],
+    "category": "electronics"
+  },
+  {
+    "id": 78,
+    "name": "USB-C Hub 78",
+    "description": "USB-C Hub - Compact and portable.",
+    "price": 192.96,
+    "in_stock": true,
+    "stock_quantity": 46,
+    "categories": ["home", "clothing"],
+    "category": "home"
+  },
+  {
+    "id": 79,
+    "name": "USB-C Hub 79",
+    "description": "USB-C Hub - User-friendly and efficient.",
+    "price": 191.43,
+    "in_stock": true,
+    "stock_quantity": 2,
+    "categories": ["toys", "books", "audio"],
+    "category": "toys"
+  },
+  {
+    "id": 80,
+    "name": "Coffee Maker 80",
+    "description": "Coffee Maker - Stylish and modern look.",
+    "price": 17.9,
+    "in_stock": true,
+    "stock_quantity": 45,
+    "categories": ["outdoor", "keyboards"],
+    "category": "outdoor"
+  },
+  {
+    "id": 81,
+    "name": "Smart Speaker 81",
+    "description": "Smart Speaker - Compact and portable.",
+    "price": 188.71,
+    "in_stock": true,
+    "stock_quantity": 1,
+    "categories": ["kitchen"],
+    "category": "kitchen"
+  },
+  {
+    "id": 82,
+    "name": "Yoga Mat 82",
+    "description": "Yoga Mat - User-friendly and efficient.",
+    "price": 81.79,
+    "in_stock": true,
+    "stock_quantity": 100,
+    "categories": ["adapters"],
+    "category": "adapters"
+  },
+  {
+    "id": 83,
+    "name": "Coffee Maker 83",
+    "description": "Coffee Maker - Ergonomic design for comfort.",
+    "price": 78.99,
+    "in_stock": true,
+    "stock_quantity": 80,
+    "categories": ["fitness", "electronics", "books"],
+    "category": "fitness"
+  },
+  {
+    "id": 84,
+    "name": "Bluetooth Tracker 84",
+    "description": "Bluetooth Tracker - Stylish and modern look.",
+    "price": 25.3,
+    "in_stock": true,
+    "stock_quantity": 17,
+    "categories": ["electronics", "toys", "books"],
+    "category": "electronics"
+  },
+  {
+    "id": 85,
+    "name": "Yoga Mat 85",
+    "description": "Yoga Mat - Stylish and modern look.",
+    "price": 94.66,
+    "in_stock": true,
+    "stock_quantity": 2,
+    "categories": ["books", "accessories"],
+    "category": "books"
+  },
+  {
+    "id": 86,
+    "name": "Yoga Mat 86",
+    "description": "Yoga Mat - User-friendly and efficient.",
+    "price": 17.96,
+    "in_stock": true,
+    "stock_quantity": 26,
+    "categories": ["home", "keyboards"],
+    "category": "home"
+  },
+  {
+    "id": 87,
+    "name": "Portable Charger 87",
+    "description": "Portable Charger - Compact and portable.",
+    "price": 53.76,
+    "in_stock": true,
+    "stock_quantity": 42,
+    "categories": ["home"],
+    "category": "home"
+  },
+  {
+    "id": 88,
+    "name": "USB-C Hub 88",
+    "description": "USB-C Hub - Stylish and modern look.",
+    "price": 142.8,
+    "in_stock": true,
+    "stock_quantity": 59,
+    "categories": ["books", "keyboards", "clothing"],
+    "category": "books"
+  },
+  {
+    "id": 89,
+    "name": "Wireless Mouse 89",
+    "description": "Wireless Mouse - User-friendly and efficient.",
+    "price": 123.46,
+    "in_stock": true,
+    "stock_quantity": 74,
+    "categories": ["outdoor"],
+    "category": "outdoor"
+  },
+  {
+    "id": 90,
+    "name": "T-Shirt 90",
+    "description": "T-Shirt - Ergonomic design for comfort.",
+    "price": 187.39,
+    "in_stock": true,
+    "stock_quantity": 67,
+    "categories": ["electronics", "outdoor"],
+    "category": "electronics"
+  },
+  {
+    "id": 91,
+    "name": "Yoga Mat 91",
+    "description": "Yoga Mat - Stylish and modern look.",
+    "price": 35.42,
+    "in_stock": true,
+    "stock_quantity": 91,
+    "categories": ["electronics"],
+    "category": "electronics"
+  },
+  {
+    "id": 92,
+    "name": "USB-C Hub 92",
+    "description": "USB-C Hub - Ergonomic design for comfort.",
+    "price": 45.82,
+    "in_stock": true,
+    "stock_quantity": 77,
+    "categories": ["accessories"],
+    "category": "accessories"
+  },
+  {
+    "id": 93,
+    "name": "Keyboard 93",
+    "description": "Keyboard - User-friendly and efficient.",
+    "price": 100.07,
+    "in_stock": true,
+    "stock_quantity": 20,
+    "categories": ["clothing", "kitchen"],
+    "category": "clothing"
+  },
+  {
+    "id": 94,
+    "name": "Coffee Maker 94",
+    "description": "Coffee Maker - Ergonomic design for comfort.",
+    "price": 177.54,
+    "in_stock": true,
+    "stock_quantity": 6,
+    "categories": ["accessories", "adapters", "books"],
+    "category": "accessories"
+  },
+  {
+    "id": 95,
+    "name": "Yoga Mat 95",
+    "description": "Yoga Mat - User-friendly and efficient.",
+    "price": 144.78,
+    "in_stock": true,
+    "stock_quantity": 12,
+    "categories": ["clothing", "adapters", "toys"],
+    "category": "clothing"
+  },
+  {
+    "id": 96,
+    "name": "Wireless Mouse 96",
+    "description": "Wireless Mouse - User-friendly and efficient.",
+    "price": 164.24,
+    "in_stock": true,
+    "stock_quantity": 84,
+    "categories": ["keyboards"],
+    "category": "keyboards"
+  },
+  {
+    "id": 97,
+    "name": "Wireless Mouse 97",
+    "description": "Wireless Mouse - High quality and durable.",
+    "price": 27.58,
+    "in_stock": true,
+    "stock_quantity": 26,
+    "categories": ["home"],
+    "category": "home"
+  },
+  {
+    "id": 98,
+    "name": "Coffee Maker 98",
+    "description": "Coffee Maker - User-friendly and efficient.",
+    "price": 133.2,
+    "in_stock": true,
+    "stock_quantity": 27,
+    "categories": ["outdoor", "books", "keyboards"],
+    "category": "outdoor"
+  },
+  {
+    "id": 99,
+    "name": "Portable Charger 99",
+    "description": "Portable Charger - Stylish and modern look.",
+    "price": 125.99,
+    "in_stock": true,
+    "stock_quantity": 13,
+    "categories": ["kitchen", "books", "keyboards"],
+    "category": "kitchen"
+  },
+  {
+    "id": 100,
+    "name": "Headphones 100",
+    "description": "Headphones - Stylish and modern look.",
+    "price": 55.18,
+    "in_stock": true,
+    "stock_quantity": 9,
+    "categories": ["toys", "home", "kitchen"],
+    "category": "toys"
+  }
+]

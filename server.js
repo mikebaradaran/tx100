@@ -137,7 +137,7 @@ app.get("/comments/Read/names", (req, res) => {
 // Handle the comment's form submission
 app.post("/commentsSave", (req, res) => {
   commentJS.saveComments(req, fs);
-  res.send("Thank you 👍 Your comments are save.");
+  res.send("Thank you 👍 Your comments are saved.");
 });
 
 app.get("/customers", function (req, res) {
@@ -157,6 +157,10 @@ app.get("/orders", function (req, res) {
   res.send(serverUtils.getOrders());
 });
 
+app.get("/products", function (req, res) {
+  res.send(serverUtils.getProducts());
+});
+
 app.get("/orders/:id", function (req, res) {
   let id = req.params.id;
   var orders = serverUtils.getOrders();
@@ -165,6 +169,24 @@ app.get("/orders/:id", function (req, res) {
   );
   res.send(data);
 });
+
+// --------------------- Drink server! -------------------
+app.get('/server', (req, res) => {
+  const drink = req.query.drink;
+  const milk = req.query.milk;
+  const sugar = req.query.sugar;
+  res.send(`You ordered a ${drink} with milk: ${milk}, sugar: ${sugar}`);
+});
+
+app.post('/server', (req, res) => {
+  const drink = req.body.drink;
+  const milk = req.body.milk;
+  const sugar = req.body.sugar;
+
+  res.send(`POSTed: You ordered a ${drink} with milk: ${milk}, sugar: ${sugar}`);
+});
+
+// -------------------------------------------------------
 
 function doTrainerCommand(data) {
   if (data.body == "delete") {
@@ -197,7 +219,7 @@ function saveMessage(data) {
 
 function saveMessageHistory(){
   fs.writeFileSync(historyFile, JSON.stringify(messages, null, 2));
-  console.log("saveMessageHistory() called! " + historyFile)
+  // console.log("saveMessageHistory() called! " + historyFile)
 }
 
 server.listen(

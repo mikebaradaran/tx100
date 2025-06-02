@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>QA</title>
+    <title>TX100</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/index.js" defer></script>
     <script src="/MyTimer.js"></script>
@@ -24,10 +24,10 @@
             <a id="material" href="" target="_blank">
                 Course material
             </a>
-            <button onclick="mimeo()">Mimeo</button> 
-            <button onclick="copy(courseData.password1)">Copy email</button>
-            <button onclick="copy(courseData.password2)">Copy password</button>
-            <button onclick="copy(courseData.password3)">Copy access code</button>
+            <button id="mimeo" onclick="mimeo()">Mimeo</button> 
+            <button name="passwords" onclick="copy(courseData.password1)">Copy email</button>
+            <button name="passwords" onclick="copy(courseData.password2)">Copy password</button>
+            <button name="passwords" onclick="copy(courseData.password3)">Copy access code</button>
         </div>
         <div class="pcs">
             <ol id="pcs"></ol>

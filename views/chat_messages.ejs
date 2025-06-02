@@ -83,7 +83,7 @@
         function copyText(event) {
           
             navigator.clipboard.writeText(event.target.innerText);
-          
+            // console.log(event.target.innerText);
             const popup = document.getElementById('popup');
             popup.style.left = event.pageX + 'px'; 
             popup.style.top = event.pageY + 'px'; 
