@@ -1,7 +1,7 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "Software Testing",
+  "course_title": "Software Testing and CI/CD",
   "code": "ASDXDSD8M6",
   "pin": "4837864-16",
   "webex_email": "qa.webex025@qa.com",
@@ -27,14 +27,9 @@
   "password2": "QAVirtualClassroom#25",
   "password3": "password3564",
   "students": [
-    " Josh",
     " River",
-    " Adam",
-    " Karina",
     " Andrew William",
-    " Ntaba",
-    " Jamie",
-    " Shriya"
+    " Ntaba"
   ],
-  "courseDuration": "3"
+  "courseDuration": "100"
 }
