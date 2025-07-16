@@ -27,9 +27,14 @@
   "password2": "QAVirtualClassroom#25",
   "password3": "password3564",
   "students": [
+    " Josh",
     " River",
+    " Adam",
+    " Karina",
     " Andrew William",
-    " Ntaba"
+    " Ntaba",
+    " Jamie",
+    " Shriya"
   ],
-  "courseDuration": "100"
+  "courseDuration": "3"
 }
