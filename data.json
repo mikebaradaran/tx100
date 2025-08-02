@@ -1,12 +1,12 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "Design and DevOps",
-  "code": "ADXD2SD4M4",
-  "pin": "4846856-1",
-  "webex_email": "qa.webex024@qa.com",
+  "course_title": "Introduction to Software Development",
+  "code": "AEDXD3SE4M1",
+  "pin": "4871199-19",
+  "webex_email": "qa.webex011@qa.com",
   "material": "https://1drv.ms/u/c/82887c4f49a97ed0/ET6_HtP9IA9Pr4nzWVbAyvoB1b9-5yqhfu_q2eyBfEgklQ?e=hQOQg4",
-  "mimeo": "GB6LDXY7C4NT",
+  "mimeo": "",
   "pcs": [
     "https://www.gotomypc.com/sc/4348E015BC7448FE2860A19855EF5BD5",
     "https://www.gotomypc.com/sc/56ED0CA128983D2A79DC919855EF9124",
@@ -31,16 +31,22 @@
   "password2": "QAVirtualClassroom#25",
   "password3": "password1991",
   "students": [
-    " Jai",
-    " Katie",
-    " Zaid",
-    " Owen",
-    " Martin",
-    " Caros",
-    " Barnaby",
-    " Kieran",
-    " Steven",
-    " Javairiya"
+    "Conor",
+    "Thomas",
+    "Benjamin",
+    "James",
+    "Muhammad",
+    "Jamie",
+    "George",
+    "Laura",
+    "Timothy",
+    "Benjamin",
+    "Kian",
+    "Kevin",
+    "Christopher",
+    "Oliver",
+    "Jamie",
+    "Deivis"
   ],
-  "courseDuration": "3"
+  "courseDuration": "10"
 }
