@@ -44,7 +44,10 @@
         socket.on("connection");
       
         function encode(str) {
-            return String(str).replaceAll("<","&lt;").replace(">","&gt;");
+            return String(str)
+            .replaceAll("<","&lt;")
+            .replace(">","&gt;")
+            .replace(/\n/g, "<br>");
         }
       
         function sendMessage() {
