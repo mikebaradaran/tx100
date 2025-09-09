@@ -1,12 +1,12 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "Automation and Software Quality",
-  "code": "ADXD2SD4M3",
-  "pin": "4846450-9",
+  "course_title": "Building Responsive Web Applications",
+  "code": "ADXD2SD4M2",
+  "pin": "4860156-12",
   "webex_email": "qa.webex032@qa.com",
-  "material": "https://1drv.ms/u/c/82887c4f49a97ed0/EbGj0Vja88hJm1-lPUQ4JGQBBu14yMOy8uQ-APfnpG07fw?e=chcn94",
-  "mimeo": "GBBH29MSCE7Q",
+  "material": "https://1drv.ms/u/c/82887c4f49a97ed0/EWVS2LFue4dHgpFqko4fvrkB0XgKLbangmYPgwF81nGFqQ?e=pI0yTM",
+  "mimeo": "",
   "pcs": [
     "https://www.gotomypc.com/sc/284F356EB4E6F8D49F2C91991A73C9F7",
     "https://www.gotomypc.com/sc/C12A397DEBFFCE65FB56C1991A740900",
@@ -30,20 +30,10 @@
   "password2": "QAVirtualClassroom#25",
   "password3": "password0136",
   "students": [
-    "Louis",
-    "Callum",
-    "Ruth",
-    "Matthew",
-    "William",
     "David",
-    "Jackson",
-    "Daniel",
-    "Laura",
-    "Ellie",
-    "Audrius",
-    "Abigail",
-    "Gabriel",
-    "Jordan"
+    "Harris",
+    "Simon",
+    "Saeed"
   ],
-  "courseDuration": "2"
+  "courseDuration": "3"
 }
