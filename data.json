@@ -5,7 +5,7 @@
   "code": "ADXD2SD3M5",
   "pin": "4836848-12",
   "webex_email": "qa.webex029@qa.com",
-  "material": "",
+  "material": "https://github.com/mikebaradaran/ADXD2SD3M5.git",
   "mimeo": "GB6PD1Q511AI",
   "pcs": [
     "https://qa.learnondemand.net",
