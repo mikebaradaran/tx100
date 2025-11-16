@@ -33,16 +33,16 @@ app.use(cors(corsOptions));
 // });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 var messages = [];
-const historyFile = path.join(__dirname, "chatHistory.json");
+// const  = path.join(__dirname, "chatHistory.json");
 
-if (fs.existsSync(historyFile)) {
-  try {
-    const data = fs.readFileSync(historyFile, "utf-8");
-    messages = JSON.parse(data);
-  } catch (error) {
-    console.error("Error reading chat history file:", error);
-  }
-}
+// if (fs.existsSync(historyFile)) {
+//   try {
+//     const data = fs.readFileSync(historyFile, "utf-8");
+//     messages = JSON.parse(data);
+//   } catch (error) {
+//     console.error("Error reading chat history file:", error);
+//   }
+// }historyFile
 
 // Define routes
 app.get("/", (req, res) => {
@@ -218,8 +218,7 @@ function saveMessage(data) {
 }
 
 function saveMessageHistory(){
-  fs.writeFileSync(historyFile, JSON.stringify(messages, null, 2));
-  // console.log("saveMessageHistory() called! " + historyFile)
+  // fs.writeFileSync(historyFile, JSON.stringify(messages, null, 2));
 }
 
 server.listen(
