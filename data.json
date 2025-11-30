@@ -1,13 +1,17 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "Web Fundamentals",
-  "code": "ADXD2SD3M2",
-  "pin": "4873049-28",
-  "webex_email": "qa.webex035@qa.com",
-  "material": "https://1drv.ms/u/c/82887c4f49a97ed0/EcVMAanLi2JDnoB98iJR1DIBdGeVjdzssoy92IvxrdYafw?e=SK5heJ",
-  "mimeo": "",
+  "course_title": "Responsive web development - Frasers",
+  "code": "AEDXD3SE4M2",
+  "pin": "4878236-3",
+  "webex_email": "x",
+  "material": "https://github.commikebaradaranMod2_Nov2025.git",
+  "mimeo": "GBO6H51EGV00",
   "pcs": [
+    "https://qa.learnondemand.net",
+    "https://qa.learnondemand.net",
+    "https://qa.learnondemand.net",
+    "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
@@ -19,13 +23,18 @@
   ],
   "password1": "",
   "password2": "",
-  "password3": "ED882329F9ED4FC0",
+  "password3": "",
   "students": [
-    " Jessica",
-    " Callum",
-    " Lucy",
-    " Mohammad",
-    " Malakai"
+    "Tyler ",
+    "George ",
+    "Luka",
+    "Abraarul-haqq",
+    "Zakaria",
+    "Magda",
+    "Ali",
+    "Callum",
+    "Harris",
+    "Shahjahan"
   ],
-  "courseDuration": "5"
+  "courseDuration": "3"
 }
