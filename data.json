@@ -1,20 +1,13 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "Responsive web development - Frasers",
-  "code": "AEDXD3SE4M2",
-  "pin": "4878236-3",
-  "webex_email": "qa.webex001@qa.com",
-  "material": "https://github.com/mikebaradaran/Mod2_Nov2025.git",
-  "mimeo": "GBO6H51EGV00",
+  "course_title": "Microservices and APIs",
+  "code": "ADXD2SD4M6",
+  "pin": "4846864-5",
+  "webex_email": "qa.webex033@qa.com",
+  "material": "https://1drv.ms/f/s!AtB-qUlPfIiCiMZuAra-hL4lozTbqg?e=S0DaAX",
+  "mimeo": "GBTLJPI4I7BK",
   "pcs": [
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
@@ -27,16 +20,11 @@
   "password2": "",
   "password3": "",
   "students": [
-    "Tyler ",
-    "George ",
-    "Luka",
-    "Abraarul-haqq",
-    " Zakaria",
-    "Magda",
-    "Ali",
-    "Callum",
-    "Harris",
-    "Shahjahan"
+    " David ",
+    " Katie ",
+    " Zaid ",
+    " Caros ",
+    " Barnaby"
   ],
-  "courseDuration": "3"
+  "courseDuration": "2"
 }
