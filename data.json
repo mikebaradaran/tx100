@@ -1,13 +1,17 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "Microservices and APIs",
-  "code": "ADXD2SD4M6",
-  "pin": "4846864-5",
-  "webex_email": "qa.webex033@qa.com",
-  "material": "https://1drv.ms/f/s!AtB-qUlPfIiCiMZuAra-hL4lozTbqg?e=S0DaAX",
-  "mimeo": "GBTLJPI4I7BK",
+  "course_title": "OO using C#",
+  "code": "ADXD2SD3M4B",
+  "pin": "4846440-12",
+  "webex_email": "qa.webex023@qa.com",
+  "material": "https://github.com/mikebaradaran/CSharp.git",
+  "mimeo": "",
   "pcs": [
+    "https://qa.learnondemand.net",
+    "https://qa.learnondemand.net",
+    "https://qa.learnondemand.net",
+    "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
@@ -18,13 +22,13 @@
   ],
   "password1": "",
   "password2": "",
-  "password3": "",
+  "password3": "ED882329F9ED4FC0",
   "students": [
-    " David ",
-    " Katie ",
-    " Zaid ",
-    " Caros ",
-    " Barnaby"
+    " Nyesha ",
+    " Callum ",
+    " Matthew ",
+    " Benjamin ",
+    " Martyn"
   ],
-  "courseDuration": "2"
+  "courseDuration": "5"
 }
