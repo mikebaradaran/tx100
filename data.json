@@ -1,13 +1,16 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "OO using C#",
-  "code": "ADXD2SD3M4B",
-  "pin": "4846440-12",
-  "webex_email": "qa.webex023@qa.com",
-  "material": "https://github.com/mikebaradaran/CSharp.git",
-  "mimeo": "",
+  "course_title": "Agile Software Development ",
+  "code": "ADXD2SD3M1",
+  "pin": "4854246-17",
+  "webex_email": "qa.webex033@qa.com",
+  "material": "https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvYy84Mjg4N2M0ZjQ5YTk3ZWQwL0VTNnU0QkFoVmZSSnVZZ3VOOGRYczVvQlV5U21KOFk1aW5IdHNDR3BiM3gzN2c%5FZT0wUHpZNE8&cid=82887C4F49A97ED0&id=82887C4F49A97ED0%21s10e0ae2e552149f4b9882e37c757b39a&parId=82887C4F49A97ED0%21102607&o=OneUp",
+  "mimeo": "GBGI9Y9WA0JU",
   "pcs": [
+    "https://qa.learnondemand.net",
+    "https://qa.learnondemand.net",
+    "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
@@ -22,13 +25,21 @@
   ],
   "password1": "",
   "password2": "",
-  "password3": "AB9DC077F3754D90",
+  "password3": "",
   "students": [
-    " Nyesha ",
-    " Callum ",
-    " Matthew ",
-    " Benjamin ",
-    " Martyn"
+    " Joshua  ",
+    " Tshepo  ",
+    " TJ  ",
+    " Jessica  ",
+    " Casper  ",
+    " Reece  ",
+    " Brendan  ",
+    " Abdelhakim  ",
+    " Steven  ",
+    " Marianna  ",
+    " Christopher  ",
+    " Muhammet  ",
+    " Andrew"
   ],
-  "courseDuration": "5"
+  "courseDuration": "3"
 }
