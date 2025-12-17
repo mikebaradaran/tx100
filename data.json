@@ -5,7 +5,7 @@
   "code": "AEDXD3SE4M1",
   "pin": "4855697-23",
   "webex_email": "qa.webex038@qa.com",
-  "material": "",
+  "material": "https://mikebaradaran.github.io/fileserver/",
   "mimeo": "GBA3VAT1O49M",
   "pcs": [
     "https://www.gotomypc.com/sc/7B4EB6BF0AE7EA6F82EDB19AEE2581F3",
@@ -33,20 +33,20 @@
   "password2": "QARemoteClassroom#11",
   "password3": "password6129",
   "students": [
-    " Finn",
-    " Rory",
-    " Connor",
-    " Ishaan",
-    " Edson",
-    " Andre",
-    " Deepak",
-    " Basit",
-    " Muhammad",
-    " Dwayne",
-    " Richard",
-    " Bogdan",
-    " Joel ",
-    " Charles"
+    "Finn",
+    "Rory",
+    "Connor",
+    "Ishaan",
+    "Edson",
+    "Andre",
+    "Deepak",
+    "Basit",
+    "Muhammad",
+    "Dwayne",
+    "Richard",
+    "Bogdan",
+    "Joel ",
+    "Charles"
   ],
   "courseDuration": "12"
 }
