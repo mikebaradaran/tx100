@@ -8,21 +8,19 @@
   "material": "https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvYy84Mjg4N2M0ZjQ5YTk3ZWQwL0ViR2owVmphODhoSm0xLWxQVVE0SkdRQkJ1MTR5TU95OHVRLUFQZm5wRzA3Znc%5FZT1TSWRkcks&cid=82887C4F49A97ED0&id=82887C4F49A97ED0%21s58d1a3b1f3da49c89b5fa53d44382464&parId=82887C4F49A97ED0%21s762cce7ba3fd4b39bae5e0974dfcdfe8&o=OneUp",
   "mimeo": "GBHB29MSCF70",
   "pcs": [
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net",
-    ""
+    "https://www.gotomypc.com/sc/BA99F4D8225E9AD1BD99E19B3749D6BA",
+    "https://www.gotomypc.com/sc/3BC25C1155E7800F5876319B374A0163",
+    "https://www.gotomypc.com/sc/34A4F80A45F1CBB08193A19B374E5F14",
+    "https://www.gotomypc.com/sc/33938603EC265D53FD29D19B374F40D8",
+    "https://www.gotomypc.com/sc/A146EFD13642975274AB419B37507A57",
+    "https://www.gotomypc.com/sc/33EB6DD549B5E5F15538419B37511BC6"
   ],
-  "password1": "",
-  "password2": "",
-  "password3": "",
+  "password1": "virtualroom33@qa.com",
+  "password2": "QARemoteClassroom#11",
+  "password3": "password3490",
   "students": [
-    " Harris",
-    " Simon"
+    "Harris",
+    "Simon"
   ],
   "courseDuration": "2"
 }
