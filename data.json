@@ -27,9 +27,9 @@
     "https://qa.learnondemand.net/User/Login?ReturnUrl=%2F",
     "https://qa.learnondemand.net/User/Login?ReturnUrl=%2F"
   ],
-  "password1": "F515430A4264AFAD",
+  "password1": "",
   "password2": "",
-  "password3": "",
+  "password3": "F515430A4264AFAD",
   "students": [
     "Thomas",
     "James",
