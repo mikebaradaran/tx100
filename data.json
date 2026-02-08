@@ -1,13 +1,15 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "OOP - Java",
-  "code": "ADXD2SD3M4A",
+  "course_title": "Python Programming and SQL Principles",
+  "code": "ADXD2SD3M3",
   "pin": "4884379-14",
-  "webex_email": "qa.webex041@qa.com",
-  "material": "https://github.com/mikebaradaran/mod1_2025",
-  "mimeo": "GBY6ICNA56KQ",
+  "webex_email": "qa.webex021@qa.com",
+  "material": "https://onedrive.live.com/?id=82887C4F49A97ED0%21143863&resid=82887C4F49A97ED0%21143863&ithint=folder&e=ZPfW4F&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBdEItcVVsUGZJaUNpT04zY1lEalVLb05fdnBXQ1E_ZT1aUGZXNEY&cid=82887c4f49a97ed0&v=validatepermission",
+  "mimeo": "",
   "pcs": [
+    "https://qa.learnondemand.net/",
+    "https://qa.learnondemand.net/",
     "https://qa.learnondemand.net/",
     "https://qa.learnondemand.net/",
     "https://qa.learnondemand.net/",
@@ -18,8 +20,11 @@
   "password2": "",
   "password3": "FA975F964952911E",
   "students": [
-    "Christopher",
-    "Luke"
+    "Iulia-Alexandra  ",
+    "Mohammad  ",
+    "Dean  ",
+    "Muhammet  ",
+    "Malakai  "
   ],
   "courseDuration": "3"
 }
