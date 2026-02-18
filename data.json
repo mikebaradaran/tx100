@@ -1,13 +1,14 @@
 {
   "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "Python Programming and SQL Principles",
-  "code": "ADXD2SD3M3",
-  "pin": "4884379-14",
-  "webex_email": "qa.webex021@qa.com",
-  "material": "https://1drv.ms/u/c/82887c4f49a97ed0/IQA8T7MP6GehTYPrCRYbjfpCAZrQ95FfwOdZFr0vmMNSZD4?e=hBcy0u",
-  "mimeo": "",
+  "course_title": "Implementing Software Methodologies",
+  "code": "ASDXDSD8M4",
+  "pin": "4882135-20",
+  "webex_email": "qa.webex023@qa.com",
+  "material": "https://github.com/mikebaradaran/ASDXDSD8M4-Scotland",
+  "mimeo": "GBPPG7LF2JLU",
   "pcs": [
+    "https://qa.learnondemand.net/",
     "https://qa.learnondemand.net/",
     "https://qa.learnondemand.net/",
     "https://qa.learnondemand.net/",
@@ -20,11 +21,12 @@
   "password2": "",
   "password3": "9D9FAA3413244294",
   "students": [
-    "Iulia-Alexandra  ",
-    "Mohammad  ",
-    "Dean  ",
-    "Bera",
-    "Malakai  "
+    "Morgan",
+    "Calum",
+    "Aidan",
+    "Amal",
+    "Jordan",
+    "Simon"
   ],
-  "courseDuration": "3"
+  "courseDuration": "2"
 }
