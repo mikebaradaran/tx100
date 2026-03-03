@@ -1,5 +1,5 @@
 {
-  "audio": "https://cdn.glitch.global/7ea2c2b4-d4b6-41d3-afca-c4c259b797be/Alarm01.wav?v=1685964726574",
+  "audio": "https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
   "course_title": "Design and DevOps",
   "code": "ADXD2SD4M4",
@@ -24,7 +24,7 @@
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
-    "https://qa.learnondemand.net"
+    "https://qa.learnondemand.net",
     ""
   ],
   "password1": "",
