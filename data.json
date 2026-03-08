@@ -1,12 +1,12 @@
 {
   "audio": "https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg",
   "trainer": "Mike Baradaran - mike.baradaran@qa.com",
-  "course_title": "Design and DevOps",
-  "code": "ADXD2SD4M4",
+  "course_title": "OOP - Java",
+  "code": "4854272-13",
   "pin": "4855724-6",
-  "webex_email": "qa.webex034@qa.com",
-  "material": "https://github.com/mikebaradaran/Mod4.git",
-  "mimeo": "GBMGBYKE79OF",
+  "webex_email": "qa.webex025@qa.com",
+  "material": "https://1drv.ms/f/c/82887c4f49a97ed0/EpvjMKayvrNPgNEgPX_otO8BDi3JjXo5y7jlt6e-VY-_yA?e=VteNcd",
+  "mimeo": "GBY6ICNA56KQ",
   "pcs": [
     "https://qa.learnondemand.net",
     "https://qa.learnondemand.net",
@@ -29,13 +29,11 @@
   ],
   "password1": "",
   "password2": "",
-  "password3": "7C60D5DCC2D04526",
+  "password3": "C66765D9334FEEAF",
   "students": [
-    "David",
-    "Harris",
-    "Andre  ",
-    "Simon",
-    "Jack"
+    "Jessica ",
+    "Lucy",
+    "Muhammet"
   ],
-  "courseDuration": "3"
+  "courseDuration": "5"
 }
