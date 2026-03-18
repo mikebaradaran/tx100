@@ -1,6 +1,5 @@
 // server.js
 // const commonData = require("./common.js");
-const setup = require("./routes/setup");
 const commentJS = require("./comments.js");
 const serverUtils = require("./serverUtils.js");
 const path = require("path");
@@ -34,9 +33,6 @@ app.use(cors(corsOptions));
 // });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 var messages = [];
-app.get("/", (req, res) => {
-  res.render("index");
-});
 // const  = path.join(__dirname, "chatHistory.json");
 
 // if (fs.existsSync(historyFile)) {
@@ -46,10 +42,25 @@ app.get("/", (req, res) => {
 //   } catch (error) {
 //     console.error("Error reading chat history file:", error);
 //   }
-// }
+// }historyFile
+
+// Define routes
+app.get("/", (req, res) => {
+  res.render("index");
+});
+app.get("/game", (req, res) => {
+  res.render("game");
+});
+app.get("/morning", (req, res) => {
+  res.render("morning");
+});
 
 app.get("/student", (req, res) => {
   res.render("studentView");
+});
+
+app.get("/help", (req, res) => {
+  res.render("help");
 });
 
 app.get("/start", (req, res) => {
@@ -71,6 +82,22 @@ app.get('/start/edit', (req, res) => {
   res.render('startedit', obj);
 });
 
+app.get("/index", (req, res) => {
+  res.render("index");
+});
+
+app.get("/timer", (req, res) => {
+  res.render("timer");
+});
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
+app.get("/getpcs", (req, res) => {
+  res.render("getpcs");
+});
+
+
 app.get("/chat", (req, res) => {
   res.render("chat");
 });
@@ -86,8 +113,7 @@ app.get("/chat/admin", (req, res) => {
 });
 
 app.get("/chat/clear", (req, res) => {
-  messages.forEach((m) => (m.body = ""));
-  //doTrainerCommand({ name: "trainer", body: "clear" });
+  doTrainerCommand({ name: "trainer", body: "clear" });
   res.render("index");
 });
 
@@ -100,8 +126,8 @@ app.get("/comments/Read", (req, res) => {
 });
 
 app.get("/comments/Delete", (req, res) => {
-  commentJS.deleteComments(fs);
-  res.send("File deleted");
+    commentJS.deleteComments(fs);
+    res.send("File deleted");
 });
 
 app.get("/comments/Read/names", (req, res) => {
@@ -143,10 +169,6 @@ app.get("/orders/:id", function (req, res) {
   );
   res.send(data);
 });
-//--------------------------------------------------------New code
-["index", "game", "morning", "help", "timer", "login", "login", "getpcs"].forEach(view => {
-  app.get(`/${view}`, (req, res) => res.render(view));
-});
 
 // --------------------- Drink server! -------------------
 app.get('/server', (req, res) => {
@@ -166,6 +188,25 @@ app.post('/server', (req, res) => {
 
 // -------------------------------------------------------
 
+function doTrainerCommand(data) {
+  if (data.body == "delete") {
+    messages = [];
+    console.log("deleted messages!")
+  }
+  else if (data.body == "clear") {
+    messages.forEach((m) => (m.body = ""));
+  }
+  else if (data.body.startsWith("deletename")) {
+    // 11 is "deletename ".length
+    const studentName = data.body.substring(11).toLowerCase();
+
+    let index = messages.findIndex((m) => m.name.toLowerCase() == studentName);
+
+    if (index != -1) messages.splice(index, 1);
+  }
+  saveMessageHistory();
+}
+
 function saveMessage(data) {
   const found = messages.find(
     (m) => m.name.toLowerCase() == data.name.toLowerCase()
@@ -176,7 +217,7 @@ function saveMessage(data) {
   saveMessageHistory();
 }
 
-function saveMessageHistory() {
+function saveMessageHistory(){
   // fs.writeFileSync(historyFile, JSON.stringify(messages, null, 2));
 }
 
@@ -193,7 +234,12 @@ server.listen(
 
 io.on("connection", (socket) => {
   socket.on("message", (data) => {
-    saveMessage(data);
+    if (data.name.toLowerCase() == "trainer") {
+      doTrainerCommand(data);
+    } else {
+      saveMessage(data);
+    }
+
     io.sockets.emit("message", messages);
   });
 });
