@@ -24,16 +24,12 @@ function initApp(req, res, fs) {
   students = students.replace(/\t/g, "");
   students = students.replace(new RegExp("\\(REQS\\)", 'g'), '');
   students = students.split("\n");
-  
+
   students = students.map(student => {
     const parts = student.split(",");
     return parts[0].trim() + " " + parts[1].trim().substring(0, 3);
   });
-
-
-  for (var i = 0; i < students.length; i++)
-    students[i] = students[i].split(",")[1];
-
+ 
   const formData = {
     audio: audio,
     trainer: trainer,
