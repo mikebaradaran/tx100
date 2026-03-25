@@ -44,17 +44,7 @@
   "password2": "",
   "password3": "",
   "students": [
-    "Burgoyne Cal",
-    "Mitchinson Mat",
-    "Bailey Har",
-    "Yandell Jac",
-    "McGuirk Sim",
-    "Batty Dan",
-    "Jopson Jac",
-    "Blakemore Dea",
-    "Noon Ste",
-    "Rion-Davies Abi",
-    "English Rut"
+"Callum", "Matthew", "Harris", "Jackson", "Simon", "Daniel", "Jack", "Dean", "Steven", "Abigail", "Ruth"
   ],
   "courseDuration": "2"
 }
