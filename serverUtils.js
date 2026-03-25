@@ -27,7 +27,7 @@ function initApp(req, res, fs) {
 
   students = students.map(student => {
     const parts = student.split(",");
-    return parts[0].trim() + " " + parts[1].trim().substring(0, 3);
+    return parts[1].trim() + " " + parts[0].trim().substring(0, 2);
   });
  
   const formData = {
