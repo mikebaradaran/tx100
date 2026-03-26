@@ -1,103 +1,114 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: 40% 20% 40%;
-  grid-template-rows: 6em 3em 2em 17em 9em;
+/* -----------------------------------------------------------
+   GLOBAL LAYOUT
+----------------------------------------------------------- */
+
+.header {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.main-layout {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.left-col {
+  flex: 1;
+}
+
+.right-col {
+  flex: 1;
+  max-width: 450px;
+}
+
+/* -----------------------------------------------------------
+   COMPONENTS
+----------------------------------------------------------- */
 
 .qaLogo {
   width: 140px;
   height: 80px;
-  padding-left: 1.5em;
-  padding-top: 1.5em;
-  float: left;
+  padding: 1.5em 0 0 1.5em;
 }
 
-.header {
-  background-color: black;
-  color: white;
-  grid-column: 1/4;
-  grid-row: 1;
-}
-
-#course_title {
+#course_title{
   font-size: xx-large;
   font-weight: bold;
-  text-align: center;
-  text-shadow: 3px 3px 3px grey;
-  margin-top: 0.5em;
 }
 
-/* #txtArea{
-  font-size: x-large;
+#webcam {
+  font-size: 1.2em;
 }
- */
-#trainer {
-  text-align: center;
-  margin-top: 0.5em;
-}
+
 
 #timer_container {
-  background-color: darkslateblue;
-  grid-column: 1/3;
-  grid-row: 2;
+  background: darkslateblue;
   padding-top: 5px;
 }
 
 .passwords {
-  background-color: lightyellow;
-  grid-column: 1/3;
-  grid-row: 3;
-  padding-top: 0.2em;
+  background: lightyellow;
+  padding: 0.2em 0;
 }
 
 .passwords * {
   margin-left: 1.5em;
-  /*   border-radius: 3em; */
 }
 
 .pcs {
-  background-color: lightcyan;
-  grid-column: 1/3;
-  grid-row: 4;
+  background: lightcyan;
 }
 
 #pcs {
   column-count: 4;
 }
 
-.afa {
-  background-color: lightcyan;
-  grid-column: 1/2;
-  grid-row: 5;
-  padding: 1em;
-}
-
-.students {
-  background-color: lightcyan;
-  grid-column: 2/3;
-  grid-row: 5;
-  padding-left: 3em;
-}
-
-.messages {
-  grid-row: 2/6;
-}
-
-li a {
-  text-decoration: none;
-}
-
-li a:hover {
-  color: black;
-  font-weight: bolder;
+.notes {
+  width: 100%;
 }
 
 #txtArea {
-  flex: 1;
-  font-weight: bolder;
-  font-size: bolder;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  font-weight: bold;
   font-size: x-large;
 }
+
+.afa,
+.students {
+  background: lightcyan;
+}
+
+.afa {
+  display: flex;
+  gap: 20px;
+  padding: 1em;
+  align-items: flex-start;
+}
+
+.students {
+  padding-left: 3em;
+}
+
+#studentMessages {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.messages {
+  width: 100%;
+}
+
+/* -----------------------------------------------------------
+   INTERACTIONS
+----------------------------------------------------------- */
 
 button {
   border-radius: 7px;
@@ -108,11 +119,96 @@ button:hover {
 }
 
 button:active {
-  transform: translateY(3px); /* Moves the button down */
+  transform: translateY(3px);
   box-shadow: 2px 4px 3px grey;
 }
 
-#webcam {
-  margin-top: 2.3em;
+li a {
+  text-decoration: none;
 }
 
+li a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+#trainer {
+  font-size: 60%;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+/* -----------------------------------------------------------
+   RESPONSIVE DESIGN
+----------------------------------------------------------- */
+
+/* Tablet and below */
+@media (max-width: 900px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .right-col {
+    max-width: 100%;
+  }
+
+  #pcs {
+    column-count: 2;
+  }
+
+  #course_title {
+    font-size: 1.6rem;
+  }
+
+  #webcam {
+    font-size: 1rem;
+  }
+
+  #txtArea {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  #course_title, #trainer{
+    font-size: 1.2rem;
+  }
+
+
+  #webcam {
+    font-size: 0.9rem;
+  }
+
+  #txtArea {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+
+  #pcs {
+    column-count: 1;
+  }
+
+  .afa {
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  .students {
+    padding-left: 0;
+  }
+}

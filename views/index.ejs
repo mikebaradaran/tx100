@@ -1,54 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <title>TX100</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/index.js" defer></script>
-    <script src="/MyTimer.js"></script>
-    <link href="/index.css" rel="stylesheet" />
 
+    <script src="/index.js" defer></script>
+    <script src="/MyTimer.js" defer></script>
+    <link href="/index.css" rel="stylesheet" />
 </head>
+
 <body>
     <div class="grid-container">
+
+        <!-- HEADER -->
         <div class="header">
-            <div class="qaLogo"> <img src="/qa_logo.svg" /> </div>
+            <div class="qaLogo">
+                <img src="/qa_logo.svg" alt="QA Logo">
+            </div>
             <div id="course_title"></div>
-            <h3 id="trainer"></h3>
-        </div>
-      <div id="timer_container">
-        <qa-timer id="qaTimer"></qa-timer> 
-      </div>
-
-        <div class="passwords">
-            <emoji>&#128218</emoji>
-            <a id="material" href="" target="_blank">
-                Course material
-            </a>
-            <button id="mimeo" onclick="mimeo()">Mimeo</button> 
-            <button name="passwords" onclick="copy(courseData.password1)">Copy email</button>
-            <button name="passwords" onclick="copy(courseData.password2)">Copy password</button>
-            <button name="passwords" onclick="copy(courseData.password3)">Copy access code</button>
-        </div>
-        <div class="pcs">
-            <ol id="pcs"></ol>
-            <div style="display: flex">
-                <textarea rows="7" id="txtArea"></textarea>
+            <div id="webcam">
+                <img src="/webcam.svg" alt="Webcam icon">
+                Please turn your webcam on 😊
             </div>
         </div>
 
-        <div class="afa">
-            <button onclick="afa()">Copy WebEx</button>
-            <select id="cboMessages"></select>
-            <a href="https://signin.qa.com/" target="_blank">Sign</a>
-            <h3 id="webcam"><img src="/webcam.svg" /> Please turn your webcam on 😊</h3>
+        <!-- TWO COLUMN LAYOUT -->
+        <div class="main-layout">
+
+            <!-- LEFT COLUMN -->
+            <div class="left-col">
+
+                <!-- TIMER -->
+                <div id="timer_container">
+                    <qa-timer id="qaTimer"></qa-timer>
+                </div>
+
+                <!-- PASSWORDS -->
+                <div class="passwords">
+                    <emoji>&#128218;</emoji>
+                    <a id="material" href="" target="_blank">Course material</a>
+                    <button id="mimeo" onclick="mimeo()">Mimeo</button>
+                    <button name="passwords" onclick="copy(courseData.password1)">Copy email</button>
+                    <button name="passwords" onclick="copy(courseData.password2)">Copy password</button>
+                    <button name="passwords" onclick="copy(courseData.password3)">Copy access code</button>
+                </div>
+
+                <!-- PCS + NOTES -->
+                <div class="pcs">
+                    <ol id="pcs"></ol>
+                    <div class="notes">
+                        <textarea rows="7" id="txtArea"></textarea>
+                    </div>
+                </div>
+
+                <!-- AFA + STUDENT MESSAGES -->
+                <div class="afa">
+                    <div>
+                        <button onclick="afa()">Copy WebEx</button>
+                        <select id="cboMessages"></select>
+                        <a href="https://signin.qa.com/" target="_blank">Sign</a>
+                    </div>
+
+                    <div class="students">
+                        <object id="studentMessages" data="/chat/student"></object>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN (TRAINER MESSAGES BELOW TIMER) -->
+            <div class="right-col">
+                <div class="MessagesDiv">
+                    <object data="/chat/trainer" height="700" width="100%"></object>
+                </div>
+            </div>
+
         </div>
 
-        <div class="students"><object id="studentMessages" data="/chat/student"></object></div>
-        <div class="messages">
-            <div class="MessagesDiv">
-                <object data="/chat/trainer" height="550" width="100%"></object>
-            </div>
-        </div>
     </div>
 </body>
+
 </html>
