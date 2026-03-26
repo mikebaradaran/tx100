@@ -66,7 +66,7 @@ app.get("/help", (req, res) => {
 app.get("/start", (req, res) => {
   res.render("start");
 });
-app.post("/startSubmit", (req, res) => {
+app.post("/start/submit", (req, res) => {
   serverUtils.initApp(req, res, fs);
 });
 
@@ -89,13 +89,13 @@ app.get("/index", (req, res) => {
 app.get("/timer", (req, res) => {
   res.render("timer");
 });
-app.get("/login", (req, res) => {
-  res.render("login");
-});
+// app.get("/login", (req, res) => {
+//   res.render("login");
+// });
 
-app.get("/getpcs", (req, res) => {
-  res.render("getpcs");
-});
+// app.get("/getpcs", (req, res) => {
+//   res.render("getpcs");
+// });
 
 
 app.get("/chat", (req, res) => {
@@ -117,28 +117,28 @@ app.get("/chat/clear", (req, res) => {
   res.render("index");
 });
 
-app.get("/comments", (req, res) => {
-  res.render("comments");
-});
+// app.get("/comments", (req, res) => {
+//   res.render("comments");
+// });
 
-app.get("/comments/Read", (req, res) => {
-  res.send(fs.readFileSync("comments.txt", "utf8"));
-});
+// app.get("/comments/Read", (req, res) => {
+//   res.send(fs.readFileSync("comments.txt", "utf8"));
+// });
 
-app.get("/comments/Delete", (req, res) => {
-    commentJS.deleteComments(fs);
-    res.send("File deleted");
-});
+// app.get("/comments/Delete", (req, res) => {
+//     commentJS.deleteComments(fs);
+//     res.send("File deleted");
+// });
 
-app.get("/comments/Read/names", (req, res) => {
-  res.send(commentJS.getNames(fs));
-});
+// app.get("/comments/Read/names", (req, res) => {
+//   res.send(commentJS.getNames(fs));
+// });
 
-// Handle the comment's form submission
-app.post("/commentsSave", (req, res) => {
-  commentJS.saveComments(req, fs);
-  res.send("Thank you 👍 Your comments are saved.");
-});
+// // Handle the comment's form submission
+// app.post("/commentsSave", (req, res) => {
+//   commentJS.saveComments(req, fs);
+//   res.send("Thank you 👍 Your comments are saved.");
+// });
 
 app.get("/customers", function (req, res) {
   res.send(serverUtils.getCustomers());
