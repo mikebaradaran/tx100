@@ -58,15 +58,6 @@ function setupForm(data) {
   }
   // End of setting up combobox ---------------------------------------------
 
-
-  if (courseData.password1.length < 2)
-    document.getElementsByName("passwords")[0].style.visibility = "hidden";
-  if (courseData.password2.length < 2)
-    document.getElementsByName("passwords")[1].style.visibility = "hidden";
-  if (courseData.mimeo.length < 2)
-    getElement("mimeo").style.visibility = "hidden";
-
-
   courseData.students = ["Trainer", ...courseData.students];
   courseData.students.forEach((stu, i) => {
     if (stu.length !== 0) {
@@ -79,6 +70,21 @@ function setupForm(data) {
       li.appendChild(a);
       ol.appendChild(li);
     }
+  });
+  
+  hideUnusedFields();
+}
+
+function hideUnusedFields() {
+  const fields = [
+    { value: courseData.password1, el: document.getElementsByName("passwords")[0] },
+    { value: courseData.password2, el: document.getElementsByName("passwords")[1] },
+    { value: courseData.password3, el: document.getElementsByName("passwords")[2] },
+    { value: courseData.mimeo, el: getElement("mimeo") }
+  ];
+
+  fields.forEach(({ value, el }) => {
+    if (value.length < 2) el.style.visibility = "hidden";
   });
 }
 
