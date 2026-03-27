@@ -22,6 +22,7 @@ function setupForm(data) {
   getElement("material").href = courseData.material;
 
   // setup combobox
+  cboMessages.addEventListener("change", cboMessage_onchange);
 
   function cboMessage_onchange() {
     const qaTimer = document.getElementById("qaTimer");
@@ -40,7 +41,7 @@ function setupForm(data) {
         qaTimer.stopTimer();
         qaTimer.message = "";
       } else {
-        qaTimer.timerValue = duration * 60;
+        qaTimer.timerValue = timerValue * 60;
         qaTimer.startTimer();
       }
     }
