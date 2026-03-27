@@ -25,14 +25,19 @@ function setupForm(data) {
   cboMessages.addEventListener("change", cboMessage_onchange);
 
   function cboMessage_onchange() {
-    const qaTimer = document.getElementById("qaTimer");
-    const cboMessages = document.getElementById("cboMessages");
-    const txtArea = document.getElementById("txtArea");
+    const qaTimer = getElement("qaTimer");
+    const cboMessages = getElement("cboMessages");
+    const txtArea = getElement("txtArea");
 
     const selectedOption = cboMessages.options[cboMessages.selectedIndex];
     const link = selectedOption.getAttribute('link');
     const timerValue = selectedOption.getAttribute('timer');
 
+    const afa = selectedOption.getAttribute('afa');
+    if (afa) {
+      copy(courseData.webex_email);
+      return;
+    }
     txtArea.value = selectedOption.getAttribute('msg');
 
     if (timerValue) {
@@ -79,10 +84,6 @@ function setupForm(data) {
 
 function copy(str) {
   navigator.clipboard.writeText(str);
-}
-
-function afa() {
-  copy(courseData.webex_email);
 }
 
 function getElement(id) {
