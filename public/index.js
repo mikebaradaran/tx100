@@ -1,6 +1,6 @@
 // const site = getElement("site").innerHTML;
 
-fetch("/start/Read")
+fetch("/startData")
   .then(function (response) {
     return response.json();
   })

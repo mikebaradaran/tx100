@@ -1,12 +1,15 @@
 // server.js
 // const commonData = require("./common.js");
-const commentJS = require("./comments.js");
+// const commentJS = require("./comments.js");
 const serverUtils = require("./serverUtils.js");
 const path = require("path");
 
 const fs = require("fs");
 const cors = require("cors");
 const express = require("express");
+
+const { MongoClient } = require("mongodb");
+const { start } = require("repl");
 
 const app = express();
 const server = require("http").createServer(app);
@@ -26,6 +29,31 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+// ========================
+// MongoDB setup
+// ========================
+const username = "mikeb";
+const password = "Password123";
+const dbName = "test";
+const mongoUri = `mongodb+srv://${username}:${password}@cluster0.smk7bk1.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+const client = new MongoClient(mongoUri);
+let collection;
+
+async function initDB() {
+  await client.connect();
+  const db = client.db(dbName);
+  collection = db.collection("startData");
+}
+// initDB();
+// let startData = await collection.find({}).toArray();
+
+(async () => {
+  await initDB();
+  startData = await collection.find({}).toArray();
+  startData = startData[0]; // get the first document
+})();
+
+
 // Middleware to make common data accessible in all views
 // app.use((req, res, next) => {
 //   res.locals.commonData = commonData;
@@ -33,73 +61,39 @@ app.use(cors(corsOptions));
 // });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 var messages = [];
-// const  = path.join(__dirname, "chatHistory.json");
-
-// if (fs.existsSync(historyFile)) {
-//   try {
-//     const data = fs.readFileSync(historyFile, "utf-8");
-//     messages = JSON.parse(data);
-//   } catch (error) {
-//     console.error("Error reading chat history file:", error);
-//   }
-// }historyFile
 
 // Define routes
 app.get("/", (req, res) => {
   res.render("index");
 });
-app.get("/game", (req, res) => {
-  res.render("game");
-});
-app.get("/morning", (req, res) => {
-  res.render("morning");
+
+app.get("/startData", (req, res) => {
+  res.send(startData);
 });
 
-app.get("/student", (req, res) => {
-  res.render("studentView");
+[
+  "game",
+  "morning",
+  "student",
+  "help",
+  "timer",
+  "chat",
+  "start"
+].forEach(route => {
+  app.get(`/${route}`, (req, res) => res.render(route));
 });
 
-app.get("/help", (req, res) => {
-  res.render("help");
-});
-
-app.get("/start", (req, res) => {
-  res.render("start");
-});
 app.post("/start/submit", (req, res) => {
-  serverUtils.initApp(req, res, fs);
+  startData = serverUtils.initApp(req);
+  saveAll(res);
 });
 
-app.get("/start/Read", (req, res) => {
-  let data = fs.readFileSync("data.json", "utf8");
-  res.send(JSON.parse(data));
-});
-
-app.get('/start/edit', (req, res) => {
+app.get('/start/edit', async (req, res) => {
+  startData = await collection.find({}).toArray();
   const obj = {
-    data: JSON.parse(fs.readFileSync("data.json", "utf8"))
+    data: startData[0]
   };
   res.render('startedit', obj);
-});
-
-app.get("/index", (req, res) => {
-  res.render("index");
-});
-
-app.get("/timer", (req, res) => {
-  res.render("timer");
-});
-// app.get("/login", (req, res) => {
-//   res.render("login");
-// });
-
-// app.get("/getpcs", (req, res) => {
-//   res.render("getpcs");
-// });
-
-
-app.get("/chat", (req, res) => {
-  res.render("chat");
 });
 
 app.get("/chat/student", (req, res) => {
@@ -116,29 +110,6 @@ app.get("/chat/clear", (req, res) => {
   doTrainerCommand({ name: "trainer", body: "clear" });
   res.render("index");
 });
-
-// app.get("/comments", (req, res) => {
-//   res.render("comments");
-// });
-
-// app.get("/comments/Read", (req, res) => {
-//   res.send(fs.readFileSync("comments.txt", "utf8"));
-// });
-
-// app.get("/comments/Delete", (req, res) => {
-//     commentJS.deleteComments(fs);
-//     res.send("File deleted");
-// });
-
-// app.get("/comments/Read/names", (req, res) => {
-//   res.send(commentJS.getNames(fs));
-// });
-
-// // Handle the comment's form submission
-// app.post("/commentsSave", (req, res) => {
-//   commentJS.saveComments(req, fs);
-//   res.send("Thank you 👍 Your comments are saved.");
-// });
 
 app.get("/customers", function (req, res) {
   res.send(serverUtils.getCustomers());
@@ -231,6 +202,17 @@ server.listen(
     console.log(`Your app is running!`);
   }
 );
+//--------------------------------------
+// server.listen(
+//   { port: 3000, host: "0.0.0.0" },
+//   function (err, address) {
+//     if (err) {
+//       console.error(err);
+//       process.exit(1);
+//     }
+//     console.log(`Your app is running!`);
+//   }
+// );
 
 io.on("connection", (socket) => {
   socket.on("message", (data) => {
@@ -243,3 +225,35 @@ io.on("connection", (socket) => {
     io.sockets.emit("message", messages);
   });
 });
+
+// ========================
+// MongoDB code
+// ========================
+
+async function saveAll(res) {
+  try {
+    await collection.deleteMany({}); // clear old messages
+    await collection.insertOne(startData); // save current chat array
+    res.send({ success: true, saved: startData });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error saving chats");
+  }
+}
+
+// Save  array to MongoDB
+app.get("/save", async (req, res) => {
+  saveAll(res);
+});
+
+// Read from MongoDB
+app.get("/start/read", async (req, res) => {
+  try {
+    const x = await collection.find({}).toArray();
+    res.send(x[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error reading data");
+  }
+});
+

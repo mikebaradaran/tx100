@@ -27,8 +27,7 @@ function initApp(req) {
 
   students = students.map(student => {
     const parts = student.split(",");
-    let index = (parts.length > 1) ? 1 : 0;
-    return parts[index].trim(); // + " " + parts[0].trim().substring(0, 2);
+    return parts[1].trim() + " " + parts[0].trim().substring(0, 2);
   });
  
   const formData = {
@@ -47,15 +46,6 @@ function initApp(req) {
     students: students,
     courseDuration: courseDuration
   };
-  // fs.writeFile("data.json", JSON.stringify(formData, null, 2), (err) => {
-  //   if (err) {
-  //     console.error("Error writing to file:", err);
-  //     res.status(500).send("Error saving data");
-  //   } else {
-  //     console.log("Data saved successfully.");
-  //     res.render("index");
-  //   }
-  // });
   return formData;
 }
 //-------------------------------
