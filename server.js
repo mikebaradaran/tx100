@@ -1,15 +1,15 @@
 // server.js
 // const commonData = require("./common.js");
 // const commentJS = require("./comments.js");
-const serverUtils = require("./serverUtils.js");
-const path = require("path");
 
-const fs = require("fs");
+const chatRoutes = require("./routes/chat");
+const dataApiRoutes = require("./routes/dataApi");
+const drinkRoutes = require("./routes/drinks");
+
+const serverUtils = require("./serverUtils.js");
 const cors = require("cors");
 const express = require("express");
-
 const { MongoClient } = require("mongodb");
-const { start } = require("repl");
 
 const app = express();
 const server = require("http").createServer(app);
@@ -22,6 +22,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from the "public" folder
 app.use(express.static("public"));
+app.use("/chat", chatRoutes({ doTrainerCommand }));
+app.use("/api", dataApiRoutes(serverUtils));
+app.use("/server", drinkRoutes());
 
 const corsOptions = {
   origin: "*",
@@ -38,19 +41,15 @@ const dbName = "test";
 const mongoUri = `mongodb+srv://${username}:${password}@cluster0.smk7bk1.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 const client = new MongoClient(mongoUri);
 let collection;
+let startData = {};
 
-async function initDB() {
+(async () => {
   await client.connect();
   const db = client.db(dbName);
   collection = db.collection("startData");
-}
-// initDB();
-// let startData = await collection.find({}).toArray();
 
-(async () => {
-  await initDB();
-  startData = await collection.find({}).toArray();
-  startData = startData[0]; // get the first document
+  const docs = await collection.find({}).toArray();
+  startData = docs[0];
 })();
 
 
@@ -96,69 +95,6 @@ app.get('/start/edit', async (req, res) => {
   res.render('startedit', obj);
 });
 
-app.get("/chat/student", (req, res) => {
-  res.render("chat_message_entry");
-});
-app.get("/chat/trainer", (req, res) => {
-  res.render("chat_messages");
-});
-app.get("/chat/admin", (req, res) => {
-  res.render("admin");
-});
-
-app.get("/chat/clear", (req, res) => {
-  doTrainerCommand({ name: "trainer", body: "clear" });
-  res.render("index");
-});
-
-app.get("/customers", function (req, res) {
-  res.send(serverUtils.getCustomers());
-});
-
-app.get("/customers/:id", function (req, res) {
-  let id = req.params.id;
-  var customers = serverUtils.getCustomers();
-  var data = customers.filter(
-    (c) => c.CustomerID.toLowerCase() == id.toLowerCase()
-  );
-  res.send(data);
-});
-
-app.get("/orders", function (req, res) {
-  res.send(serverUtils.getOrders());
-});
-
-app.get("/products", function (req, res) {
-  res.send(serverUtils.getProducts());
-});
-
-app.get("/orders/:id", function (req, res) {
-  let id = req.params.id;
-  var orders = serverUtils.getOrders();
-  var data = orders.filter(
-    (c) => c.CustomerID.toLowerCase() == id.toLowerCase()
-  );
-  res.send(data);
-});
-
-// --------------------- Drink server! -------------------
-app.get('/server', (req, res) => {
-  const drink = req.query.drink;
-  const milk = req.query.milk;
-  const sugar = req.query.sugar;
-  res.send(`You ordered a ${drink} with milk: ${milk}, sugar: ${sugar}`);
-});
-
-app.post('/server', (req, res) => {
-  const drink = req.body.drink;
-  const milk = req.body.milk;
-  const sugar = req.body.sugar;
-
-  res.send(`POSTed: You ordered a ${drink} with milk: ${milk}, sugar: ${sugar}`);
-});
-
-// -------------------------------------------------------
-
 function doTrainerCommand(data) {
   if (data.body == "delete") {
     messages = [];
@@ -193,7 +129,8 @@ function saveMessageHistory() {
 }
 
 server.listen(
-  { port: process.env.PORT, host: "0.0.0.0" },
+  // { port: process.env.PORT, host: "0.0.0.0" },
+  { port: 3000, host: "0.0.0.0" },
   function (err, address) {
     if (err) {
       console.error(err);
@@ -202,17 +139,6 @@ server.listen(
     console.log(`Your app is running!`);
   }
 );
-//--------------------------------------
-// server.listen(
-//   { port: 3000, host: "0.0.0.0" },
-//   function (err, address) {
-//     if (err) {
-//       console.error(err);
-//       process.exit(1);
-//     }
-//     console.log(`Your app is running!`);
-//   }
-// );
 
 io.on("connection", (socket) => {
   socket.on("message", (data) => {
@@ -242,9 +168,9 @@ async function saveAll(res) {
 }
 
 // Save  array to MongoDB
-app.get("/save", async (req, res) => {
-  saveAll(res);
-});
+// app.get("/save", async (req, res) => {
+//   saveAll(res);
+// });
 
 // Read from MongoDB
 app.get("/start/read", async (req, res) => {
