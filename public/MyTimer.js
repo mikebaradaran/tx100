@@ -1,9 +1,8 @@
 class QA_Timer extends HTMLElement {
   constructor() {
     super();
-
+    this.msg = {};
     this.setupSpeech();
-    this.msg = null;
     this.myInterval = null;
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
