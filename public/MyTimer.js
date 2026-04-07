@@ -1,128 +1,141 @@
 class QA_Timer extends HTMLElement {
   constructor() {
     super();
-    this.msg = {};
-    this.setupSpeech();
-    this.myInterval = null;
+
     this.attachShadow({ mode: "open" });
+
     this.shadowRoot.innerHTML = `
-        <link href="/MyTimer.css" rel="stylesheet" />
-          <span id="timerGoButton">▶️</span>
-          <input id="timer" type="range" min="1" max="120"/>
-          <span id="info"></span>
-        </p>`;
+      <link href="/MyTimer.css" rel="stylesheet" />
+      <span id="timerGoButton">▶️</span>
+      <input id="timer" type="range" min="1" max="120"/>
+      <span id="info"></span>
+    `;
+
+    // cache DOM once
+    this.$timer = this.shadowRoot.querySelector("#timer");
+    this.$info = this.shadowRoot.querySelector("#info");
+    this.$btn = this.shadowRoot.querySelector("#timerGoButton");
+
+    // state
+    this.seconds = 0;
+    this.startMins = 0;
+    this.interval = null;
+
+    // speech
+    this.msg = new SpeechSynthesisUtterance();
+    this.setupSpeech();
   }
-  timerGoButton_click() {
-    let t = document.querySelector("#qaTimer");
-    t.timerValue = t.timerValue * 60;
-    t.startTimer();
-  }
+
   connectedCallback() {
-    this.timer.addEventListener("input", this.sliding.bind(this));
-    const btnGo = this.shadowRoot.querySelector("#timerGoButton");
-    btnGo.addEventListener("click", this.timerGoButton_click.bind(this));
+    this.$timer.addEventListener("input", () => this.onSlide());
+    this.$btn.addEventListener("click", () => this.startFromUI());
   }
 
-  sliding() {
+  // -------------------------
+  // UI handlers
+  // -------------------------
+
+  onSlide() {
     this.stopTimer();
-    this.shadowRoot.querySelector("#info").innerHTML = this.timerValue;
+    this.updateDisplay(this.$timer.value + " mins");
   }
 
-  set timerValue(seconds) {
+  startFromUI() {
+    const mins = Number(this.$timer.value);
+    this.start(mins * 60);
+  }
+
+  // -------------------------
+  // Core timer logic
+  // -------------------------
+
+  start(seconds) {
     this.stopTimer();
-    this.startMins = (seconds / 60) | 0;
-    this.timer.value = this.startMins;
+
     this.seconds = seconds;
-  }
+    this.startMins = Math.floor(seconds / 60);
 
-  set sound(audioURL) {
-    this.audio = audioURL;
-  }
-
-  get timerValue() {
-    return this.timer.value;
-  }
-
-  get timer() {
-    return this.shadowRoot.querySelector("#timer");
+    this.interval = setInterval(() => this.tick(), 1000);
   }
 
   stopTimer() {
-    if (this.myInterval !== null) clearInterval(this.myInterval);
+    if (this.interval) {
+      clearInterval(this.interval);
+      this.interval = null;
+    }
   }
 
-  set message(msg) {
-    this.shadowRoot.querySelector("#info").innerHTML = msg;
+  tick() {
+    if (this.seconds <= 0) {
+      this.finish();
+      return;
+    }
+
+    const mins = Math.floor(this.seconds / 60);
+    const secs = this.seconds % 60;
+    const hours = Math.floor(mins / 60);
+    const displayMins = mins % 60;
+
+    const time =
+      (hours > 0 ? `${hours}h : ` : "") +
+      `${displayMins}m : ${secs}`;
+
+    this.updateDisplay(time);
+    this.seconds--;
   }
 
-  displayTimerValue(secs) {
-    this.timerValue = secs;
+  finish() {
+    this.stopTimer();
+
+    const msg = `${this.startMins} minutes passed. Ended at ${this.getTime()}`;
+    this.updateDisplay(msg);
+
+    // speech chain (avoids overlap)
+    this.speak(`${this.startMins} minutes passed`)
+      .then(() => this.speak(`Ended at ${this.getTime()}`));
   }
 
-  startTimer() {
-    this.myInterval = setInterval(() => {
-      var mins = (this.seconds / 60) | 0;
-
-      if (this.seconds === 0) {
-        this.stopTimer();
-        this.message =
-          this.startMins + " minutes passed. Ended at " + this.getTime();
-        //new Audio(this.audio).play();
-        this.speak(this.startMins + " minutes passed. " );
-        this.speak("Ended at "+  this.getTime());
-        return;
-      }
-
-      var hours = Math.floor(mins / 60);
-      var minutes = mins % 60;
-      hours = (hours > 0) ? hours + "h : " : "";
-
-      this.message = hours + minutes + "m : " + (this.seconds - mins * 60);
-      this.seconds--;
-    }, 1000);
+  updateDisplay(text) {
+    this.$info.textContent = text;
   }
 
-  getTime() {
-    var today = new Date();
-    return (
-      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
-    );
-  }
-
-  //------------------------------------------------
+  // -------------------------
+  // Speech
+  // -------------------------
 
   setupSpeech() {
-    this.msg = new SpeechSynthesisUtterance();
-
-    window.speechSynthesis.onvoiceschanged = () => {
+    const setVoice = () => {
       const voices = speechSynthesis.getVoices();
+      if (!voices.length) return;
 
-      this.msg.voice = voices.find(voice =>
-        voice.name.toLowerCase().includes("female") ||
-        voice.name.toLowerCase().includes("woman") ||
-        voice.name.toLowerCase().includes("samantha") ||
-        voice.name.toLowerCase().includes("Karen") ||
-        voice.name.toLowerCase().includes("zira")
+      this.msg.voice = voices.find(v =>
+        /female|woman|samantha|karen|zira/i.test(v.name)
       );
 
       this.msg.pitch = 1.1;
       this.msg.rate = 0.9;
     };
+
+    setVoice();
+    speechSynthesis.onvoiceschanged = setVoice;
   }
 
   speak(text) {
     return new Promise(resolve => {
-      if (text === "end") {
-        resolve();
-        return;
-      }
       this.msg.text = text;
-      speechSynthesis.speak(this.msg);
       this.msg.onend = resolve;
+      speechSynthesis.speak(this.msg);
     });
   }
-  //------------------------------------------------
+
+  // -------------------------
+  // Utils
+  // -------------------------
+
+  getTime() {
+    const d = new Date();
+    return `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+  }
 }
 
-// Define the tag
 customElements.define("qa-timer", QA_Timer);

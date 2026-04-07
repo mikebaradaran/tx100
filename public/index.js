@@ -17,7 +17,7 @@ function setupForm(data) {
   courseData = data;
   const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code}&pin=${courseData.pin}`;
 
-  getElement("qaTimer").sound = courseData.audio;
+  // getElement("qaTimer").sound = courseData.audio;
   getElement("course_title").innerHTML = `${courseData.course_title} <div id='trainer'> ${courseData.trainer} - ${courseData.courseDuration} days</div>`;
   getElement("material").href = courseData.material;
 
@@ -47,7 +47,7 @@ function setupForm(data) {
         qaTimer.message = "";
       } else {
         qaTimer.timerValue = timerValue * 60;
-        qaTimer.startTimer();
+        qaTimer.start(qaTimer.timerValue);
       }
     }
     if (link) {
