@@ -2,7 +2,7 @@ class QA_Timer extends HTMLElement {
   constructor() {
     super();
 
-    setupSpeech();
+    this.setupSpeech();
     this.msg = null;
     this.myInterval = null;
     this.attachShadow({ mode: "open" });
@@ -18,7 +18,7 @@ class QA_Timer extends HTMLElement {
     t.timerValue = t.timerValue * 60;
     t.startTimer();
   }
-  connectedCallback() {
+  connectedCallback() {git ad
     this.timer.addEventListener("input", this.sliding.bind(this));
     const btnGo = this.shadowRoot.querySelector("#timerGoButton");
     btnGo.addEventListener("click", this.timerGoButton_click.bind(this));
@@ -69,7 +69,7 @@ class QA_Timer extends HTMLElement {
         this.message =
           this.startMins + " minutes passed. Ended at " + this.getTime();
         //new Audio(this.audio).play();
-        this.speak(this.getTime() + ": has passed!");
+        this.speak(this.message);
         return;
       }
 
