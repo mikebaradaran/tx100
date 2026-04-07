@@ -68,7 +68,8 @@ class QA_Timer extends HTMLElement {
         this.message =
           this.startMins + " minutes passed. Ended at " + this.getTime();
         //new Audio(this.audio).play();
-        this.speak(this.message);
+        this.speak(this.startMins + " minutes passed. " );
+        this.speak("Ended at "+  this.getTime());
         return;
       }
 
