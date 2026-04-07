@@ -1,6 +1,9 @@
 class QA_Timer extends HTMLElement {
   constructor() {
     super();
+
+    setupSpeech();
+    this.msg = null;
     this.myInterval = null;
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
@@ -17,7 +20,7 @@ class QA_Timer extends HTMLElement {
   }
   connectedCallback() {
     this.timer.addEventListener("input", this.sliding.bind(this));
-    const btnGo= this.shadowRoot.querySelector("#timerGoButton");
+    const btnGo = this.shadowRoot.querySelector("#timerGoButton");
     btnGo.addEventListener("click", this.timerGoButton_click.bind(this));
   }
 
@@ -65,14 +68,15 @@ class QA_Timer extends HTMLElement {
         this.stopTimer();
         this.message =
           this.startMins + " minutes passed. Ended at " + this.getTime();
-        new Audio(this.audio).play();
+        //new Audio(this.audio).play();
+        this.speak(this.getTime() + ": has passed!");
         return;
       }
-      
-      var hours = Math.floor(mins / 60);          
+
+      var hours = Math.floor(mins / 60);
       var minutes = mins % 60;
-      hours = (hours > 0)? hours +"h : ": "";
-      
+      hours = (hours > 0) ? hours + "h : " : "";
+
       this.message = hours + minutes + "m : " + (this.seconds - mins * 60);
       this.seconds--;
     }, 1000);
@@ -84,6 +88,40 @@ class QA_Timer extends HTMLElement {
       today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
     );
   }
+
+  //------------------------------------------------
+
+  setupSpeech() {
+    this.msg = new SpeechSynthesisUtterance();
+
+    window.speechSynthesis.onvoiceschanged = () => {
+      const voices = speechSynthesis.getVoices();
+
+      this.msg.voice = voices.find(voice =>
+        voice.name.toLowerCase().includes("female") ||
+        voice.name.toLowerCase().includes("woman") ||
+        voice.name.toLowerCase().includes("samantha") ||
+        voice.name.toLowerCase().includes("Karen") ||
+        voice.name.toLowerCase().includes("zira")
+      );
+
+      this.msg.pitch = 1.1;
+      this.msg.rate = 0.9;
+    };
+  }
+
+  speak(text) {
+    return new Promise(resolve => {
+      if (text === "end") {
+        resolve();
+        return;
+      }
+      this.msg.text = text;
+      speechSynthesis.speak(this.msg);
+      this.msg.onend = resolve;
+    });
+  }
+  //------------------------------------------------
 }
 
 // Define the tag
