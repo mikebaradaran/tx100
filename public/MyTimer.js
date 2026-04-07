@@ -18,7 +18,7 @@ class QA_Timer extends HTMLElement {
     t.timerValue = t.timerValue * 60;
     t.startTimer();
   }
-  connectedCallback() {git ad
+  connectedCallback() {
     this.timer.addEventListener("input", this.sliding.bind(this));
     const btnGo = this.shadowRoot.querySelector("#timerGoButton");
     btnGo.addEventListener("click", this.timerGoButton_click.bind(this));
