@@ -1,5 +1,31 @@
+// -------------------------------
+// Helpers
+// -------------------------------
+const cleanLines = (input = "", { removeTabs = false, removeReqs = false } = {}) => {
+  let result = input.replace(/\r/g, "");
+
+  if (removeTabs) result = result.replace(/\t/g, "");
+  if (removeReqs) result = result.replace(/\(REQS\)/g, "");
+
+  return result
+    .split("\n")
+    .map(line => line.trim())
+    .filter(Boolean);
+};
+
+const extractStudentNames = (students = "") => {
+  return cleanLines(students, { removeTabs: true, removeReqs: true })
+    .map(line => {
+      const parts = line.split(",");
+      return (parts[1] || parts[0]).trim();
+    });
+};
+
+// -------------------------------
+// Main function
+// -------------------------------
 function initApp(req) {
-  var {
+  const {
     audio,
     trainer,
     course_title,
@@ -8,76 +34,52 @@ function initApp(req) {
     webex_email,
     material,
     mimeo,
-    pcs,
+    pcs = "",
     password1,
     password2,
     password3,
-    password4,
-    students,
+    students = "",
     courseDuration
-  } = req.body;
+  } = req.body || {};
 
-  pcs = pcs.replace(/\r/g, "");
-  pcs = pcs.split("\n");
-
-  students = students.replace(/\r/g, "");
-  students = students.replace(/\t/g, "");
-  students = students.replace(new RegExp("\\(REQS\\)", 'g'), '');
-  students = students.split("\n");
-
-  students = students.map(student => {
-    const parts = student.split(",");
-    let index = (parts.length > 1) ? 1 : 0;
-    return parts[index].trim(); // + " " + parts[0].trim().substring(0, 2);
-  });
- 
-  const formData = {
-    audio: audio,
-    trainer: trainer,
-    course_title: course_title,
-    code: code,
-    pin: pin,
-    webex_email: webex_email,
-    material: material,
-    mimeo: mimeo,
-    pcs: pcs,
-    password1: password1,
-    password2: password2,
-    password3: password3,
-    students: students,
-    courseDuration: courseDuration
+  return {
+    audio,
+    trainer,
+    course_title,
+    code,
+    pin,
+    webex_email,
+    material,
+    mimeo,
+    pcs: cleanLines(pcs),
+    password1,
+    password2,
+    password3,
+    students: extractStudentNames(students),
+    courseDuration
   };
-  // fs.writeFile("data.json", JSON.stringify(formData, null, 2), (err) => {
-  //   if (err) {
-  //     console.error("Error writing to file:", err);
-  //     res.status(500).send("Error saving data");
-  //   } else {
-  //     console.log("Data saved successfully.");
-  //     res.render("index");
-  //   }
-  // });
-  return formData;
-}
-//-------------------------------
-var customers = undefined;
-var orders = undefined;
-var products = undefined;
-
-function getCustomers() {
-  if (customers === undefined) customers = require("./customers.json");
-  return customers;
-}
-function getOrders() {
-  if (orders === undefined) orders = require("./orders.json");
-  return orders;
 }
 
-function getProducts() {
-  if (products === undefined) products = require("./products.json");
-  return products;
-}
+// -------------------------------
+// Lazy JSON loader
+// -------------------------------
+const cache = {};
 
+const loadJson = (file) => {
+  if (!cache[file]) {
+    cache[file] = require(file);
+  }
+  return cache[file];
+};
 
+const getCustomers = () => loadJson("./customers.json");
+const getOrders = () => loadJson("./orders.json");
+const getProducts = () => loadJson("./products.json");
+
+// -------------------------------
 module.exports = {
-  initApp, getCustomers, getOrders, getProducts
+  initApp,
+  getCustomers,
+  getOrders,
+  getProducts
 };
