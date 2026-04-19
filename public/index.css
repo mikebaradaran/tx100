@@ -213,3 +213,12 @@ li a:hover {
     padding-left: 0;
   }
 }
+
+.rotated {
+    transform: rotate(180deg);
+}
+.arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+    transform-origin: center;
+}

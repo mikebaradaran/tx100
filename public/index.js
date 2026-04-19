@@ -100,3 +100,15 @@ function mimeo() {
   copy(courseData.mimeo);
   window.open("https://mimeo.digital/QALtd/distributions", "_blank");
 }
+
+function toggle(span) {
+    const parent = span.parentElement;
+    const children = Array.from(parent.children).slice(1);
+
+    children.forEach(c => {
+        c.style.display = (c.style.display === "none") ? "" : "none";
+    });
+
+    // rotate the arrow
+    span.classList.toggle("rotated");
+}    
