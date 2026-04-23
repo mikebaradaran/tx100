@@ -1,39 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>QA</title>
+    <title>TX100</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/MyTimer.js"></script>
+
+    <script src="/index.js" defer></script>
+    <script src="/MyTimer.js" defer></script>
+    <link href="/index.css" rel="stylesheet" />
     <link href="/morning.css" rel="stylesheet" />
     <script src="/morning.js" defer></script>
+<style>
+    .afa, .right-col, .students, #txtArea{
+        display:none;
+    }
+</style>
 </head>
+
 <body>
     <div class="grid-container">
+
+        <!-- HEADER -->
         <div class="header">
-            <div class="qaLogo"> <a href="/"><img src="qa_logo.svg" /></a></div>
-            <div id="course_title"></div>
-            <h3 id="trainer"></h3>
-        </div>
-        <div id="timer_container">
-          <qa-timer id="qaTimer"></qa-timer> 
-        </div>
-        <div class="pcs">
-            <ol id="pcs"></ol>
-            <div style="display: flex">
-                <textarea rows="2"  id="txtArea"></textarea>
+            <div class="qaLogo">
+                <img src="/qa_logo.svg" alt="QA Logo">
             </div>
-            <h2 class="camText"><img src="webcam.svg" /> Please turn your webcam on 😊</h2>
-          <div>
-      <div class="greetings">
+            <div id="course_title"></div>
+            <div id="webcam">
+                <img src="/webcam.svg" alt="Webcam icon">
+                Please turn your webcam on 😊
+            </div>
+        </div>
+
+        <!-- TWO COLUMN LAYOUT -->
+        <div class="main-layout">
+
+            <!-- LEFT COLUMN -->
+            <div class="left-col">
+
+                <!-- TIMER -->
+                <div id="timer_container">
+                    <qa-timer id="qaTimer"></qa-timer>
+                </div>
+
+                <!-- PASSWORDS -->
+                <div class="passwords">
+                    <emoji>&#128218;</emoji>
+                    <a id="material" href="" target="_blank">Course material</a>
+                    <button id="mimeo" onclick="mimeo()">Mimeo</button>
+                    <button name="passwords" onclick="copy(courseData.password1)">Copy email</button>
+                    <button name="passwords" onclick="copy(courseData.password2)">Copy password</button>
+                    <button name="passwords" onclick="copy(courseData.password3)">Copy access code</button>
+                </div>
+
+                <!-- PCS + NOTES -->
+                <div class="pcs">
+                    <div class="arrow" onclick="toggle(this)">▼</div>
+                    <ol id="pcs"></ol><br />
+                    <div class="notes">
+                        <textarea rows="7" id="txtArea"></textarea>
+                    </div>
+                </div>
+
+                <!-- AFA + STUDENT MESSAGES -->
+                <div class="afa">
+                    <div>
+                        <select id="cboMessages">
+                            <option timer="0" msg="Select an item">Select an item</option>
+                            <option msg="Please put a ✔ when you have completed the lab">Finish lab</option>
+                            <option timer="0" msg="Ready to start?">Ready to start</option>
+                            <option timer="15" msg="Let's take a 15 minutes break ☕">Coffee</option>
+                            <option timer="60" msg="Let's take 60 minutes for lunch 🍔">Lunch</option>
+                            <option timer="0" msg="Please complete the course evaluation" link="evaluation">Evaluation
+                            </option>
+                            <option afa="afa">Copy WebEx</option>
+                        </select>
+                        <a href="https://signin.qa.com/" target="_blank">Sign</a>
+                    </div>
+
+                    <div class="students">
+                        <object id="studentMessages" data="/chat/student"></object>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN (TRAINER MESSAGES BELOW TIMER) -->
+            <div class="right-col">
+                <div class="MessagesDiv">
+                    <object data="/chat/trainer" height="700" width="100%"></object>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="greetings">
         <span>Good morning </span>
-        <span>Buongiorno   </span>
-        <span>Bonjour      </span>
+        <span>Buongiorno </span>
+        <span>Bonjour </span>
         <span>Guten Morgen </span>
         <span>शुभ प्रभात</span>
         <span>早上好</span>
-        <span>Доброе утро  </span>
+        <span>Доброе утро </span>
         <span>صباح الخير</span>
         <span>おはよう</span>
+        <br />
+        <br />
+        <div>We will start at 9:30</div><br />
     </div>
 </body>
+
 </html>
