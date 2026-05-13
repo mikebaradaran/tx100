@@ -92,7 +92,7 @@ class QA_Timer extends HTMLElement {
 
     // speech chain (avoids overlap)
     this.speak(`${this.startMins} minutes passed`)
-      .then(() => this.speak(`Ended at ${this.getTime()}`));
+      .then(() => this.speak(`Ended at ${this.getShortTime()}`));
   }
 
   updateDisplay(text) {
@@ -135,6 +135,10 @@ class QA_Timer extends HTMLElement {
   getTime() {
     const d = new Date();
     return `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+  }
+  getShortTime(){
+    const d = new Date();
+    return `${d.getHours()}:${d.getMinutes()}`;
   }
 }
 
