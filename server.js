@@ -5,6 +5,9 @@
 const chatRoutes = require("./routes/chat");
 const dataApiRoutes = require("./routes/dataApi");
 const drinkRoutes = require("./routes/drinks");
+const customers = require("./public/customers.json");
+const orders = require("./public/orders.json");
+const products = require("./public/products.json");
 
 const serverUtils = require("./serverUtils.js");
 const cors = require("cors");
@@ -86,7 +89,8 @@ app.get("/startData", (req, res) => {
   "start"
 ].forEach(route => {
   app.get(`/${route}`, (req, res) => res.render(route));
-});
+    });
+
 
 app.post("/start/submit", (req, res) => {
   startData = serverUtils.initApp(req);
@@ -101,6 +105,18 @@ app.get('/start/edit', async (req, res) => {
   res.render('startedit', obj);
 });
 
+
+//---------------------------------------
+app.get('/customers', (req, res) => {
+    res.send(customers);
+});
+app.get('/orders', (req, res) => {
+    res.send(orders);
+});
+app.get('/products', (req, res) => {
+    res.send(products);
+});
+//---------------------------------------
 function doTrainerCommand(data) {
   if (data.body == "delete") {
     messages = [];
@@ -135,8 +151,7 @@ function saveMessageHistory() {
 }
 
 server.listen(
-  // { port: process.env.PORT, host: "0.0.0.0" },
-  { port: 3000, host: "0.0.0.0" },
+  { port: process.env.PORT, host: "0.0.0.0" },
   function (err, address) {
     if (err) {
       console.error(err);
