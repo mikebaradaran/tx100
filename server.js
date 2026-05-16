@@ -89,7 +89,7 @@ app.get("/startData", (req, res) => {
   "start"
 ].forEach(route => {
   app.get(`/${route}`, (req, res) => res.render(route));
-    });
+});
 
 
 app.post("/start/submit", (req, res) => {
@@ -108,13 +108,28 @@ app.get('/start/edit', async (req, res) => {
 
 //---------------------------------------
 app.get('/customers', (req, res) => {
-    res.send(customers);
+  res.send(customers);
 });
 app.get('/orders', (req, res) => {
-    res.send(orders);
+  res.send(orders);
 });
 app.get('/products', (req, res) => {
-    res.send(products);
+  res.send(products);
+});
+
+router.get("/orders/:id", (req, res) => {
+  const id = req.params.id.toLowerCase();
+  const data = orders.filter(
+    o => o.CustomerID.toLowerCase() === id
+  );
+  res.send(data);
+});
+router.get("/customers/:id", (req, res) => {
+  const id = req.params.id.toLowerCase();
+  const data = customers.filter(
+    o => o.CustomerID.toLowerCase() === id
+  );
+  res.send(data);
 });
 //---------------------------------------
 function doTrainerCommand(data) {
