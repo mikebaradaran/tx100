@@ -2,9 +2,9 @@
 // const commonData = require("./common.js");
 // const commentJS = require("./comments.js");
 
-const chatRoutes = require("./routes/chat");
-const dataApiRoutes = require("./routes/dataApi");
-const drinkRoutes = require("./routes/drinks");
+// const chatRoutes = require("./routes/chat");
+// const dataApiRoutes = require("./routes/dataApi");
+// const drinkRoutes = require("./routes/drinks");
 const customers = require("./public/customers.json");
 const orders = require("./public/orders.json");
 const products = require("./public/products.json");
@@ -25,9 +25,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from the "public" folder
 app.use(express.static("public"));
-app.use("/chat", chatRoutes({ doTrainerCommand }));
-app.use("/api", dataApiRoutes(serverUtils));
-app.use("/server", drinkRoutes());
+// app.use("/chat", chatRoutes({ doTrainerCommand }));
+// app.use("/api", dataApiRoutes(serverUtils));
+// app.use("/server", drinkRoutes());
 
 const corsOptions = {
   origin: "*",
@@ -151,7 +151,7 @@ function saveMessageHistory() {
 }
 
 server.listen(
-  { port: process.env.PORT, host: "0.0.0.0" },
+  { port: process.env.PORT || 3000, host: "0.0.0.0" },
   function (err, address) {
     if (err) {
       console.error(err);

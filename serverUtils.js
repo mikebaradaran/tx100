@@ -60,26 +60,26 @@ function initApp(req) {
   };
 }
 
-// -------------------------------
-// Lazy JSON loader
-// -------------------------------
-const cache = {};
+// // -------------------------------
+// // Lazy JSON loader
+// // -------------------------------
+// const cache = {};
 
-const loadJson = (file) => {
-  if (!cache[file]) {
-    cache[file] = require(file);
-  }
-  return cache[file];
-};
+// const loadJson = (file) => {
+//   if (!cache[file]) {
+//     cache[file] = require(file);
+//   }
+//   return cache[file];
+// };
 
-const getCustomers = () => loadJson("./customers.json");
-const getOrders = () => loadJson("./orders.json");
-const getProducts = () => loadJson("./products.json");
+// const getCustomers = () => loadJson("/public/customers.json");
+// const getOrders = () => loadJson("/public/orders.json");
+// const getProducts = () => loadJson("/public/products.json");
 
 // -------------------------------
 module.exports = {
   initApp,
-  getCustomers,
-  getOrders,
-  getProducts
+  // getCustomers,
+  // getOrders,
+  // getProducts
 };
