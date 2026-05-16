@@ -117,14 +117,14 @@ app.get('/products', (req, res) => {
   res.send(products);
 });
 
-router.get("/orders/:id", (req, res) => {
+app.get("/orders/:id", (req, res) => {
   const id = req.params.id.toLowerCase();
   const data = orders.filter(
     o => o.CustomerID.toLowerCase() === id
   );
   res.send(data);
 });
-router.get("/customers/:id", (req, res) => {
+app.get("/customers/:id", (req, res) => {
   const id = req.params.id.toLowerCase();
   const data = customers.filter(
     o => o.CustomerID.toLowerCase() === id
