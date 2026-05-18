@@ -119,10 +119,10 @@ app.get('/products', (req, res) => {
 
 //-----------------------------------------------
 app.get('/chat/student', (req, res) => {
-  res.send('chat_message_entry');
+  res.render('chat_message_entry');
 });
 app.get('/chat/trainer', (req, res) => {
-  res.send('chat_messages');
+  res.render('chat_messages');
 });
 //----------------------------------------------
 app.get("/orders/:id", (req, res) => {
