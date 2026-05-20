@@ -1,104 +1,136 @@
-// const site = getElement("site").innerHTML;
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("/startData")
+        .then(res => res.json())
+        .then(data => {
+            if (!data || Object.keys(data).length === 0) {
+                console.error("startData is empty");
+                return;
+            }
+            setupForm(data);
+        })
+        .catch(err => console.error("Error loading startData:", err));
+});
 
-fetch("/startData")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    setupForm(data);
-  })
-  .catch(function (error) {
-    alert(error);
-  });
-
-var courseData;
+let courseData = {};
 
 function setupForm(data) {
-  courseData = data;
-  const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code}&pin=${courseData.pin}`;
+    courseData = data;
 
-  // getElement("qaTimer").sound = courseData.audio;
-  getElement("course_title").innerHTML = `${courseData.course_title} <div id='trainer'> ${courseData.trainer} - ${courseData.courseDuration} days</div>`;
-  getElement("material").href = courseData.material;
+    // Safe defaults
+    courseData.students = Array.isArray(courseData.students) ? courseData.students : [];
+    courseData.pcs = Array.isArray(courseData.pcs) ? courseData.pcs : [];
 
-  // setup combobox
-  cboMessages.addEventListener("change", cboMessage_onchange);
+    const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code || ""}&pin=${courseData.pin || ""}`;
 
-  function cboMessage_onchange() {
-    const qaTimer = getElement("qaTimer");
-    const cboMessages = getElement("cboMessages");
-    const txtArea = getElement("txtArea");
+    // Title
+    const titleEl = get("course_title");
+    if (titleEl) {
+        titleEl.innerHTML = `${courseData.course_title || ""} - ${courseData.courseDuration || ""} days
+            <div id='trainer'>${courseData.trainer || ""}</div>`;
+    }
 
-    const selectedOption = cboMessages.options[cboMessages.selectedIndex];
-    const link = selectedOption.getAttribute('link');
-    const timerValue = selectedOption.getAttribute('timer');
+    // Material link
+    const material = get("material");
+    if (material) material.href = courseData.material || "#";
 
-    const afa = selectedOption.getAttribute('afa');
+    // Setup combobox
+    const cboMessages = get("cboMessages");
+    if (cboMessages) {
+        cboMessages.addEventListener("change", () => onMessageChange(cboMessages, evalLink));
+    }
+
+    // Students + PCS links
+    const ol = get("pcs");
+    if (ol) {
+        const allStudents = ["Trainer", ...courseData.students];
+        allStudents.forEach((stu, i) => {
+            if (!stu) return;
+
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+
+            a.innerHTML = stu;
+            a.target = "_blank";
+
+            // Safe PCS link
+            a.href = courseData.pcs[i - 1] || "#";
+
+            li.appendChild(a);
+            ol.appendChild(li);
+        });
+    }
+
+    hideUnusedFields();
+}
+
+function onMessageChange(cboMessages, evalLink) {
+    const qaTimer = get("qaTimer");
+    const txtArea = get("txtArea");
+
+    const opt = cboMessages.options[cboMessages.selectedIndex];
+    if (!opt) return;
+
+    const msg = opt.getAttribute("msg");
+    const link = opt.getAttribute("link");
+    const timerValue = opt.getAttribute("timer");
+    const afa = opt.getAttribute("afa");
+
     if (afa) {
-      copy(courseData.webex_email);
-      return;
+        copy(courseData.webex_email || "");
+        return;
     }
-    txtArea.value = selectedOption.getAttribute('msg');
 
-    if (timerValue) {
-      // qaTimer.innerText = parseInt(timerValue, 10) * 60;
-      if (timerValue == 0) {
-        qaTimer.stopTimer();
-        qaTimer.message = "";
-      } else {
-        qaTimer.timerValue = timerValue * 60;
-        qaTimer.start(qaTimer.timerValue);
-      }
+    if (txtArea) txtArea.value = msg || "";
+
+    // Timer logic
+    if (qaTimer && typeof qaTimer.start === "function") {
+        if (timerValue == 0) {
+            qaTimer.stopTimer?.();
+            qaTimer.message = "";
+        } else if (timerValue) {
+            qaTimer.timerValue = timerValue * 60;
+            qaTimer.start(qaTimer.timerValue);
+        }
     }
-    if (link) {
-      if (link === "evaluation") {
+
+    // Links
+    if (link === "evaluation") {
         window.open(evalLink, "_blank");
-      }
     }
-  }
-  // End of setting up combobox ---------------------------------------------
-
-  courseData.students = ["Trainer", ...courseData.students];
-  courseData.students.forEach((stu, i) => {
-    if (stu.length !== 0) {
-      var ol = getElement("pcs");
-      var li = document.createElement("li");
-      var a = document.createElement("a");
-      a.href = courseData.pcs[i];
-      a.target = "_blank";
-      a.innerHTML = stu; //.split(",")[1];
-      li.appendChild(a);
-      ol.appendChild(li);
-    }
-  });
-  
-  hideUnusedFields();
 }
 
 function hideUnusedFields() {
-  const fields = [
-    { value: courseData.password1, el: document.getElementsByName("passwords")[0] },
-    { value: courseData.password2, el: document.getElementsByName("passwords")[1] },
-    { value: courseData.password3, el: document.getElementsByName("passwords")[2] },
-    { value: courseData.mimeo, el: getElement("mimeo") }
-  ];
+    const fields = [
+        { value: courseData.password1, el: document.getElementsByName("passwords")[0] },
+        { value: courseData.password2, el: document.getElementsByName("passwords")[1] },
+        { value: courseData.password3, el: document.getElementsByName("passwords")[2] },
+        { value: courseData.mimeo, el: get("mimeo") }
+    ];
 
-  fields.forEach(({ value, el }) => {
-    if (value.length < 2) el.style.visibility = "hidden";
-  });
+    fields.forEach(({ value, el }) => {
+        if (!el) return;
+        if (!value || value.length < 2) {
+            el.style.visibility = "hidden";
+        }
+    });
 }
 
 function copy(str) {
-  navigator.clipboard.writeText(str);
+    if (!str) return;
+    if (!navigator.clipboard) {
+        console.warn("Clipboard API not available");
+        return;
+    }
+    navigator.clipboard.writeText(str).catch(err => console.error("Copy failed:", err));
 }
 
-function getElement(id) {
-  return document.getElementById(id);
+function get(id) {
+    return document.getElementById(id);
 }
 
 function mimeo() {
-  copy(courseData.mimeo);
-  window.open("https://mimeo.digital/QALtd/distributions", "_blank");
+    copy(courseData.mimeo || "");
+    window.open("https://mimeo.digital/QALtd/distributions", "_blank");
 }
 
 function toggle(span) {
@@ -109,6 +141,5 @@ function toggle(span) {
         c.style.display = (c.style.display === "none") ? "" : "none";
     });
 
-    // rotate the arrow
     span.classList.toggle("rotated");
-}    
+}

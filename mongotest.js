@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 // ========================
 // MongoDB setup
 // ========================
-const username = "mikeb";   
+const username = "mikeb";
 const password = "Password123";
 const dbName = "test";
 const mongoUri = `mongodb+srv://${username}:${password}@cluster0.smk7bk1.mongodb.net/${dbName}?retryWrites=true&w=majority`;
@@ -20,7 +20,17 @@ async function initDB() {
     collection = db.collection("startData");
 }
 
-initDB();
+async function startServer() {
+    await initDB();   // waits properly
+    app.listen(port, () => {
+        console.log(`Server running`);
+    });
+}
+
+startServer();
+
+
+// initDB();
 
 let startData;
 // ========================
@@ -69,6 +79,6 @@ app.get("/", (req, res) => {
 });
 
 // Start server
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server running at http://localhost:${port}`);
+// });

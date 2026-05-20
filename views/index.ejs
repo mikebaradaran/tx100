@@ -41,9 +41,11 @@
                     <emoji>&#128218;</emoji>
                     <a id="material" href="" target="_blank">Course material</a>
                     <button id="mimeo" onclick="mimeo()">Mimeo</button>
-                    <button name="passwords" onclick="copy(courseData.password1)">Copy email</button>
-                    <button name="passwords" onclick="copy(courseData.password2)">Copy password</button>
-                    <button name="passwords" onclick="copy(courseData.password3)">Copy access code</button>
+                    <div id="vpcButtons">
+                        <button name="passwords" onclick="copy(courseData.password1)">email</button>
+                        <button name="passwords" onclick="copy(courseData.password2)">password</button>
+                        <button name="passwords" onclick="copy(courseData.password3)">access code</button>
+                    </div>
                 </div>
 
                 <!-- PCS + NOTES -->
@@ -64,7 +66,8 @@
                             <option timer="0" msg="Ready to start?">Ready to start</option>
                             <option timer="15" msg="Let's take a 15 minutes break ☕">Coffee</option>
                             <option timer="60" msg="Let's take 60 minutes for lunch 🍔">Lunch</option>
-                            <option timer="0" msg="Please complete the course evaluation" link="evaluation">Evaluation</option>
+                            <option timer="0" msg="Please complete the course evaluation" link="evaluation">Evaluation
+                            </option>
                             <option afa="afa">Copy WebEx</option>
                         </select>
                         <a href="https://signin.qa.com/" target="_blank">Sign</a>

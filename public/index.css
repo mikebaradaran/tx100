@@ -53,11 +53,16 @@
 
 .passwords {
   background: lightyellow;
-  padding: 0.2em 0;
+  /* padding: 0.2em 0; */
 }
 
-.passwords * {
+#material, #mimeo{
   margin-left: 1.5em;
+}
+#vpcButtons {
+  float:right;
+  margin-right:1em;
+  margin-top:0.3em;
 }
 
 .pcs {
