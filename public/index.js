@@ -19,7 +19,7 @@ function setupForm(data) {
     // Safe defaults
     courseData.students = Array.isArray(courseData.students) ? courseData.students : [];
     courseData.pcs = Array.isArray(courseData.pcs) ? courseData.pcs : [];
-
+   
     const evalLink = `https://evaluation.qa.com/Login.aspx?course=${courseData.code || ""}&pin=${courseData.pin || ""}`;
 
     // Title
@@ -45,18 +45,18 @@ function setupForm(data) {
         const allStudents = ["Trainer", ...courseData.students];
         allStudents.forEach((stu, i) => {
             if (!stu) return;
+            ol.innerHTML += `<li><a href=${courseData.pcs[i]}>${stu}</a></li>`;
+            // const li = document.createElement("li");
+            // const a = document.createElement("a");
 
-            const li = document.createElement("li");
-            const a = document.createElement("a");
+            // a.innerHTML = stu;
+            // a.target = "_blank";
 
-            a.innerHTML = stu;
-            a.target = "_blank";
+            // // Safe PCS link
+            // a.href = courseData.pcs[i] || "#";
 
-            // Safe PCS link
-            a.href = courseData.pcs[i - 1] || "#";
-
-            li.appendChild(a);
-            ol.appendChild(li);
+            // li.appendChild(a);
+            // ol.appendChild(li);
         });
     }
 
