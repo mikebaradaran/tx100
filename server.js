@@ -52,7 +52,9 @@ app.post("/start/submit", async (req, res) => {
   startData = serverUtils.initApp(req);
   await saveAll(res);
 });
-
+app.get("/start", async (req, res) => {
+  res.render("start");
+});
 app.get("/start/edit", async (req, res) => {
   const docs = await collection.find({}).toArray();
   const data = docs[0] || {};
@@ -147,6 +149,9 @@ app.get('/chat/student', (req, res) => {
 });
 app.get('/chat/trainer', (req, res) => {
   res.render('chat_messages');
+});
+app.get('/chat', (req, res) => {
+  res.render('chat');
 });
 
 // ========================
