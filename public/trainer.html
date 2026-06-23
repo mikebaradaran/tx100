@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Teacher – View Screen</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h1>Teacher</h1>
+  <video id="remote" autoplay playsinline style="max-width: 800px;"></video>
+
+  <script>
+    const socket = io();
+    const remote = document.getElementById("remote");
+    const pc = new RTCPeerConnection({
+      iceServers: [{ urls: "stun:stun.l.google.com:19302" }]
+    });
+
+    pc.ontrack = e => {
+      remote.srcObject = e.streams[0];
+    };
+
+    pc.onicecandidate = e => {
+      if (e.candidate) socket.emit("ice", e.candidate);
+    };
+
+    socket.on("offer", async offer => {
+      await pc.setRemoteDescription(offer);
+      const answer = await pc.createAnswer();
+      await pc.setLocalDescription(answer);
+      socket.emit("answer", answer);
+    });
+
+    socket.on("ice", async candidate => {
+      try { await pc.addIceCandidate(candidate); } catch {}
+    });
+  </script>
+</body>
+</html>

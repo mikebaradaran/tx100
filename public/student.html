@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Student – Share Screen</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h1>Student</h1>
+  <button id="share">Share Screen</button>
+  <video id="preview" autoplay playsinline style="max-width: 400px;"></video>
+
+  <script>
+    const socket = io();
+    const btn = document.getElementById("share");
+    const preview = document.getElementById("preview");
+    const pc = new RTCPeerConnection({
+      iceServers: [{ urls: "stun:stun.l.google.com:19302" }]
+    });
+
+    pc.onicecandidate = e => {
+      if (e.candidate) socket.emit("ice", e.candidate);
+    };
+
+    btn.onclick = async () => {
+      const stream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: false });
+      preview.srcObject = stream;
+      stream.getTracks().forEach(t => pc.addTrack(t, stream));
+
+      const offer = await pc.createOffer();
+      await pc.setLocalDescription(offer);
+      socket.emit("offer", offer);
+    };
+
+    socket.on("answer", async answer => {
+      await pc.setRemoteDescription(answer);
+    });
+
+    socket.on("ice", async candidate => {
+      try { await pc.addIceCandidate(candidate); } catch {}
+    });
+  </script>
+</body>
+</html>
