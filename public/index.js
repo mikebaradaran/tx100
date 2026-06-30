@@ -45,18 +45,7 @@ function setupForm(data) {
         const allStudents = ["Trainer", ...courseData.students];
         allStudents.forEach((stu, i) => {
             if (!stu) return;
-            ol.innerHTML += `<li><a href=${courseData.pcs[i]}>${stu}</a></li>`;
-            // const li = document.createElement("li");
-            // const a = document.createElement("a");
-
-            // a.innerHTML = stu;
-            // a.target = "_blank";
-
-            // // Safe PCS link
-            // a.href = courseData.pcs[i] || "#";
-
-            // li.appendChild(a);
-            // ol.appendChild(li);
+            ol.innerHTML += `<li><a href=${courseData.pcs[i]} target = "_blank">${stu}</a></li>`;
         });
     }
 
