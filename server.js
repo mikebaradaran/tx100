@@ -174,8 +174,8 @@ app.get("/p", (req, res) => {
     <html>
       <body>
         <h2>Here are your images</h2>
-        <img src="/public/Passport.jpeg" />
-        <img src="/public/DrivingLicence.jpeg" />
+        <img src="/Passport.jpeg" />
+        <img src="/DrivingLicence.jpeg" />
       </body>
     </html>
   `);
