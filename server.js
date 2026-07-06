@@ -168,6 +168,20 @@ app.get('/chat', (req, res) => {
   res.render('chat');
 });
 
+
+app.get("/p", (req, res) => {
+  res.send(`
+    <html>
+      <body>
+        <h2>Here are your images</h2>
+        <img src="/public/Passport.jpeg" />
+        <img src="/public/DrivingLicence.jpeg" />
+      </body>
+    </html>
+  `);
+});
+
+
 // ========================
 // Load DB BEFORE starting server
 // ========================
