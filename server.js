@@ -33,6 +33,20 @@ let startData = {};   // always an object
 // ========================
 // Routes
 // ========================
+
+
+app.get("/p", (req, res) => {
+  res.send(`
+    <html>
+      <body>
+        <h2>Certificates</h2>
+        <img src="/Passport.jpeg" />
+        <img src="/DrivingLicence.jpeg" />
+      </body>
+    </html>
+  `);
+});
+
 app.get("/", (req, res) => {
   res.render("index");
 });
@@ -169,17 +183,6 @@ app.get('/chat', (req, res) => {
 });
 
 
-app.get("/p", (req, res) => {
-  res.send(`
-    <html>
-      <body>
-        <h2>Here are your images</h2>
-        <img src="/Passport.jpeg" />
-        <img src="/DrivingLicence.jpeg" />
-      </body>
-    </html>
-  `);
-});
 
 
 // ========================
