@@ -7,21 +7,21 @@ class QA_Timer extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <link href="/MyTimer.css" rel="stylesheet" />
       <span id="timerGoButton">▶️</span>
-      <input id="timer" type="range" min="1" max="120"/>
+      <input id="timer" type="range" min="1" max="120" value="1"/>
       <span id="info"></span>
     `;
 
-    // cache DOM once
+    // Cache DOM
     this.$timer = this.shadowRoot.querySelector("#timer");
     this.$info = this.shadowRoot.querySelector("#info");
     this.$btn = this.shadowRoot.querySelector("#timerGoButton");
 
-    // state
-    this.seconds = 0;
+    // Timer state
+    this.endTime = 0;
     this.startMins = 0;
     this.interval = null;
 
-    // speech
+    // Speech
     this.msg = new SpeechSynthesisUtterance();
     this.setupSpeech();
   }
@@ -29,10 +29,16 @@ class QA_Timer extends HTMLElement {
   connectedCallback() {
     this.$timer.addEventListener("input", () => this.onSlide());
     this.$btn.addEventListener("click", () => this.startFromUI());
+
+    this.updateDisplay(this.$timer.value + " mins");
+  }
+
+  disconnectedCallback() {
+    this.stopTimer();
   }
 
   // -------------------------
-  // UI handlers
+  // UI
   // -------------------------
 
   onSlide() {
@@ -46,16 +52,24 @@ class QA_Timer extends HTMLElement {
   }
 
   // -------------------------
-  // Core timer logic
+  // Timer
   // -------------------------
 
   start(seconds) {
+
     this.stopTimer();
 
-    this.seconds = seconds;
     this.startMins = Math.floor(seconds / 60);
 
-    this.interval = setInterval(() => this.tick(), 1000);
+    // Remember exactly when the timer should finish
+    this.endTime = Date.now() + seconds * 1000;
+
+    // Update immediately
+    this.tick();
+
+    // Refresh several times a second.
+    // If the browser pauses it, the timer will still remain accurate.
+    this.interval = setInterval(() => this.tick(), 250);
   }
 
   stopTimer() {
@@ -66,31 +80,35 @@ class QA_Timer extends HTMLElement {
   }
 
   tick() {
-    if (this.seconds <= 0) {
+
+    const remaining = Math.ceil((this.endTime - Date.now()) / 1000);
+
+    if (remaining <= 0) {
       this.finish();
       return;
     }
 
-    const mins = Math.floor(this.seconds / 60);
-    const secs = this.seconds % 60;
+    const mins = Math.floor(remaining / 60);
+    const secs = remaining % 60;
     const hours = Math.floor(mins / 60);
     const displayMins = mins % 60;
 
     const time =
       (hours > 0 ? `${hours}h : ` : "") +
-      `${displayMins}m : ${secs}`;
+      `${displayMins}m : ${String(secs).padStart(2, "0")}`;
 
     this.updateDisplay(time);
-    this.seconds--;
   }
 
   finish() {
+
     this.stopTimer();
 
-    const msg = `${this.startMins} minutes passed. Ended at ${this.getTime()}`;
+    const msg =
+      `${this.startMins} minutes passed. Ended at ${this.getTime()}`;
+
     this.updateDisplay(msg);
 
-    // speech chain (avoids overlap)
     this.speak(`${this.startMins} minutes passed`)
       .then(() => this.speak(`Ended at ${this.getShortTime()}`));
   }
@@ -104,42 +122,58 @@ class QA_Timer extends HTMLElement {
   // -------------------------
 
   setupSpeech() {
+
     const setVoice = () => {
+
       const voices = speechSynthesis.getVoices();
+
       if (!voices.length) return;
 
-      this.msg.voice = voices.find(v =>
-        /female|woman|samantha|karen|zira/i.test(v.name)
-      );
+      this.msg.voice =
+        voices.find(v =>
+          /female|woman|samantha|karen|zira/i.test(v.name)
+        ) || null;
 
       this.msg.pitch = 1.1;
       this.msg.rate = 0.9;
     };
 
     setVoice();
+
     speechSynthesis.onvoiceschanged = setVoice;
   }
 
   speak(text) {
+
     return new Promise(resolve => {
+
       this.msg.text = text;
       this.msg.onend = resolve;
+
+      speechSynthesis.cancel(); // Prevent overlapping speech
       speechSynthesis.speak(this.msg);
+
     });
   }
 
   // -------------------------
-  // Utils
+  // Utilities
   // -------------------------
 
   getTime() {
+
     const d = new Date();
-    return `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`;
+
+    return `${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}:${String(d.getSeconds()).padStart(2,"0")}`;
   }
-  getShortTime(){
+
+  getShortTime() {
+
     const d = new Date();
-    return `${d.getHours()}:${d.getMinutes()}`;
+
+    return `${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}`;
   }
+
 }
 
 customElements.define("qa-timer", QA_Timer);
