@@ -123,7 +123,7 @@ app.get('/chat/trainer', (req, res) => {
 });
 
 app.get('/chat/admin', (req, res) => {
-  res.render('admin');
+  res.render('chat_admin');
 });
 //----------------------------------------------
 app.get("/orders/:id", (req, res) => {

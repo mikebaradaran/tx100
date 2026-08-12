@@ -11,10 +11,6 @@
 //     res.render("chat_messages");
 //   });
 
-//   router.get("/admin", (req, res) => {
-//     res.render("admin");
-//   });
-
 //   router.get("/clear", (req, res) => {
 //     doTrainerCommand({ name: "trainer", body: "clear" });
 //     res.render("index");
