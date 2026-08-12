@@ -181,9 +181,9 @@ app.get('/chat/trainer', (req, res) => {
 app.get('/chat', (req, res) => {
   res.render('chat');
 });
-
-
-
+app.get('/chat/admin', (req, res) => {
+  res.render('chat_admin');
+});
 
 // ========================
 // Load DB BEFORE starting server
