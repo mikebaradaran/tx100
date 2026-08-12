@@ -121,6 +121,10 @@ app.get('/chat/student', (req, res) => {
 app.get('/chat/trainer', (req, res) => {
   res.render('chat_messages');
 });
+
+app.get('/chat/admin', (req, res) => {
+  res.render('admin');
+});
 //----------------------------------------------
 app.get("/orders/:id", (req, res) => {
   const id = req.params.id.toLowerCase();

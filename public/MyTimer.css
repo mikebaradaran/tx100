@@ -19,5 +19,12 @@
   font-size: x-large;
 }
 
+.break{
+  font-size: x-large;
+  margin-left: 1em;
 
+}
+.break:hover{
+  border: 1px solid white;
+}
 

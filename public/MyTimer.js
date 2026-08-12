@@ -9,6 +9,8 @@ class QA_Timer extends HTMLElement {
       <span id="timerGoButton">▶️</span>
       <input id="timer" type="range" min="1" max="120" value="1"/>
       <span id="info"></span>
+      <span id='break15' class='break'>🍵</span>
+      <span id='break60' class='break'>🍴</span>
     `;
 
     // Cache DOM
@@ -26,11 +28,22 @@ class QA_Timer extends HTMLElement {
     this.setupSpeech();
   }
 
+  setTime(minutes) {
+    this.shadowRoot.querySelector("#timer").value = minutes;
+    this.start(minutes * 60);
+  }
+
   connectedCallback() {
     this.$timer.addEventListener("input", () => this.onSlide());
     this.$btn.addEventListener("click", () => this.startFromUI());
 
     this.updateDisplay(this.$timer.value + " mins");
+
+    this.shadowRoot.querySelector("#break15")
+      .addEventListener("click", () => this.setTime(15));
+
+    this.shadowRoot.querySelector("#break60")
+      .addEventListener("click", () => this.setTime(60));
   }
 
   disconnectedCallback() {
@@ -164,14 +177,14 @@ class QA_Timer extends HTMLElement {
 
     const d = new Date();
 
-    return `${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}:${String(d.getSeconds()).padStart(2,"0")}`;
+    return `${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}:${String(d.getSeconds()).padStart(2, "0")}`;
   }
 
   getShortTime() {
 
     const d = new Date();
 
-    return `${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}`;
+    return `${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}`;
   }
 
 }
