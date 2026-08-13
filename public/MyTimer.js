@@ -9,8 +9,6 @@ class QA_Timer extends HTMLElement {
       <span id="timerGoButton">▶️</span>
       <input id="timer" type="range" min="1" max="120" value="1"/>
       <span id="info"></span>
-      <span id='break15' class='break'>🍵</span>
-      <span id='break60' class='break'>🍴</span>
     `;
 
     // Cache DOM
@@ -39,11 +37,11 @@ class QA_Timer extends HTMLElement {
 
     this.updateDisplay(this.$timer.value + " mins");
 
-    this.shadowRoot.querySelector("#break15")
-      .addEventListener("click", () => this.setTime(15));
+    // this.shadowRoot.querySelector("#break15")
+    //   .addEventListener("click", () => this.setTime(15));
 
-    this.shadowRoot.querySelector("#break60")
-      .addEventListener("click", () => this.setTime(60));
+    // this.shadowRoot.querySelector("#break60")
+    //   .addEventListener("click", () => this.setTime(60));
   }
 
   disconnectedCallback() {
