@@ -185,6 +185,10 @@ app.get('/chat/admin', (req, res) => {
   res.render('chat_admin');
 });
 
+app.get('/keepalive', (req, res) => {
+  res.render('keepalive');
+});
+
 // ========================
 // Load DB BEFORE starting server
 // ========================
