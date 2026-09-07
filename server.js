@@ -35,18 +35,6 @@ let startData = {};   // always an object
 // ========================
 
 
-app.get("/p", (req, res) => {
-  res.send(`
-    <html>
-      <body>
-        <h2>Certificates</h2>
-        <img src="/Passport.jpeg" />
-        <img src="/DrivingLicence.jpeg" />
-      </body>
-    </html>
-  `);
-});
-
 app.get("/", (req, res) => {
   res.render("index");
 });
